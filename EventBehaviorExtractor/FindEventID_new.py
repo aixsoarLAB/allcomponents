@@ -32,3 +32,19 @@ with open(output_file_path + ".txt", 'w', encoding='utf-8') as output_file:
 print(f'所有 Event IDs 已成功儲存到 "{output_file_path}"。')
 
 os.rename(output_file_path + ".txt", output_file_path)
+
+# 讀取檔案
+file_name = 'ids2018-54'
+file_path = './' + file_name  # 指定檔案路徑
+with open(file_path, 'r', encoding='utf-8') as file:
+    lines = file.readlines()
+
+# 移除只包含換行符號的行
+cleaned_lines = [line for line in lines if line.strip() != '']
+
+# 將整理後的內容寫回到一個新檔案
+cleaned_file_path = './' + file_name
+with open(cleaned_file_path, 'w', encoding='utf-8') as file:
+    file.writelines(cleaned_lines)
+
+print(f'已整理檔案並儲存到 {cleaned_file_path}')
