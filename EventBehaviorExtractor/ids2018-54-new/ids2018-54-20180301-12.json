@@ -1,0 +1,151 @@
+{
+  "took" : 1,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 2,
+      "relation" : "eq"
+    },
+    "max_score" : 0.0,
+    "hits" : [
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "X_gfiY4B6U4O_9c57735",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-03-01T05:44:32.192Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "record_id" : 3417,
+            "process" : {
+              "pid" : 4160,
+              "thread" : {
+                "id" : 1012
+              }
+            },
+            "event_id" : "16",
+            "task" : "None",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "HiveNameLength" : "64",
+              "HiveName" : "\\??\\C:\\Users\\oracle\\AppData\\Local\\Microsoft\\Windows\\UsrClass.dat",
+              "DirtyPages" : "13",
+              "KeysUpdated" : "22"
+            },
+            "provider_name" : "Microsoft-Windows-Kernel-General",
+            "opcode" : "資訊",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:35.447919887Z",
+            "code" : "16",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "created" : "2024-03-29T07:32:34.596Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "已清除登錄區 \\??\\C:\\Users\\oracle\\AppData\\Local\\Microsoft\\Windows\\UsrClass.dat 中的存取歷程記錄，更新了 22 個機碼並建立了 13 個修改的頁面。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "3PgfiY4B6U4O_9c5Yq-p",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-03-01T05:44:32.192Z",
+          "winlog" : {
+            "record_id" : 3417,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 4160,
+              "thread" : {
+                "id" : 1012
+              }
+            },
+            "event_id" : "16",
+            "task" : "None",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "event_data" : {
+              "HiveNameLength" : "64",
+              "DirtyPages" : "13",
+              "HiveName" : "\\??\\C:\\Users\\oracle\\AppData\\Local\\Microsoft\\Windows\\UsrClass.dat",
+              "KeysUpdated" : "22"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-Kernel-General",
+            "opcode" : "資訊",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "已清除登錄區 \\??\\C:\\Users\\oracle\\AppData\\Local\\Microsoft\\Windows\\UsrClass.dat 中的存取歷程記錄，更新了 22 個機碼並建立了 13 個修改的頁面。",
+          "event" : {
+            "ingested" : "2024-03-29T07:31:59.272069145Z",
+            "code" : "16",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:58.525Z",
+            "action" : "None"
+          }
+        }
+      }
+    ]
+  }
+}

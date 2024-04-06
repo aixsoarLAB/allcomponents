@@ -1,0 +1,374 @@
+{
+  "took" : 2,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 5,
+      "relation" : "eq"
+    },
+    "max_score" : 0.0,
+    "hits" : [
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "K_geiY4B6U4O_9c51p2e",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T19:07:21.546Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 496,
+              "thread" : {
+                "id" : 1968
+              }
+            },
+            "keywords" : [
+              "ut:DnsAutoLogKeyword"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "AddressLength" : "128",
+              "Address" : "02000000AC1F0002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "QueryName" : "r3---sn-vgqsrnek.googlevideo.com"
+            },
+            "opcode" : "資訊",
+            "record_id" : 1749,
+            "event_id" : "1014",
+            "task" : "DnsAllServersTimeoutSystem",
+            "provider_guid" : "{1c95126e-7eea-49a9-a3fe-a378b03ddb4d}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-DNS-Client",
+            "user" : {
+              "identifier" : "S-1-5-20",
+              "domain" : "NT AUTHORITY",
+              "name" : "NETWORK SERVICE",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "警告"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.422245536Z",
+            "code" : "1014",
+            "provider" : "Microsoft-Windows-DNS-Client",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:23.429Z",
+            "action" : "DnsAllServersTimeoutSystem"
+          },
+          "message" : "設定的 DNS 伺服器沒有回應，名稱 r3---sn-vgqsrnek.googlevideo.com 的名稱解析逾時。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "KPgeiY4B6U4O_9c5T5I8",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T19:07:21.546Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 496,
+              "thread" : {
+                "id" : 1968
+              }
+            },
+            "keywords" : [
+              "ut:DnsAutoLogKeyword"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "AddressLength" : "128",
+              "Address" : "02000000AC1F0002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "QueryName" : "r3---sn-vgqsrnek.googlevideo.com"
+            },
+            "opcode" : "資訊",
+            "record_id" : 1749,
+            "task" : "DnsAllServersTimeoutSystem",
+            "event_id" : "1014",
+            "provider_guid" : "{1c95126e-7eea-49a9-a3fe-a378b03ddb4d}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-DNS-Client",
+            "user" : {
+              "identifier" : "S-1-5-20",
+              "domain" : "NT AUTHORITY",
+              "name" : "NETWORK SERVICE",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "警告"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:30:48.764342596Z",
+            "code" : "1014",
+            "provider" : "Microsoft-Windows-DNS-Client",
+            "created" : "2024-03-29T07:30:47.950Z",
+            "kind" : "event",
+            "action" : "DnsAllServersTimeoutSystem"
+          },
+          "message" : "設定的 DNS 伺服器沒有回應，名稱 r3---sn-vgqsrnek.googlevideo.com 的名稱解析逾時。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "WPgfiY4B6U4O_9c5Wqn5",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T19:07:21.546Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 496,
+              "thread" : {
+                "id" : 1968
+              }
+            },
+            "keywords" : [
+              "ut:DnsAutoLogKeyword"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "AddressLength" : "128",
+              "Address" : "02000000AC1F0002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "QueryName" : "r3---sn-vgqsrnek.googlevideo.com"
+            },
+            "opcode" : "資訊",
+            "record_id" : 1749,
+            "event_id" : "1014",
+            "task" : "DnsAllServersTimeoutSystem",
+            "provider_guid" : "{1c95126e-7eea-49a9-a3fe-a378b03ddb4d}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-DNS-Client",
+            "user" : {
+              "identifier" : "S-1-5-20",
+              "domain" : "NT AUTHORITY",
+              "name" : "NETWORK SERVICE",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "警告"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "設定的 DNS 伺服器沒有回應，名稱 r3---sn-vgqsrnek.googlevideo.com 的名稱解析逾時。",
+          "event" : {
+            "ingested" : "2024-03-29T07:31:57.305593202Z",
+            "code" : "1014",
+            "provider" : "Microsoft-Windows-DNS-Client",
+            "created" : "2024-03-29T07:31:56.535Z",
+            "kind" : "event",
+            "action" : "DnsAllServersTimeoutSystem"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "X_gaiY4B6U4O_9c53Yey",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T19:07:21.546Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 496,
+              "thread" : {
+                "id" : 1968
+              }
+            },
+            "keywords" : [
+              "ut:DnsAutoLogKeyword"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "AddressLength" : "128",
+              "Address" : "02000000AC1F0002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "QueryName" : "r3---sn-vgqsrnek.googlevideo.com"
+            },
+            "opcode" : "資訊",
+            "record_id" : 1749,
+            "event_id" : "1014",
+            "task" : "DnsAllServersTimeoutSystem",
+            "provider_guid" : "{1c95126e-7eea-49a9-a3fe-a378b03ddb4d}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-DNS-Client",
+            "user" : {
+              "identifier" : "S-1-5-20",
+              "domain" : "NT AUTHORITY",
+              "name" : "NETWORK SERVICE",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "警告"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "設定的 DNS 伺服器沒有回應，名稱 r3---sn-vgqsrnek.googlevideo.com 的名稱解析逾時。",
+          "event" : {
+            "ingested" : "2024-03-29T07:27:03.089608631Z",
+            "code" : "1014",
+            "provider" : "Microsoft-Windows-DNS-Client",
+            "created" : "2024-03-29T07:26:58.588Z",
+            "kind" : "event",
+            "action" : "DnsAllServersTimeoutSystem"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "2_gfiY4B6U4O_9c557b3",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T19:07:21.546Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 496,
+              "thread" : {
+                "id" : 1968
+              }
+            },
+            "keywords" : [
+              "ut:DnsAutoLogKeyword"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "AddressLength" : "128",
+              "Address" : "02000000AC1F0002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "QueryName" : "r3---sn-vgqsrnek.googlevideo.com"
+            },
+            "opcode" : "資訊",
+            "record_id" : 1749,
+            "event_id" : "1014",
+            "task" : "DnsAllServersTimeoutSystem",
+            "provider_guid" : "{1c95126e-7eea-49a9-a3fe-a378b03ddb4d}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-DNS-Client",
+            "user" : {
+              "identifier" : "S-1-5-20",
+              "domain" : "NT AUTHORITY",
+              "name" : "NETWORK SERVICE",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "警告"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:33.398992376Z",
+            "code" : "1014",
+            "provider" : "Microsoft-Windows-DNS-Client",
+            "created" : "2024-03-29T07:32:32.501Z",
+            "kind" : "event",
+            "action" : "DnsAllServersTimeoutSystem"
+          },
+          "message" : "設定的 DNS 伺服器沒有回應，名稱 r3---sn-vgqsrnek.googlevideo.com 的名稱解析逾時。"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,265 @@
+{
+  "took" : 1,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 3,
+      "relation" : "eq"
+    },
+    "max_score" : 0.0,
+    "hits" : [
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "EfgfiY4B6U4O_9c56rt4",
+        "_score" : 0.0,
+        "_ignored" : [
+          "message.keyword"
+        ],
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-18T12:38:26.417Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 836,
+              "thread" : {
+                "id" : 6136
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param7" : "NETWORK SERVICE",
+              "param8" : "S-1-5-20",
+              "param5" : "{9CA88EE3-ACB7-47C8-AFC4-AB702511C276}",
+              "param6" : "NT AUTHORITY",
+              "param9" : "LocalHost (Using LRPC)",
+              "param10" : "Unavailable",
+              "param11" : "Unavailable",
+              "param3" : "Activation",
+              "param4" : "{D63B10C5-BB46-4990-A94F-E40B9D520160}",
+              "param1" : "application-specific",
+              "param2" : "Local"
+            },
+            "opcode" : "資訊",
+            "record_id" : 2827,
+            "task" : "None",
+            "event_id" : "10016",
+            "provider_guid" : "{1B562E86-B7AA-4131-BADC-B6F3A001407E}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-DistributedCOM",
+            "user" : {
+              "identifier" : "S-1-5-20",
+              "domain" : "NT AUTHORITY",
+              "name" : "NETWORK SERVICE",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "application-specific 權限設定無法將含有 CLSID \n{D63B10C5-BB46-4990-A94F-E40B9D520160}\n 與 APPID \n{9CA88EE3-ACB7-47C8-AFC4-AB702511C276}\n 之 COM 伺服器應用程式的 Local Activation 權限授與來自位址 LocalHost (Using LRPC) (在應用程式容器 Unavailable SID (Unavailable) 中執行) 的使用者 NT AUTHORITY\\NETWORK SERVICE SID (S-1-5-20)。您可以使用元件服務系統管理工具修改此安全性權限。",
+          "event" : {
+            "ingested" : "2024-03-29T07:32:34.039488343Z",
+            "code" : "10016",
+            "provider" : "Microsoft-Windows-DistributedCOM",
+            "created" : "2024-03-29T07:32:33.864Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "YfgeiY4B6U4O_9c53aFZ",
+        "_score" : 0.0,
+        "_ignored" : [
+          "message.keyword"
+        ],
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-18T12:38:26.417Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 836,
+              "thread" : {
+                "id" : 6136
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param7" : "NETWORK SERVICE",
+              "param8" : "S-1-5-20",
+              "param5" : "{9CA88EE3-ACB7-47C8-AFC4-AB702511C276}",
+              "param6" : "NT AUTHORITY",
+              "param9" : "LocalHost (Using LRPC)",
+              "param10" : "Unavailable",
+              "param11" : "Unavailable",
+              "param3" : "Activation",
+              "param4" : "{D63B10C5-BB46-4990-A94F-E40B9D520160}",
+              "param1" : "application-specific",
+              "param2" : "Local"
+            },
+            "opcode" : "資訊",
+            "record_id" : 2827,
+            "event_id" : "10016",
+            "task" : "None",
+            "provider_guid" : "{1B562E86-B7AA-4131-BADC-B6F3A001407E}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-DistributedCOM",
+            "user" : {
+              "identifier" : "S-1-5-20",
+              "domain" : "NT AUTHORITY",
+              "name" : "NETWORK SERVICE",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:25.144503298Z",
+            "code" : "10016",
+            "provider" : "Microsoft-Windows-DistributedCOM",
+            "created" : "2024-03-29T07:31:24.715Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "application-specific 權限設定無法將含有 CLSID \n{D63B10C5-BB46-4990-A94F-E40B9D520160}\n 與 APPID \n{9CA88EE3-ACB7-47C8-AFC4-AB702511C276}\n 之 COM 伺服器應用程式的 Local Activation 權限授與來自位址 LocalHost (Using LRPC) (在應用程式容器 Unavailable SID (Unavailable) 中執行) 的使用者 NT AUTHORITY\\NETWORK SERVICE SID (S-1-5-20)。您可以使用元件服務系統管理工具修改此安全性權限。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "jvgfiY4B6U4O_9c5Xa11",
+        "_score" : 0.0,
+        "_ignored" : [
+          "message.keyword"
+        ],
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-18T12:38:26.417Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 836,
+              "thread" : {
+                "id" : 6136
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param7" : "NETWORK SERVICE",
+              "param8" : "S-1-5-20",
+              "param5" : "{9CA88EE3-ACB7-47C8-AFC4-AB702511C276}",
+              "param6" : "NT AUTHORITY",
+              "param9" : "LocalHost (Using LRPC)",
+              "param10" : "Unavailable",
+              "param11" : "Unavailable",
+              "param3" : "Activation",
+              "param4" : "{D63B10C5-BB46-4990-A94F-E40B9D520160}",
+              "param1" : "application-specific",
+              "param2" : "Local"
+            },
+            "opcode" : "資訊",
+            "record_id" : 2827,
+            "event_id" : "10016",
+            "task" : "None",
+            "provider_guid" : "{1B562E86-B7AA-4131-BADC-B6F3A001407E}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-DistributedCOM",
+            "user" : {
+              "identifier" : "S-1-5-20",
+              "domain" : "NT AUTHORITY",
+              "name" : "NETWORK SERVICE",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "application-specific 權限設定無法將含有 CLSID \n{D63B10C5-BB46-4990-A94F-E40B9D520160}\n 與 APPID \n{9CA88EE3-ACB7-47C8-AFC4-AB702511C276}\n 之 COM 伺服器應用程式的 Local Activation 權限授與來自位址 LocalHost (Using LRPC) (在應用程式容器 Unavailable SID (Unavailable) 中執行) 的使用者 NT AUTHORITY\\NETWORK SERVICE SID (S-1-5-20)。您可以使用元件服務系統管理工具修改此安全性權限。",
+          "event" : {
+            "ingested" : "2024-03-29T07:31:57.939996098Z",
+            "code" : "10016",
+            "provider" : "Microsoft-Windows-DistributedCOM",
+            "created" : "2024-03-29T07:31:57.868Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,2939 @@
+{
+  "took" : 2,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 40,
+      "relation" : "eq"
+    },
+    "max_score" : 0.0,
+    "hits" : [
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "IPgeiY4B6U4O_9c51p2e",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:05:02.193Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 756,
+              "thread" : {
+                "id" : 3104
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "200",
+              "updateGuid" : "{4a67948e-4fa9-4e4e-9ba2-40316b913dec}",
+              "updateTitle" : "Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.191.0)"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 1738,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "44",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.421631890Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:31:23.429Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "Windows Update 已開始下載更新。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "IfgeiY4B6U4O_9c51p2e",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:05:25.182Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 756,
+              "thread" : {
+                "id" : 3104
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "203",
+              "updateGuid" : "{948292b8-ab66-4897-b435-e1e2f10e21f4}",
+              "updateTitle" : "Feature update to Windows 10, version 1709"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1739,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "43",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.421688283Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:23.429Z",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: Feature update to Windows 10, version 1709"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "IvgeiY4B6U4O_9c51p2e",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:05:25.235Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 756,
+              "thread" : {
+                "id" : 3104
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "失敗"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "203",
+              "updateGuid" : "{948292b8-ab66-4897-b435-e1e2f10e21f4}",
+              "serviceGuid" : "{9482f4b4-e343-43b6-b170-9a65bc822c77}",
+              "errorCode" : "0x80240020",
+              "updateTitle" : "Feature update to Windows 10, version 1709"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1740,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "20",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "安裝失敗: Windows 無法安裝下列更新，錯誤 0x80240020: Feature update to Windows 10, version 1709。",
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.421744412Z",
+            "code" : "20",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:31:23.429Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "I_geiY4B6U4O_9c51p2e",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:05:30.302Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 756,
+              "thread" : {
+                "id" : 3104
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "200",
+              "updateGuid" : "{4a67948e-4fa9-4e4e-9ba2-40316b913dec}",
+              "updateTitle" : "Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.191.0)"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1741,
+            "event_id" : "43",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.421800812Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:23.429Z",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.191.0)"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "JPgeiY4B6U4O_9c51p2e",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:05:37.145Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 680,
+              "thread" : {
+                "id" : 492
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "ServiceName" : "MpKsl8c9f4e64",
+              "ServiceType" : "kernel mode driver",
+              "ImagePath" : "C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{688CF977-DDF9-4791-8CF7-E57039D0B09A}\\MpKsl8c9f4e64.sys",
+              "StartType" : "system start"
+            },
+            "opcode" : "Info",
+            "record_id" : 1742,
+            "event_id" : "7045",
+            "task" : "None",
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.421857583Z",
+            "code" : "7045",
+            "provider" : "Service Control Manager",
+            "created" : "2024-03-29T07:31:23.429Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "服務已經安裝在系統中。\n\n服務名稱:  MpKsl8c9f4e64\n服務檔案名稱:  C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{688CF977-DDF9-4791-8CF7-E57039D0B09A}\\MpKsl8c9f4e64.sys\n服務類型:  kernel mode driver\n服務啟動類型:  system start\n服務帳戶:  "
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "JfgeiY4B6U4O_9c51p2e",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:06:16.818Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 756,
+              "thread" : {
+                "id" : 3104
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "成功"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "200",
+              "updateGuid" : "{4a67948e-4fa9-4e4e-9ba2-40316b913dec}",
+              "serviceGuid" : "{9482f4b4-e343-43b6-b170-9a65bc822c77}",
+              "updateTitle" : "Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.191.0)"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1743,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "19",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.421914894Z",
+            "code" : "19",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:31:23.429Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "安裝成功: Windows 已順利安裝下列更新: Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.191.0)"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "JvgeiY4B6U4O_9c51p2e",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:06:51.378Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 680,
+              "thread" : {
+                "id" : 492
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "ServiceName" : "MpKsl6900df2f",
+              "ServiceType" : "kernel mode driver",
+              "ImagePath" : "C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{660E2CC1-B795-4158-AA4B-569CD0B5E81E}\\MpKsl6900df2f.sys",
+              "StartType" : "system start"
+            },
+            "opcode" : "Info",
+            "record_id" : 1744,
+            "task" : "None",
+            "event_id" : "7045",
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.421970697Z",
+            "code" : "7045",
+            "provider" : "Service Control Manager",
+            "created" : "2024-03-29T07:31:23.429Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "服務已經安裝在系統中。\n\n服務名稱:  MpKsl6900df2f\n服務檔案名稱:  C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{660E2CC1-B795-4158-AA4B-569CD0B5E81E}\\MpKsl6900df2f.sys\n服務類型:  kernel mode driver\n服務啟動類型:  system start\n服務帳戶:  "
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "J_geiY4B6U4O_9c51p2e",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T14:05:23.451Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 680,
+              "thread" : {
+                "id" : 4244
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param3" : "demand start",
+              "param4" : "BITS",
+              "param1" : "Background Intelligent Transfer Service",
+              "param2" : "auto start"
+            },
+            "opcode" : "Info",
+            "record_id" : 1745,
+            "event_id" : "7040",
+            "task" : "None",
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.422030962Z",
+            "code" : "7040",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:23.429Z",
+            "action" : "None"
+          },
+          "message" : "Background Intelligent Transfer Service 服務的啟動類型已從 auto start 變更為 demand start。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "HfgeiY4B6U4O_9c5T5I8",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:05:02.193Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 756,
+              "thread" : {
+                "id" : 3104
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "200",
+              "updateGuid" : "{4a67948e-4fa9-4e4e-9ba2-40316b913dec}",
+              "updateTitle" : "Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.191.0)"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 1738,
+            "event_id" : "44",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:30:48.763651430Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:30:47.950Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "Windows Update 已開始下載更新。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "HvgeiY4B6U4O_9c5T5I8",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:05:25.182Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 756,
+              "thread" : {
+                "id" : 3104
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "203",
+              "updateGuid" : "{948292b8-ab66-4897-b435-e1e2f10e21f4}",
+              "updateTitle" : "Feature update to Windows 10, version 1709"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1739,
+            "event_id" : "43",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: Feature update to Windows 10, version 1709",
+          "event" : {
+            "ingested" : "2024-03-29T07:30:48.763714101Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:30:47.950Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "H_geiY4B6U4O_9c5T5I8",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:05:25.235Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 756,
+              "thread" : {
+                "id" : 3104
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "失敗"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "203",
+              "updateGuid" : "{948292b8-ab66-4897-b435-e1e2f10e21f4}",
+              "serviceGuid" : "{9482f4b4-e343-43b6-b170-9a65bc822c77}",
+              "errorCode" : "0x80240020",
+              "updateTitle" : "Feature update to Windows 10, version 1709"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1740,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "20",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "安裝失敗: Windows 無法安裝下列更新，錯誤 0x80240020: Feature update to Windows 10, version 1709。",
+          "event" : {
+            "ingested" : "2024-03-29T07:30:48.763777451Z",
+            "code" : "20",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:30:47.950Z",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "IPgeiY4B6U4O_9c5T5I8",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:05:30.302Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 756,
+              "thread" : {
+                "id" : 3104
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "200",
+              "updateGuid" : "{4a67948e-4fa9-4e4e-9ba2-40316b913dec}",
+              "updateTitle" : "Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.191.0)"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1741,
+            "event_id" : "43",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:30:48.763845997Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:30:47.950Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.191.0)"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "IfgeiY4B6U4O_9c5T5I8",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:05:37.145Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 680,
+              "thread" : {
+                "id" : 492
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "ServiceName" : "MpKsl8c9f4e64",
+              "ServiceType" : "kernel mode driver",
+              "ImagePath" : "C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{688CF977-DDF9-4791-8CF7-E57039D0B09A}\\MpKsl8c9f4e64.sys",
+              "StartType" : "system start"
+            },
+            "opcode" : "Info",
+            "record_id" : 1742,
+            "task" : "None",
+            "event_id" : "7045",
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "服務已經安裝在系統中。\n\n服務名稱:  MpKsl8c9f4e64\n服務檔案名稱:  C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{688CF977-DDF9-4791-8CF7-E57039D0B09A}\\MpKsl8c9f4e64.sys\n服務類型:  kernel mode driver\n服務啟動類型:  system start\n服務帳戶:  ",
+          "event" : {
+            "ingested" : "2024-03-29T07:30:48.763911746Z",
+            "code" : "7045",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-03-29T07:30:47.950Z",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "IvgeiY4B6U4O_9c5T5I8",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:06:16.818Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 756,
+              "thread" : {
+                "id" : 3104
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "成功"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "200",
+              "updateGuid" : "{4a67948e-4fa9-4e4e-9ba2-40316b913dec}",
+              "serviceGuid" : "{9482f4b4-e343-43b6-b170-9a65bc822c77}",
+              "updateTitle" : "Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.191.0)"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1743,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "19",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:30:48.763975958Z",
+            "code" : "19",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:30:47.950Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "安裝成功: Windows 已順利安裝下列更新: Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.191.0)"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "I_geiY4B6U4O_9c5T5I8",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:06:51.378Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 680,
+              "thread" : {
+                "id" : 492
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "ServiceName" : "MpKsl6900df2f",
+              "ServiceType" : "kernel mode driver",
+              "ImagePath" : "C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{660E2CC1-B795-4158-AA4B-569CD0B5E81E}\\MpKsl6900df2f.sys",
+              "StartType" : "system start"
+            },
+            "opcode" : "Info",
+            "record_id" : 1744,
+            "task" : "None",
+            "event_id" : "7045",
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "服務已經安裝在系統中。\n\n服務名稱:  MpKsl6900df2f\n服務檔案名稱:  C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{660E2CC1-B795-4158-AA4B-569CD0B5E81E}\\MpKsl6900df2f.sys\n服務類型:  kernel mode driver\n服務啟動類型:  system start\n服務帳戶:  ",
+          "event" : {
+            "ingested" : "2024-03-29T07:30:48.764039351Z",
+            "code" : "7045",
+            "provider" : "Service Control Manager",
+            "created" : "2024-03-29T07:30:47.950Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "JPgeiY4B6U4O_9c5T5I8",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T14:05:23.451Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 680,
+              "thread" : {
+                "id" : 4244
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param3" : "demand start",
+              "param4" : "BITS",
+              "param1" : "Background Intelligent Transfer Service",
+              "param2" : "auto start"
+            },
+            "opcode" : "Info",
+            "record_id" : 1745,
+            "event_id" : "7040",
+            "task" : "None",
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:30:48.764102040Z",
+            "code" : "7040",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-03-29T07:30:47.950Z",
+            "action" : "None"
+          },
+          "message" : "Background Intelligent Transfer Service 服務的啟動類型已從 auto start 變更為 demand start。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "TfgfiY4B6U4O_9c5Wqn5",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:05:02.193Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 756,
+              "thread" : {
+                "id" : 3104
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "200",
+              "updateGuid" : "{4a67948e-4fa9-4e4e-9ba2-40316b913dec}",
+              "updateTitle" : "Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.191.0)"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 1738,
+            "event_id" : "44",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:57.304855942Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:56.535Z",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "Windows Update 已開始下載更新。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "TvgfiY4B6U4O_9c5Wqn5",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:05:25.182Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 756,
+              "thread" : {
+                "id" : 3104
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "203",
+              "updateGuid" : "{948292b8-ab66-4897-b435-e1e2f10e21f4}",
+              "updateTitle" : "Feature update to Windows 10, version 1709"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1739,
+            "event_id" : "43",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:57.304923592Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:31:56.535Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: Feature update to Windows 10, version 1709"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "T_gfiY4B6U4O_9c5Wqn5",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:05:25.235Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 756,
+              "thread" : {
+                "id" : 3104
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "失敗"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "203",
+              "updateGuid" : "{948292b8-ab66-4897-b435-e1e2f10e21f4}",
+              "serviceGuid" : "{9482f4b4-e343-43b6-b170-9a65bc822c77}",
+              "errorCode" : "0x80240020",
+              "updateTitle" : "Feature update to Windows 10, version 1709"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1740,
+            "event_id" : "20",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "安裝失敗: Windows 無法安裝下列更新，錯誤 0x80240020: Feature update to Windows 10, version 1709。",
+          "event" : {
+            "ingested" : "2024-03-29T07:31:57.304974526Z",
+            "code" : "20",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:31:56.535Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "UPgfiY4B6U4O_9c5Wqn5",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:05:30.302Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 756,
+              "thread" : {
+                "id" : 3104
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "200",
+              "updateGuid" : "{4a67948e-4fa9-4e4e-9ba2-40316b913dec}",
+              "updateTitle" : "Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.191.0)"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1741,
+            "event_id" : "43",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:57.305024485Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:31:56.535Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.191.0)"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "UfgfiY4B6U4O_9c5Wqn5",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:05:37.145Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 680,
+              "thread" : {
+                "id" : 492
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "ServiceName" : "MpKsl8c9f4e64",
+              "ServiceType" : "kernel mode driver",
+              "ImagePath" : "C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{688CF977-DDF9-4791-8CF7-E57039D0B09A}\\MpKsl8c9f4e64.sys",
+              "StartType" : "system start"
+            },
+            "opcode" : "Info",
+            "record_id" : 1742,
+            "task" : "None",
+            "event_id" : "7045",
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "服務已經安裝在系統中。\n\n服務名稱:  MpKsl8c9f4e64\n服務檔案名稱:  C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{688CF977-DDF9-4791-8CF7-E57039D0B09A}\\MpKsl8c9f4e64.sys\n服務類型:  kernel mode driver\n服務啟動類型:  system start\n服務帳戶:  ",
+          "event" : {
+            "ingested" : "2024-03-29T07:31:57.305229814Z",
+            "code" : "7045",
+            "provider" : "Service Control Manager",
+            "created" : "2024-03-29T07:31:56.535Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "UvgfiY4B6U4O_9c5Wqn5",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:06:16.818Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 756,
+              "thread" : {
+                "id" : 3104
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "成功"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "200",
+              "updateGuid" : "{4a67948e-4fa9-4e4e-9ba2-40316b913dec}",
+              "serviceGuid" : "{9482f4b4-e343-43b6-b170-9a65bc822c77}",
+              "updateTitle" : "Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.191.0)"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1743,
+            "event_id" : "19",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "安裝成功: Windows 已順利安裝下列更新: Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.191.0)",
+          "event" : {
+            "ingested" : "2024-03-29T07:31:57.305290975Z",
+            "code" : "19",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:31:56.535Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "U_gfiY4B6U4O_9c5Wqn5",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:06:51.378Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 680,
+              "thread" : {
+                "id" : 492
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "ServiceName" : "MpKsl6900df2f",
+              "ServiceType" : "kernel mode driver",
+              "ImagePath" : "C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{660E2CC1-B795-4158-AA4B-569CD0B5E81E}\\MpKsl6900df2f.sys",
+              "StartType" : "system start"
+            },
+            "opcode" : "Info",
+            "record_id" : 1744,
+            "task" : "None",
+            "event_id" : "7045",
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:57.305342381Z",
+            "code" : "7045",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:56.535Z",
+            "action" : "None"
+          },
+          "message" : "服務已經安裝在系統中。\n\n服務名稱:  MpKsl6900df2f\n服務檔案名稱:  C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{660E2CC1-B795-4158-AA4B-569CD0B5E81E}\\MpKsl6900df2f.sys\n服務類型:  kernel mode driver\n服務啟動類型:  system start\n服務帳戶:  "
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "VPgfiY4B6U4O_9c5Wqn5",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T14:05:23.451Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 680,
+              "thread" : {
+                "id" : 4244
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param3" : "demand start",
+              "param4" : "BITS",
+              "param1" : "Background Intelligent Transfer Service",
+              "param2" : "auto start"
+            },
+            "opcode" : "Info",
+            "record_id" : 1745,
+            "event_id" : "7040",
+            "task" : "None",
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:57.305392423Z",
+            "code" : "7040",
+            "provider" : "Service Control Manager",
+            "created" : "2024-03-29T07:31:56.535Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Background Intelligent Transfer Service 服務的啟動類型已從 auto start 變更為 demand start。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "VPgaiY4B6U4O_9c53Yex",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:05:02.193Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 756,
+              "thread" : {
+                "id" : 3104
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "200",
+              "updateGuid" : "{4a67948e-4fa9-4e4e-9ba2-40316b913dec}",
+              "updateTitle" : "Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.191.0)"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 1738,
+            "event_id" : "44",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:03.088545056Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:26:58.588Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "Windows Update 已開始下載更新。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "VfgaiY4B6U4O_9c53Yex",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:05:25.182Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 756,
+              "thread" : {
+                "id" : 3104
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "203",
+              "updateGuid" : "{948292b8-ab66-4897-b435-e1e2f10e21f4}",
+              "updateTitle" : "Feature update to Windows 10, version 1709"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1739,
+            "event_id" : "43",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: Feature update to Windows 10, version 1709",
+          "event" : {
+            "ingested" : "2024-03-29T07:27:03.088620739Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:26:58.588Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "VvgaiY4B6U4O_9c53Yex",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:05:25.235Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 756,
+              "thread" : {
+                "id" : 3104
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "失敗"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "203",
+              "updateGuid" : "{948292b8-ab66-4897-b435-e1e2f10e21f4}",
+              "serviceGuid" : "{9482f4b4-e343-43b6-b170-9a65bc822c77}",
+              "errorCode" : "0x80240020",
+              "updateTitle" : "Feature update to Windows 10, version 1709"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1740,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "20",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:03.088697134Z",
+            "code" : "20",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:26:58.588Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "安裝失敗: Windows 無法安裝下列更新，錯誤 0x80240020: Feature update to Windows 10, version 1709。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "V_gaiY4B6U4O_9c53Yex",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:05:30.302Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 756,
+              "thread" : {
+                "id" : 3104
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "200",
+              "updateGuid" : "{4a67948e-4fa9-4e4e-9ba2-40316b913dec}",
+              "updateTitle" : "Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.191.0)"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1741,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "43",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.191.0)",
+          "event" : {
+            "ingested" : "2024-03-29T07:27:03.088771659Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:26:58.588Z",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "WPgaiY4B6U4O_9c53Yey",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:05:37.145Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 680,
+              "thread" : {
+                "id" : 492
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "ServiceName" : "MpKsl8c9f4e64",
+              "ServiceType" : "kernel mode driver",
+              "ImagePath" : "C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{688CF977-DDF9-4791-8CF7-E57039D0B09A}\\MpKsl8c9f4e64.sys",
+              "StartType" : "system start"
+            },
+            "opcode" : "Info",
+            "record_id" : 1742,
+            "event_id" : "7045",
+            "task" : "None",
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:03.088922490Z",
+            "code" : "7045",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-03-29T07:26:58.588Z",
+            "action" : "None"
+          },
+          "message" : "服務已經安裝在系統中。\n\n服務名稱:  MpKsl8c9f4e64\n服務檔案名稱:  C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{688CF977-DDF9-4791-8CF7-E57039D0B09A}\\MpKsl8c9f4e64.sys\n服務類型:  kernel mode driver\n服務啟動類型:  system start\n服務帳戶:  "
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "WfgaiY4B6U4O_9c53Yey",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:06:16.818Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 756,
+              "thread" : {
+                "id" : 3104
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "成功"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "200",
+              "updateGuid" : "{4a67948e-4fa9-4e4e-9ba2-40316b913dec}",
+              "serviceGuid" : "{9482f4b4-e343-43b6-b170-9a65bc822c77}",
+              "updateTitle" : "Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.191.0)"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1743,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "19",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:03.089030641Z",
+            "code" : "19",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:26:58.588Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "安裝成功: Windows 已順利安裝下列更新: Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.191.0)"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "WvgaiY4B6U4O_9c53Yey",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:06:51.378Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 680,
+              "thread" : {
+                "id" : 492
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "ServiceName" : "MpKsl6900df2f",
+              "ServiceType" : "kernel mode driver",
+              "ImagePath" : "C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{660E2CC1-B795-4158-AA4B-569CD0B5E81E}\\MpKsl6900df2f.sys",
+              "StartType" : "system start"
+            },
+            "opcode" : "Info",
+            "record_id" : 1744,
+            "event_id" : "7045",
+            "task" : "None",
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:03.089107918Z",
+            "code" : "7045",
+            "provider" : "Service Control Manager",
+            "created" : "2024-03-29T07:26:58.588Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "服務已經安裝在系統中。\n\n服務名稱:  MpKsl6900df2f\n服務檔案名稱:  C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{660E2CC1-B795-4158-AA4B-569CD0B5E81E}\\MpKsl6900df2f.sys\n服務類型:  kernel mode driver\n服務啟動類型:  system start\n服務帳戶:  "
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "W_gaiY4B6U4O_9c53Yey",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T14:05:23.451Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 680,
+              "thread" : {
+                "id" : 4244
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param3" : "demand start",
+              "param4" : "BITS",
+              "param1" : "Background Intelligent Transfer Service",
+              "param2" : "auto start"
+            },
+            "opcode" : "Info",
+            "record_id" : 1745,
+            "event_id" : "7040",
+            "task" : "None",
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "Background Intelligent Transfer Service 服務的啟動類型已從 auto start 變更為 demand start。",
+          "event" : {
+            "ingested" : "2024-03-29T07:27:03.089184218Z",
+            "code" : "7040",
+            "provider" : "Service Control Manager",
+            "created" : "2024-03-29T07:26:58.588Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "0PgfiY4B6U4O_9c557b3",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:05:02.193Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 756,
+              "thread" : {
+                "id" : 3104
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "200",
+              "updateGuid" : "{4a67948e-4fa9-4e4e-9ba2-40316b913dec}",
+              "updateTitle" : "Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.191.0)"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 1738,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "44",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:33.398690204Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:32:32.501Z",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "Windows Update 已開始下載更新。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "0fgfiY4B6U4O_9c557b3",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:05:25.182Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 756,
+              "thread" : {
+                "id" : 3104
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "203",
+              "updateGuid" : "{948292b8-ab66-4897-b435-e1e2f10e21f4}",
+              "updateTitle" : "Feature update to Windows 10, version 1709"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1739,
+            "event_id" : "43",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: Feature update to Windows 10, version 1709",
+          "event" : {
+            "ingested" : "2024-03-29T07:32:33.398714004Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:32:32.501Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "0vgfiY4B6U4O_9c557b3",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:05:25.235Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 756,
+              "thread" : {
+                "id" : 3104
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "失敗"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "203",
+              "updateGuid" : "{948292b8-ab66-4897-b435-e1e2f10e21f4}",
+              "serviceGuid" : "{9482f4b4-e343-43b6-b170-9a65bc822c77}",
+              "errorCode" : "0x80240020",
+              "updateTitle" : "Feature update to Windows 10, version 1709"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1740,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "20",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:33.398738446Z",
+            "code" : "20",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:32:32.501Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "安裝失敗: Windows 無法安裝下列更新，錯誤 0x80240020: Feature update to Windows 10, version 1709。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "0_gfiY4B6U4O_9c557b3",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:05:30.302Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 756,
+              "thread" : {
+                "id" : 3104
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "200",
+              "updateGuid" : "{4a67948e-4fa9-4e4e-9ba2-40316b913dec}",
+              "updateTitle" : "Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.191.0)"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1741,
+            "event_id" : "43",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:33.398762196Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:32:32.501Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.191.0)"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "1PgfiY4B6U4O_9c557b3",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:05:37.145Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 680,
+              "thread" : {
+                "id" : 492
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "ServiceName" : "MpKsl8c9f4e64",
+              "ServiceType" : "kernel mode driver",
+              "ImagePath" : "C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{688CF977-DDF9-4791-8CF7-E57039D0B09A}\\MpKsl8c9f4e64.sys",
+              "StartType" : "system start"
+            },
+            "opcode" : "Info",
+            "record_id" : 1742,
+            "task" : "None",
+            "event_id" : "7045",
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:33.398786460Z",
+            "code" : "7045",
+            "provider" : "Service Control Manager",
+            "created" : "2024-03-29T07:32:32.501Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "服務已經安裝在系統中。\n\n服務名稱:  MpKsl8c9f4e64\n服務檔案名稱:  C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{688CF977-DDF9-4791-8CF7-E57039D0B09A}\\MpKsl8c9f4e64.sys\n服務類型:  kernel mode driver\n服務啟動類型:  system start\n服務帳戶:  "
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "1fgfiY4B6U4O_9c557b3",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:06:16.818Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 756,
+              "thread" : {
+                "id" : 3104
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "成功"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "200",
+              "updateGuid" : "{4a67948e-4fa9-4e4e-9ba2-40316b913dec}",
+              "serviceGuid" : "{9482f4b4-e343-43b6-b170-9a65bc822c77}",
+              "updateTitle" : "Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.191.0)"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1743,
+            "event_id" : "19",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:33.398809997Z",
+            "code" : "19",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:32:32.501Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "安裝成功: Windows 已順利安裝下列更新: Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.191.0)"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "1vgfiY4B6U4O_9c557b3",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T13:06:51.378Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 680,
+              "thread" : {
+                "id" : 492
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "ServiceName" : "MpKsl6900df2f",
+              "ServiceType" : "kernel mode driver",
+              "ImagePath" : "C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{660E2CC1-B795-4158-AA4B-569CD0B5E81E}\\MpKsl6900df2f.sys",
+              "StartType" : "system start"
+            },
+            "opcode" : "Info",
+            "record_id" : 1744,
+            "task" : "None",
+            "event_id" : "7045",
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:33.398833445Z",
+            "code" : "7045",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-03-29T07:32:32.501Z",
+            "action" : "None"
+          },
+          "message" : "服務已經安裝在系統中。\n\n服務名稱:  MpKsl6900df2f\n服務檔案名稱:  C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{660E2CC1-B795-4158-AA4B-569CD0B5E81E}\\MpKsl6900df2f.sys\n服務類型:  kernel mode driver\n服務啟動類型:  system start\n服務帳戶:  "
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "1_gfiY4B6U4O_9c557b3",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-24T14:05:23.451Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 680,
+              "thread" : {
+                "id" : 4244
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param3" : "demand start",
+              "param4" : "BITS",
+              "param1" : "Background Intelligent Transfer Service",
+              "param2" : "auto start"
+            },
+            "opcode" : "Info",
+            "record_id" : 1745,
+            "event_id" : "7040",
+            "task" : "None",
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:33.398855914Z",
+            "code" : "7040",
+            "provider" : "Service Control Manager",
+            "created" : "2024-03-29T07:32:32.501Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Background Intelligent Transfer Service 服務的啟動類型已從 auto start 變更為 demand start。"
+        }
+      }
+    ]
+  }
+}

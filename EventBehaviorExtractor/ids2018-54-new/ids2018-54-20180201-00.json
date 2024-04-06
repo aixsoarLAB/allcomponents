@@ -1,0 +1,1714 @@
+{
+  "took" : 2,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 25,
+      "relation" : "eq"
+    },
+    "max_score" : 0.0,
+    "hits" : [
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "LvgeiY4B6U4O_9c5UZSx",
+        "_score" : 0.0,
+        "_ignored" : [
+          "winlog.event_data.Binary.keyword"
+        ],
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-31T16:00:00.000Z",
+          "winlog" : {
+            "record_id" : 2267,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "event_id" : "6013",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "param7" : "240 Atlantic Standard Time",
+              "param5" : "185195",
+              "param6" : "60",
+              "Binary" : "31002E003100000030000000570069006E0064006F00770073002000310030002000500072006F000000310030002E0030002E003100300032003400300020004200750069006C0064002000310030003200340030002000200000004D0075006C0074006900700072006F0063006500730073006F007200200046007200650065000000310030003200340030002E007400680031002E003100350030003700300039002D00310037003000300000003500610032003600620065003300630000004E006F007400200041007600610069006C00610062006C00650000004E006F007400200041007600610069006C00610062006C006500000039000000310000003100300032003400000034003000390000004400450053004B0054004F0050002D0041004E0033005500320038004E0000000000"
+            },
+            "provider_name" : "EventLog"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:30:49.390555941Z",
+            "code" : "6013",
+            "provider" : "EventLog",
+            "kind" : "event",
+            "created" : "2024-03-29T07:30:48.433Z",
+            "action" : "None"
+          },
+          "message" : "系統執行時間是 185195 秒。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "L_geiY4B6U4O_9c5UZSx",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-31T16:56:53.133Z",
+          "winlog" : {
+            "record_id" : 2268,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 4808,
+              "thread" : {
+                "id" : 5420
+              }
+            },
+            "task" : "None",
+            "event_id" : "16",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "event_data" : {
+              "HiveNameLength" : "26",
+              "HiveName" : "\\??\\C:\\Users\\PC\\NTUSER.DAT",
+              "DirtyPages" : "10",
+              "KeysUpdated" : "27"
+            },
+            "api" : "wineventlog",
+            "opcode" : "資訊",
+            "provider_name" : "Microsoft-Windows-Kernel-General",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:30:49.390618571Z",
+            "code" : "16",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "created" : "2024-03-29T07:30:48.433Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "已清除登錄區 \\??\\C:\\Users\\PC\\NTUSER.DAT 中的存取歷程記錄，更新了 27 個機碼並建立了 10 個修改的頁面。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "MPgeiY4B6U4O_9c5UZSx",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-31T16:56:53.337Z",
+          "winlog" : {
+            "record_id" : 2269,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 4808,
+              "thread" : {
+                "id" : 5420
+              }
+            },
+            "event_id" : "16",
+            "task" : "None",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "event_data" : {
+              "HiveNameLength" : "60",
+              "HiveName" : "\\??\\C:\\Users\\PC\\AppData\\Local\\Microsoft\\Windows\\UsrClass.dat",
+              "DirtyPages" : "13",
+              "KeysUpdated" : "23"
+            },
+            "api" : "wineventlog",
+            "opcode" : "資訊",
+            "provider_name" : "Microsoft-Windows-Kernel-General",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:30:49.390680060Z",
+            "code" : "16",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "created" : "2024-03-29T07:30:48.433Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "已清除登錄區 \\??\\C:\\Users\\PC\\AppData\\Local\\Microsoft\\Windows\\UsrClass.dat 中的存取歷程記錄，更新了 23 個機碼並建立了 13 個修改的頁面。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "MfgeiY4B6U4O_9c5UZSx",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-31T17:04:20.422Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 792,
+              "thread" : {
+                "id" : 3044
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "200",
+              "updateGuid" : "{6416efb5-7364-409a-ba5b-d4a65c824012}",
+              "updateTitle" : "Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.566.0)"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 2270,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "44",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{5bc17415-98fd-0000-e648-c25bfd98d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:30:49.390744021Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:30:48.433Z",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "Windows Update 已開始下載更新。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "MvgeiY4B6U4O_9c5UZSx",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-31T18:04:22.363Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 684,
+              "thread" : {
+                "id" : 3056
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param3" : "demand start",
+              "param4" : "BITS",
+              "param1" : "Background Intelligent Transfer Service",
+              "param2" : "auto start"
+            },
+            "opcode" : "Info",
+            "record_id" : 2271,
+            "event_id" : "7040",
+            "task" : "None",
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:30:49.390809409Z",
+            "code" : "7040",
+            "provider" : "Service Control Manager",
+            "created" : "2024-03-29T07:30:48.433Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Background Intelligent Transfer Service 服務的啟動類型已從 auto start 變更為 demand start。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "MfgeiY4B6U4O_9c525-_",
+        "_score" : 0.0,
+        "_ignored" : [
+          "winlog.event_data.Binary.keyword"
+        ],
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-31T16:00:00.000Z",
+          "winlog" : {
+            "record_id" : 2267,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "event_id" : "6013",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param7" : "240 Atlantic Standard Time",
+              "param5" : "185195",
+              "param6" : "60",
+              "Binary" : "31002E003100000030000000570069006E0064006F00770073002000310030002000500072006F000000310030002E0030002E003100300032003400300020004200750069006C0064002000310030003200340030002000200000004D0075006C0074006900700072006F0063006500730073006F007200200046007200650065000000310030003200340030002E007400680031002E003100350030003700300039002D00310037003000300000003500610032003600620065003300630000004E006F007400200041007600610069006C00610062006C00650000004E006F007400200041007600610069006C00610062006C006500000039000000310000003100300032003400000034003000390000004400450053004B0054004F0050002D0041004E0033005500320038004E0000000000"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "EventLog"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "系統執行時間是 185195 秒。",
+          "event" : {
+            "ingested" : "2024-03-29T07:31:24.733403897Z",
+            "code" : "6013",
+            "provider" : "EventLog",
+            "created" : "2024-03-29T07:31:23.966Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "MvgeiY4B6U4O_9c525-_",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-31T16:56:53.133Z",
+          "winlog" : {
+            "record_id" : 2268,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 4808,
+              "thread" : {
+                "id" : 5420
+              }
+            },
+            "task" : "None",
+            "event_id" : "16",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "event_data" : {
+              "HiveNameLength" : "26",
+              "DirtyPages" : "10",
+              "HiveName" : "\\??\\C:\\Users\\PC\\NTUSER.DAT",
+              "KeysUpdated" : "27"
+            },
+            "api" : "wineventlog",
+            "opcode" : "資訊",
+            "provider_name" : "Microsoft-Windows-Kernel-General",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:24.733478323Z",
+            "code" : "16",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "created" : "2024-03-29T07:31:23.966Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "已清除登錄區 \\??\\C:\\Users\\PC\\NTUSER.DAT 中的存取歷程記錄，更新了 27 個機碼並建立了 10 個修改的頁面。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "M_geiY4B6U4O_9c525-_",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-31T16:56:53.337Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "record_id" : 2269,
+            "process" : {
+              "pid" : 4808,
+              "thread" : {
+                "id" : 5420
+              }
+            },
+            "task" : "None",
+            "event_id" : "16",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "event_data" : {
+              "HiveNameLength" : "60",
+              "HiveName" : "\\??\\C:\\Users\\PC\\AppData\\Local\\Microsoft\\Windows\\UsrClass.dat",
+              "DirtyPages" : "13",
+              "KeysUpdated" : "23"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-Kernel-General",
+            "opcode" : "資訊",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:24.733534782Z",
+            "code" : "16",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:23.966Z",
+            "action" : "None"
+          },
+          "message" : "已清除登錄區 \\??\\C:\\Users\\PC\\AppData\\Local\\Microsoft\\Windows\\UsrClass.dat 中的存取歷程記錄，更新了 23 個機碼並建立了 13 個修改的頁面。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "NPgeiY4B6U4O_9c525-_",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-31T17:04:20.422Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 792,
+              "thread" : {
+                "id" : 3044
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "200",
+              "updateGuid" : "{6416efb5-7364-409a-ba5b-d4a65c824012}",
+              "updateTitle" : "Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.566.0)"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 2270,
+            "event_id" : "44",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{5bc17415-98fd-0000-e648-c25bfd98d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:24.733587745Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:23.966Z",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "Windows Update 已開始下載更新。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "NfgeiY4B6U4O_9c525-_",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-31T18:04:22.363Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 684,
+              "thread" : {
+                "id" : 3056
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param3" : "demand start",
+              "param4" : "BITS",
+              "param1" : "Background Intelligent Transfer Service",
+              "param2" : "auto start"
+            },
+            "opcode" : "Info",
+            "record_id" : 2271,
+            "task" : "None",
+            "event_id" : "7040",
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:24.733640449Z",
+            "code" : "7040",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:23.966Z",
+            "action" : "None"
+          },
+          "message" : "Background Intelligent Transfer Service 服務的啟動類型已從 auto start 變更為 demand start。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "XvgfiY4B6U4O_9c5XKsx",
+        "_score" : 0.0,
+        "_ignored" : [
+          "winlog.event_data.Binary.keyword"
+        ],
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-31T16:00:00.000Z",
+          "winlog" : {
+            "record_id" : 2267,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "event_id" : "6013",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "param7" : "240 Atlantic Standard Time",
+              "param5" : "185195",
+              "param6" : "60",
+              "Binary" : "31002E003100000030000000570069006E0064006F00770073002000310030002000500072006F000000310030002E0030002E003100300032003400300020004200750069006C0064002000310030003200340030002000200000004D0075006C0074006900700072006F0063006500730073006F007200200046007200650065000000310030003200340030002E007400680031002E003100350030003700300039002D00310037003000300000003500610032003600620065003300630000004E006F007400200041007600610069006C00610062006C00650000004E006F007400200041007600610069006C00610062006C006500000039000000310000003100300032003400000034003000390000004400450053004B0054004F0050002D0041004E0033005500320038004E0000000000"
+            },
+            "provider_name" : "EventLog"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:57.615010480Z",
+            "code" : "6013",
+            "provider" : "EventLog",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:57.086Z",
+            "action" : "None"
+          },
+          "message" : "系統執行時間是 185195 秒。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "X_gfiY4B6U4O_9c5XKsx",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-31T16:56:53.133Z",
+          "winlog" : {
+            "record_id" : 2268,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 4808,
+              "thread" : {
+                "id" : 5420
+              }
+            },
+            "event_id" : "16",
+            "task" : "None",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "HiveNameLength" : "26",
+              "HiveName" : "\\??\\C:\\Users\\PC\\NTUSER.DAT",
+              "DirtyPages" : "10",
+              "KeysUpdated" : "27"
+            },
+            "opcode" : "資訊",
+            "provider_name" : "Microsoft-Windows-Kernel-General",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:57.615058304Z",
+            "code" : "16",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "created" : "2024-03-29T07:31:57.086Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "已清除登錄區 \\??\\C:\\Users\\PC\\NTUSER.DAT 中的存取歷程記錄，更新了 27 個機碼並建立了 10 個修改的頁面。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "YPgfiY4B6U4O_9c5XKsx",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-31T16:56:53.337Z",
+          "winlog" : {
+            "record_id" : 2269,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 4808,
+              "thread" : {
+                "id" : 5420
+              }
+            },
+            "task" : "None",
+            "event_id" : "16",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "event_data" : {
+              "HiveNameLength" : "60",
+              "HiveName" : "\\??\\C:\\Users\\PC\\AppData\\Local\\Microsoft\\Windows\\UsrClass.dat",
+              "DirtyPages" : "13",
+              "KeysUpdated" : "23"
+            },
+            "api" : "wineventlog",
+            "opcode" : "資訊",
+            "provider_name" : "Microsoft-Windows-Kernel-General",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:57.615104662Z",
+            "code" : "16",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:57.086Z",
+            "action" : "None"
+          },
+          "message" : "已清除登錄區 \\??\\C:\\Users\\PC\\AppData\\Local\\Microsoft\\Windows\\UsrClass.dat 中的存取歷程記錄，更新了 23 個機碼並建立了 13 個修改的頁面。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "YfgfiY4B6U4O_9c5XKsx",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-31T17:04:20.422Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 792,
+              "thread" : {
+                "id" : 3044
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "200",
+              "updateGuid" : "{6416efb5-7364-409a-ba5b-d4a65c824012}",
+              "updateTitle" : "Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.566.0)"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 2270,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "44",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{5bc17415-98fd-0000-e648-c25bfd98d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "Windows Update 已開始下載更新。",
+          "event" : {
+            "ingested" : "2024-03-29T07:31:57.615153202Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:31:57.086Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "YvgfiY4B6U4O_9c5XKsx",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-31T18:04:22.363Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 684,
+              "thread" : {
+                "id" : 3056
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param3" : "demand start",
+              "param4" : "BITS",
+              "param1" : "Background Intelligent Transfer Service",
+              "param2" : "auto start"
+            },
+            "opcode" : "Info",
+            "record_id" : 2271,
+            "task" : "None",
+            "event_id" : "7040",
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:57.615201206Z",
+            "code" : "7040",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:57.086Z",
+            "action" : "None"
+          },
+          "message" : "Background Intelligent Transfer Service 服務的啟動類型已從 auto start 變更為 demand start。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "ZfgaiY4B6U4O_9c54YmO",
+        "_score" : 0.0,
+        "_ignored" : [
+          "winlog.event_data.Binary.keyword"
+        ],
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-31T16:00:00.000Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "record_id" : 2267,
+            "task" : "None",
+            "event_id" : "6013",
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param7" : "240 Atlantic Standard Time",
+              "param5" : "185195",
+              "param6" : "60",
+              "Binary" : "31002E003100000030000000570069006E0064006F00770073002000310030002000500072006F000000310030002E0030002E003100300032003400300020004200750069006C0064002000310030003200340030002000200000004D0075006C0074006900700072006F0063006500730073006F007200200046007200650065000000310030003200340030002E007400680031002E003100350030003700300039002D00310037003000300000003500610032003600620065003300630000004E006F007400200041007600610069006C00610062006C00650000004E006F007400200041007600610069006C00610062006C006500000039000000310000003100300032003400000034003000390000004400450053004B0054004F0050002D0041004E0033005500320038004E0000000000"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "EventLog"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:04.075890643Z",
+            "code" : "6013",
+            "provider" : "EventLog",
+            "created" : "2024-03-29T07:26:59.105Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "系統執行時間是 185195 秒。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "ZvgaiY4B6U4O_9c54YmO",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-31T16:56:53.133Z",
+          "winlog" : {
+            "record_id" : 2268,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 4808,
+              "thread" : {
+                "id" : 5420
+              }
+            },
+            "event_id" : "16",
+            "task" : "None",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "HiveNameLength" : "26",
+              "HiveName" : "\\??\\C:\\Users\\PC\\NTUSER.DAT",
+              "DirtyPages" : "10",
+              "KeysUpdated" : "27"
+            },
+            "provider_name" : "Microsoft-Windows-Kernel-General",
+            "opcode" : "資訊",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:04.075963722Z",
+            "code" : "16",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "kind" : "event",
+            "created" : "2024-03-29T07:26:59.105Z",
+            "action" : "None"
+          },
+          "message" : "已清除登錄區 \\??\\C:\\Users\\PC\\NTUSER.DAT 中的存取歷程記錄，更新了 27 個機碼並建立了 10 個修改的頁面。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "Z_gaiY4B6U4O_9c54YmO",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-31T16:56:53.337Z",
+          "winlog" : {
+            "record_id" : 2269,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 4808,
+              "thread" : {
+                "id" : 5420
+              }
+            },
+            "task" : "None",
+            "event_id" : "16",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "HiveNameLength" : "60",
+              "HiveName" : "\\??\\C:\\Users\\PC\\AppData\\Local\\Microsoft\\Windows\\UsrClass.dat",
+              "DirtyPages" : "13",
+              "KeysUpdated" : "23"
+            },
+            "opcode" : "資訊",
+            "provider_name" : "Microsoft-Windows-Kernel-General",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:04.076032663Z",
+            "code" : "16",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "kind" : "event",
+            "created" : "2024-03-29T07:26:59.106Z",
+            "action" : "None"
+          },
+          "message" : "已清除登錄區 \\??\\C:\\Users\\PC\\AppData\\Local\\Microsoft\\Windows\\UsrClass.dat 中的存取歷程記錄，更新了 23 個機碼並建立了 13 個修改的頁面。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "aPgaiY4B6U4O_9c54YmO",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-31T17:04:20.422Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 792,
+              "thread" : {
+                "id" : 3044
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "200",
+              "updateGuid" : "{6416efb5-7364-409a-ba5b-d4a65c824012}",
+              "updateTitle" : "Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.566.0)"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 2270,
+            "event_id" : "44",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{5bc17415-98fd-0000-e648-c25bfd98d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "Windows Update 已開始下載更新。",
+          "event" : {
+            "ingested" : "2024-03-29T07:27:04.076102753Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:26:59.106Z",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "afgaiY4B6U4O_9c54YmO",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-31T18:04:22.363Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 684,
+              "thread" : {
+                "id" : 3056
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param3" : "demand start",
+              "param4" : "BITS",
+              "param1" : "Background Intelligent Transfer Service",
+              "param2" : "auto start"
+            },
+            "opcode" : "Info",
+            "record_id" : 2271,
+            "task" : "None",
+            "event_id" : "7040",
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:04.076173150Z",
+            "code" : "7040",
+            "provider" : "Service Control Manager",
+            "created" : "2024-03-29T07:26:59.106Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Background Intelligent Transfer Service 服務的啟動類型已從 auto start 變更為 demand start。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "4fgfiY4B6U4O_9c56bgh",
+        "_score" : 0.0,
+        "_ignored" : [
+          "winlog.event_data.Binary.keyword"
+        ],
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-31T16:00:00.000Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "record_id" : 2267,
+            "event_id" : "6013",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param7" : "240 Atlantic Standard Time",
+              "param5" : "185195",
+              "param6" : "60",
+              "Binary" : "31002E003100000030000000570069006E0064006F00770073002000310030002000500072006F000000310030002E0030002E003100300032003400300020004200750069006C0064002000310030003200340030002000200000004D0075006C0074006900700072006F0063006500730073006F007200200046007200650065000000310030003200340030002E007400680031002E003100350030003700300039002D00310037003000300000003500610032003600620065003300630000004E006F007400200041007600610069006C00610062006C00650000004E006F007400200041007600610069006C00610062006C006500000039000000310000003100300032003400000034003000390000004400450053004B0054004F0050002D0041004E0033005500320038004E0000000000"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "EventLog"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:33.695882012Z",
+            "code" : "6013",
+            "provider" : "EventLog",
+            "kind" : "event",
+            "created" : "2024-03-29T07:32:33.075Z",
+            "action" : "None"
+          },
+          "message" : "系統執行時間是 185195 秒。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "4vgfiY4B6U4O_9c56bgh",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-31T16:56:53.133Z",
+          "winlog" : {
+            "record_id" : 2268,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 4808,
+              "thread" : {
+                "id" : 5420
+              }
+            },
+            "task" : "None",
+            "event_id" : "16",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "event_data" : {
+              "HiveNameLength" : "26",
+              "DirtyPages" : "10",
+              "HiveName" : "\\??\\C:\\Users\\PC\\NTUSER.DAT",
+              "KeysUpdated" : "27"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-Kernel-General",
+            "opcode" : "資訊",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "已清除登錄區 \\??\\C:\\Users\\PC\\NTUSER.DAT 中的存取歷程記錄，更新了 27 個機碼並建立了 10 個修改的頁面。",
+          "event" : {
+            "ingested" : "2024-03-29T07:32:33.695957011Z",
+            "code" : "16",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "created" : "2024-03-29T07:32:33.075Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "4_gfiY4B6U4O_9c56bgh",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-31T16:56:53.337Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "record_id" : 2269,
+            "process" : {
+              "pid" : 4808,
+              "thread" : {
+                "id" : 5420
+              }
+            },
+            "event_id" : "16",
+            "task" : "None",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "HiveNameLength" : "60",
+              "HiveName" : "\\??\\C:\\Users\\PC\\AppData\\Local\\Microsoft\\Windows\\UsrClass.dat",
+              "DirtyPages" : "13",
+              "KeysUpdated" : "23"
+            },
+            "provider_name" : "Microsoft-Windows-Kernel-General",
+            "opcode" : "資訊",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "已清除登錄區 \\??\\C:\\Users\\PC\\AppData\\Local\\Microsoft\\Windows\\UsrClass.dat 中的存取歷程記錄，更新了 23 個機碼並建立了 13 個修改的頁面。",
+          "event" : {
+            "ingested" : "2024-03-29T07:32:33.695990172Z",
+            "code" : "16",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "kind" : "event",
+            "created" : "2024-03-29T07:32:33.075Z",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "5PgfiY4B6U4O_9c56bgh",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-31T17:04:20.422Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 792,
+              "thread" : {
+                "id" : 3044
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "200",
+              "updateGuid" : "{6416efb5-7364-409a-ba5b-d4a65c824012}",
+              "updateTitle" : "Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.261.566.0)"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 2270,
+            "event_id" : "44",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{5bc17415-98fd-0000-e648-c25bfd98d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:33.696016278Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:32:33.075Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "Windows Update 已開始下載更新。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "5fgfiY4B6U4O_9c56bgh",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-31T18:04:22.363Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 684,
+              "thread" : {
+                "id" : 3056
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param3" : "demand start",
+              "param4" : "BITS",
+              "param1" : "Background Intelligent Transfer Service",
+              "param2" : "auto start"
+            },
+            "opcode" : "Info",
+            "record_id" : 2271,
+            "event_id" : "7040",
+            "task" : "None",
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "Background Intelligent Transfer Service 服務的啟動類型已從 auto start 變更為 demand start。",
+          "event" : {
+            "ingested" : "2024-03-29T07:32:33.696040978Z",
+            "code" : "7040",
+            "provider" : "Service Control Manager",
+            "created" : "2024-03-29T07:32:33.075Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      }
+    ]
+  }
+}

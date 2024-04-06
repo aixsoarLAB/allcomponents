@@ -1,0 +1,2974 @@
+{
+  "took" : 7,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 45,
+      "relation" : "eq"
+    },
+    "max_score" : 0.0,
+    "hits" : [
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "9_geiY4B6U4O_9c51ZvG",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:19.732Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 540,
+              "thread" : {
+                "id" : 552
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param7" : "NT AUTHORITY\\SYSTEM",
+              "param5" : "restart",
+              "param3" : "No title for this reason could be found",
+              "param4" : "0x8000000c",
+              "param1" : "C:\\Program Files\\Amazon\\XenTools\\LiteAgent.exe (DESKTOP-AN3U28N)",
+              "param2" : "DESKTOP-AN3U28N"
+            },
+            "opcode" : "Info",
+            "record_id" : 1441,
+            "task" : "None",
+            "event_id" : "1074",
+            "provider_guid" : "{b0aa8734-56f7-41cc-b2f4-de228e98b946}",
+            "api" : "wineventlog",
+            "provider_name" : "User32",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "處理程序 C:\\Program Files\\Amazon\\XenTools\\LiteAgent.exe (DESKTOP-AN3U28N)已代表使用者 NT AUTHORITY\\SYSTEM，啟動電腦 DESKTOP-AN3U28N 的 restart，原因如下: No title for this reason could be found\n 理由代碼: 0x8000000c\n 關機類型: restart\n 註解: ",
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.205415042Z",
+            "code" : "1074",
+            "provider" : "User32",
+            "created" : "2024-03-29T07:31:23.020Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "-PgeiY4B6U4O_9c51ZvG",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:20.045Z",
+          "winlog" : {
+            "record_id" : 1442,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 684,
+              "thread" : {
+                "id" : 4516
+              }
+            },
+            "event_id" : "7031",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "event_data" : {
+              "param5" : "Restart the service",
+              "Binary" : "4F006E006500530079006E0063005300760063005F00530065007300730069006F006E0032000000",
+              "param3" : "10000",
+              "param4" : "1",
+              "param1" : "Sync Host_Session2",
+              "param2" : "1"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.205474198Z",
+            "code" : "7031",
+            "provider" : "Service Control Manager",
+            "created" : "2024-03-29T07:31:23.020Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Sync Host_Session2 服務意外終止，服務曾完成這項動作 1 次。以下的修正操作將在 10000 毫秒內執行: Restart the service。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "-fgeiY4B6U4O_9c51ZvG",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:20.968Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 824,
+              "thread" : {
+                "id" : 852
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param1" : "{9BA05972-F6A8-11CF-A442-00A0C90A8F39}"
+            },
+            "opcode" : "資訊",
+            "record_id" : 1443,
+            "task" : "None",
+            "event_id" : "10010",
+            "provider_guid" : "{1B562E86-B7AA-4131-BADC-B6F3A001407E}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-DistributedCOM",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "伺服器 {9BA05972-F6A8-11CF-A442-00A0C90A8F39} 沒有在指定的逾時內登錄 DCOM。",
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.205530975Z",
+            "code" : "10010",
+            "provider" : "Microsoft-Windows-DistributedCOM",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:23.020Z",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "-vgeiY4B6U4O_9c51ZvG",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:21.285Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 3460,
+              "thread" : {
+                "id" : 3596
+              }
+            },
+            "keywords" : [
+              "ms:Telemetry"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "UserSid" : "S-1-5-21-913095808-1976597276-3100954228-500",
+              "TSId" : "2"
+            },
+            "opcode" : "資訊",
+            "record_id" : 1444,
+            "task" : "WinSqmUserLogoff",
+            "event_id" : "7002",
+            "provider_guid" : "{dbe9b383-7cf3-4331-91cc-a3cb16a3b538}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-Winlogon",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "客戶經驗改進計畫的使用者登出通知",
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.205584711Z",
+            "code" : "7002",
+            "provider" : "Microsoft-Windows-Winlogon",
+            "created" : "2024-03-29T07:31:23.020Z",
+            "kind" : "event",
+            "action" : "WinSqmUserLogoff"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "-_geiY4B6U4O_9c51ZvG",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:22.000Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "record_id" : 1445,
+            "event_id" : "6006",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "0100000000000000"
+            },
+            "provider_name" : "EventLog"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "事件記錄檔服務已中止。",
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.205635415Z",
+            "code" : "6006",
+            "provider" : "EventLog",
+            "created" : "2024-03-29T07:31:23.020Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "__geiY4B6U4O_9c51ZvG",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:22.069Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "record_id" : 1449,
+            "process" : {
+              "pid" : 492,
+              "thread" : {
+                "id" : 1520
+              }
+            },
+            "task" : "Service State Event",
+            "event_id" : "51047",
+            "provider_guid" : "{6a1f2b00-6a90-4c38-95a5-5cab3b056778}",
+            "channel" : "System",
+            "event_data" : {
+              "DwordVal" : "1"
+            },
+            "api" : "wineventlog",
+            "opcode" : "ServiceStop",
+            "provider_name" : "Microsoft-Windows-DHCPv6-Client",
+            "user" : {
+              "identifier" : "S-1-5-19",
+              "domain" : "NT AUTHORITY",
+              "name" : "LOCAL SERVICE",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.205835501Z",
+            "code" : "51047",
+            "provider" : "Microsoft-Windows-DHCPv6-Client",
+            "created" : "2024-03-29T07:31:23.020Z",
+            "kind" : "event",
+            "action" : "Service State Event"
+          },
+          "message" : "DHCPv6 用戶端服務已停止。關機旗標值是 1"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "APgeiY4B6U4O_9c51ZzG",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:22.089Z",
+          "winlog" : {
+            "record_id" : 1450,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 492,
+              "thread" : {
+                "id" : 1340
+              }
+            },
+            "event_id" : "50037",
+            "task" : "服務狀態事件",
+            "provider_guid" : "{15a7a4f8-0072-4eab-abad-f98a4d666aed}",
+            "channel" : "System",
+            "event_data" : {
+              "DwordVal" : "1"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-Dhcp-Client",
+            "opcode" : "ServiceStop",
+            "user" : {
+              "identifier" : "S-1-5-19",
+              "domain" : "NT AUTHORITY",
+              "name" : "LOCAL SERVICE",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.205888956Z",
+            "code" : "50037",
+            "provider" : "Microsoft-Windows-Dhcp-Client",
+            "created" : "2024-03-29T07:31:23.020Z",
+            "kind" : "event",
+            "action" : "服務狀態事件"
+          },
+          "message" : "DHCPv4 用戶端服務已停止。關機旗標值為 1"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "AfgeiY4B6U4O_9c51Zzm",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:26.895Z",
+          "winlog" : {
+            "record_id" : 1451,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 632,
+              "thread" : {
+                "id" : 636
+              }
+            },
+            "task" : "ShutdownAction",
+            "event_id" : "109",
+            "keywords" : [
+              "po:Diagnostic",
+              "ms:Telemetry"
+            ],
+            "provider_guid" : "{331c3b3a-2005-44c2-ac5e-77220c37d6b4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "ShutdownActionType" : "5",
+              "ShutdownEventCode" : "0",
+              "ShutdownReason" : "5"
+            },
+            "provider_name" : "Microsoft-Windows-Kernel-Power",
+            "opcode" : "資訊"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.235018075Z",
+            "code" : "109",
+            "provider" : "Microsoft-Windows-Kernel-Power",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:23.020Z",
+            "action" : "ShutdownAction"
+          },
+          "message" : "核心電源管理員已起始關機轉換。\n\n動作： Power Action Reboot \n事件代碼： 0x0 \n原因： Kernel API"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "AvgeiY4B6U4O_9c51Zzm",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:27.623Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "record_id" : 1452,
+            "process" : {
+              "pid" : 4,
+              "thread" : {
+                "id" : 4224
+              }
+            },
+            "event_id" : "13",
+            "task" : "None",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "StopTime" : "2018-01-22T19:11:27.6231617Z"
+            },
+            "provider_name" : "Microsoft-Windows-Kernel-General",
+            "opcode" : "資訊"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "作業系統已經在系統時間 ‎2018‎-‎01‎-‎22T19:11:27.623161700Z 關閉。",
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.235210921Z",
+            "code" : "13",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:23.020Z",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "K_gaiY4B6U4O_9c524b4",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:19.732Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 540,
+              "thread" : {
+                "id" : 552
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param7" : "NT AUTHORITY\\SYSTEM",
+              "param5" : "restart",
+              "param3" : "No title for this reason could be found",
+              "param4" : "0x8000000c",
+              "param1" : "C:\\Program Files\\Amazon\\XenTools\\LiteAgent.exe (DESKTOP-AN3U28N)",
+              "param2" : "DESKTOP-AN3U28N"
+            },
+            "opcode" : "Info",
+            "record_id" : 1441,
+            "event_id" : "1074",
+            "task" : "None",
+            "provider_guid" : "{b0aa8734-56f7-41cc-b2f4-de228e98b946}",
+            "api" : "wineventlog",
+            "provider_name" : "User32",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "處理程序 C:\\Program Files\\Amazon\\XenTools\\LiteAgent.exe (DESKTOP-AN3U28N)已代表使用者 NT AUTHORITY\\SYSTEM，啟動電腦 DESKTOP-AN3U28N 的 restart，原因如下: No title for this reason could be found\n 理由代碼: 0x8000000c\n 關機類型: restart\n 註解: ",
+          "event" : {
+            "ingested" : "2024-03-29T07:27:02.647046536Z",
+            "code" : "1074",
+            "provider" : "User32",
+            "kind" : "event",
+            "created" : "2024-03-29T07:26:58.205Z",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "LPgaiY4B6U4O_9c524b4",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:20.045Z",
+          "winlog" : {
+            "record_id" : 1442,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 684,
+              "thread" : {
+                "id" : 4516
+              }
+            },
+            "task" : "None",
+            "event_id" : "7031",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "param5" : "Restart the service",
+              "Binary" : "4F006E006500530079006E0063005300760063005F00530065007300730069006F006E0032000000",
+              "param3" : "10000",
+              "param4" : "1",
+              "param1" : "Sync Host_Session2",
+              "param2" : "1"
+            },
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "Sync Host_Session2 服務意外終止，服務曾完成這項動作 1 次。以下的修正操作將在 10000 毫秒內執行: Restart the service。",
+          "event" : {
+            "ingested" : "2024-03-29T07:27:02.647128442Z",
+            "code" : "7031",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-03-29T07:26:58.205Z",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "LfgaiY4B6U4O_9c524b4",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:20.968Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 824,
+              "thread" : {
+                "id" : 852
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param1" : "{9BA05972-F6A8-11CF-A442-00A0C90A8F39}"
+            },
+            "opcode" : "資訊",
+            "record_id" : 1443,
+            "task" : "None",
+            "event_id" : "10010",
+            "provider_guid" : "{1B562E86-B7AA-4131-BADC-B6F3A001407E}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-DistributedCOM",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:02.647208175Z",
+            "code" : "10010",
+            "provider" : "Microsoft-Windows-DistributedCOM",
+            "created" : "2024-03-29T07:26:58.205Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "伺服器 {9BA05972-F6A8-11CF-A442-00A0C90A8F39} 沒有在指定的逾時內登錄 DCOM。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "LvgaiY4B6U4O_9c524b4",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:21.285Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 3460,
+              "thread" : {
+                "id" : 3596
+              }
+            },
+            "keywords" : [
+              "ms:Telemetry"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "UserSid" : "S-1-5-21-913095808-1976597276-3100954228-500",
+              "TSId" : "2"
+            },
+            "opcode" : "資訊",
+            "record_id" : 1444,
+            "event_id" : "7002",
+            "task" : "WinSqmUserLogoff",
+            "provider_guid" : "{dbe9b383-7cf3-4331-91cc-a3cb16a3b538}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-Winlogon",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:02.647284728Z",
+            "code" : "7002",
+            "provider" : "Microsoft-Windows-Winlogon",
+            "created" : "2024-03-29T07:26:58.205Z",
+            "kind" : "event",
+            "action" : "WinSqmUserLogoff"
+          },
+          "message" : "客戶經驗改進計畫的使用者登出通知"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "L_gaiY4B6U4O_9c524b4",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:22.000Z",
+          "winlog" : {
+            "record_id" : 1445,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "task" : "None",
+            "event_id" : "6006",
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "Binary" : "0100000000000000"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "EventLog"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:02.647357754Z",
+            "code" : "6006",
+            "provider" : "EventLog",
+            "kind" : "event",
+            "created" : "2024-03-29T07:26:58.205Z",
+            "action" : "None"
+          },
+          "message" : "事件記錄檔服務已中止。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "M_gaiY4B6U4O_9c524b4",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:22.069Z",
+          "winlog" : {
+            "record_id" : 1449,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 492,
+              "thread" : {
+                "id" : 1520
+              }
+            },
+            "task" : "Service State Event",
+            "event_id" : "51047",
+            "provider_guid" : "{6a1f2b00-6a90-4c38-95a5-5cab3b056778}",
+            "channel" : "System",
+            "event_data" : {
+              "DwordVal" : "1"
+            },
+            "api" : "wineventlog",
+            "opcode" : "ServiceStop",
+            "provider_name" : "Microsoft-Windows-DHCPv6-Client",
+            "user" : {
+              "identifier" : "S-1-5-19",
+              "domain" : "NT AUTHORITY",
+              "name" : "LOCAL SERVICE",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:02.647658925Z",
+            "code" : "51047",
+            "provider" : "Microsoft-Windows-DHCPv6-Client",
+            "kind" : "event",
+            "created" : "2024-03-29T07:26:58.205Z",
+            "action" : "Service State Event"
+          },
+          "message" : "DHCPv6 用戶端服務已停止。關機旗標值是 1"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "NPgaiY4B6U4O_9c524b4",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:22.089Z",
+          "winlog" : {
+            "record_id" : 1450,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 492,
+              "thread" : {
+                "id" : 1340
+              }
+            },
+            "event_id" : "50037",
+            "task" : "服務狀態事件",
+            "provider_guid" : "{15a7a4f8-0072-4eab-abad-f98a4d666aed}",
+            "channel" : "System",
+            "event_data" : {
+              "DwordVal" : "1"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-Dhcp-Client",
+            "opcode" : "ServiceStop",
+            "user" : {
+              "identifier" : "S-1-5-19",
+              "domain" : "NT AUTHORITY",
+              "name" : "LOCAL SERVICE",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:02.647733445Z",
+            "code" : "50037",
+            "provider" : "Microsoft-Windows-Dhcp-Client",
+            "created" : "2024-03-29T07:26:58.205Z",
+            "kind" : "event",
+            "action" : "服務狀態事件"
+          },
+          "message" : "DHCPv4 用戶端服務已停止。關機旗標值為 1"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "NfgaiY4B6U4O_9c53Iai",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:26.895Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "record_id" : 1451,
+            "process" : {
+              "pid" : 632,
+              "thread" : {
+                "id" : 636
+              }
+            },
+            "task" : "ShutdownAction",
+            "event_id" : "109",
+            "keywords" : [
+              "po:Diagnostic",
+              "ms:Telemetry"
+            ],
+            "provider_guid" : "{331c3b3a-2005-44c2-ac5e-77220c37d6b4}",
+            "channel" : "System",
+            "event_data" : {
+              "ShutdownActionType" : "5",
+              "ShutdownEventCode" : "0",
+              "ShutdownReason" : "5"
+            },
+            "api" : "wineventlog",
+            "opcode" : "資訊",
+            "provider_name" : "Microsoft-Windows-Kernel-Power"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "核心電源管理員已起始關機轉換。\n\n動作： Power Action Reboot \n事件代碼： 0x0 \n原因： Kernel API",
+          "event" : {
+            "ingested" : "2024-03-29T07:27:02.811340486Z",
+            "code" : "109",
+            "provider" : "Microsoft-Windows-Kernel-Power",
+            "created" : "2024-03-29T07:26:58.205Z",
+            "kind" : "event",
+            "action" : "ShutdownAction"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "NvgaiY4B6U4O_9c53Iai",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:27.623Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "record_id" : 1452,
+            "process" : {
+              "pid" : 4,
+              "thread" : {
+                "id" : 4224
+              }
+            },
+            "event_id" : "13",
+            "task" : "None",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "event_data" : {
+              "StopTime" : "2018-01-22T19:11:27.6231617Z"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-Kernel-General",
+            "opcode" : "資訊"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:02.811843029Z",
+            "code" : "13",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "kind" : "event",
+            "created" : "2024-03-29T07:26:58.205Z",
+            "action" : "None"
+          },
+          "message" : "作業系統已經在系統時間 ‎2018‎-‎01‎-‎22T19:11:27.623161700Z 關閉。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "9PgeiY4B6U4O_9c5SpCN",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:19.732Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 540,
+              "thread" : {
+                "id" : 552
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param7" : "NT AUTHORITY\\SYSTEM",
+              "param5" : "restart",
+              "param3" : "No title for this reason could be found",
+              "param4" : "0x8000000c",
+              "param1" : "C:\\Program Files\\Amazon\\XenTools\\LiteAgent.exe (DESKTOP-AN3U28N)",
+              "param2" : "DESKTOP-AN3U28N"
+            },
+            "opcode" : "Info",
+            "record_id" : 1441,
+            "event_id" : "1074",
+            "task" : "None",
+            "provider_guid" : "{b0aa8734-56f7-41cc-b2f4-de228e98b946}",
+            "api" : "wineventlog",
+            "provider_name" : "User32",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "處理程序 C:\\Program Files\\Amazon\\XenTools\\LiteAgent.exe (DESKTOP-AN3U28N)已代表使用者 NT AUTHORITY\\SYSTEM，啟動電腦 DESKTOP-AN3U28N 的 restart，原因如下: No title for this reason could be found\n 理由代碼: 0x8000000c\n 關機類型: restart\n 註解: ",
+          "event" : {
+            "ingested" : "2024-03-29T07:30:47.564464441Z",
+            "code" : "1074",
+            "provider" : "User32",
+            "created" : "2024-03-29T07:30:47.542Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "9fgeiY4B6U4O_9c5SpCN",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:20.045Z",
+          "winlog" : {
+            "record_id" : 1442,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 684,
+              "thread" : {
+                "id" : 4516
+              }
+            },
+            "event_id" : "7031",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "event_data" : {
+              "param5" : "Restart the service",
+              "Binary" : "4F006E006500530079006E0063005300760063005F00530065007300730069006F006E0032000000",
+              "param3" : "10000",
+              "param4" : "1",
+              "param1" : "Sync Host_Session2",
+              "param2" : "1"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:30:47.564532160Z",
+            "code" : "7031",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-03-29T07:30:47.542Z",
+            "action" : "None"
+          },
+          "message" : "Sync Host_Session2 服務意外終止，服務曾完成這項動作 1 次。以下的修正操作將在 10000 毫秒內執行: Restart the service。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "9vgeiY4B6U4O_9c5SpCN",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:20.968Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 824,
+              "thread" : {
+                "id" : 852
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param1" : "{9BA05972-F6A8-11CF-A442-00A0C90A8F39}"
+            },
+            "opcode" : "資訊",
+            "record_id" : 1443,
+            "task" : "None",
+            "event_id" : "10010",
+            "provider_guid" : "{1B562E86-B7AA-4131-BADC-B6F3A001407E}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-DistributedCOM",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "伺服器 {9BA05972-F6A8-11CF-A442-00A0C90A8F39} 沒有在指定的逾時內登錄 DCOM。",
+          "event" : {
+            "ingested" : "2024-03-29T07:30:47.564594331Z",
+            "code" : "10010",
+            "provider" : "Microsoft-Windows-DistributedCOM",
+            "created" : "2024-03-29T07:30:47.542Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "9_geiY4B6U4O_9c5SpCN",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:21.285Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 3460,
+              "thread" : {
+                "id" : 3596
+              }
+            },
+            "keywords" : [
+              "ms:Telemetry"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "UserSid" : "S-1-5-21-913095808-1976597276-3100954228-500",
+              "TSId" : "2"
+            },
+            "opcode" : "資訊",
+            "record_id" : 1444,
+            "task" : "WinSqmUserLogoff",
+            "event_id" : "7002",
+            "provider_guid" : "{dbe9b383-7cf3-4331-91cc-a3cb16a3b538}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-Winlogon",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "客戶經驗改進計畫的使用者登出通知",
+          "event" : {
+            "ingested" : "2024-03-29T07:30:47.564723385Z",
+            "code" : "7002",
+            "provider" : "Microsoft-Windows-Winlogon",
+            "kind" : "event",
+            "created" : "2024-03-29T07:30:47.542Z",
+            "action" : "WinSqmUserLogoff"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "-PgeiY4B6U4O_9c5SpCN",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:22.000Z",
+          "winlog" : {
+            "record_id" : 1445,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "event_id" : "6006",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "Binary" : "0100000000000000"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "EventLog"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:30:47.564871038Z",
+            "code" : "6006",
+            "provider" : "EventLog",
+            "kind" : "event",
+            "created" : "2024-03-29T07:30:47.542Z",
+            "action" : "None"
+          },
+          "message" : "事件記錄檔服務已中止。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "_PgeiY4B6U4O_9c5SpCN",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:22.069Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "record_id" : 1449,
+            "process" : {
+              "pid" : 492,
+              "thread" : {
+                "id" : 1520
+              }
+            },
+            "task" : "Service State Event",
+            "event_id" : "51047",
+            "provider_guid" : "{6a1f2b00-6a90-4c38-95a5-5cab3b056778}",
+            "channel" : "System",
+            "event_data" : {
+              "DwordVal" : "1"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-DHCPv6-Client",
+            "opcode" : "ServiceStop",
+            "user" : {
+              "identifier" : "S-1-5-19",
+              "domain" : "NT AUTHORITY",
+              "name" : "LOCAL SERVICE",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:30:47.565168561Z",
+            "code" : "51047",
+            "provider" : "Microsoft-Windows-DHCPv6-Client",
+            "created" : "2024-03-29T07:30:47.543Z",
+            "kind" : "event",
+            "action" : "Service State Event"
+          },
+          "message" : "DHCPv6 用戶端服務已停止。關機旗標值是 1"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "_fgeiY4B6U4O_9c5SpCN",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:22.089Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "record_id" : 1450,
+            "process" : {
+              "pid" : 492,
+              "thread" : {
+                "id" : 1340
+              }
+            },
+            "event_id" : "50037",
+            "task" : "服務狀態事件",
+            "provider_guid" : "{15a7a4f8-0072-4eab-abad-f98a4d666aed}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "DwordVal" : "1"
+            },
+            "provider_name" : "Microsoft-Windows-Dhcp-Client",
+            "opcode" : "ServiceStop",
+            "user" : {
+              "identifier" : "S-1-5-19",
+              "domain" : "NT AUTHORITY",
+              "name" : "LOCAL SERVICE",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:30:47.565227461Z",
+            "code" : "50037",
+            "provider" : "Microsoft-Windows-Dhcp-Client",
+            "kind" : "event",
+            "created" : "2024-03-29T07:30:47.543Z",
+            "action" : "服務狀態事件"
+          },
+          "message" : "DHCPv4 用戶端服務已停止。關機旗標值為 1"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "_vgeiY4B6U4O_9c5SpC0",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:26.895Z",
+          "winlog" : {
+            "record_id" : 1451,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 632,
+              "thread" : {
+                "id" : 636
+              }
+            },
+            "event_id" : "109",
+            "task" : "ShutdownAction",
+            "keywords" : [
+              "ms:Telemetry",
+              "po:Diagnostic"
+            ],
+            "provider_guid" : "{331c3b3a-2005-44c2-ac5e-77220c37d6b4}",
+            "channel" : "System",
+            "event_data" : {
+              "ShutdownActionType" : "5",
+              "ShutdownEventCode" : "0",
+              "ShutdownReason" : "5"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-Kernel-Power",
+            "opcode" : "資訊"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "核心電源管理員已起始關機轉換。\n\n動作： Power Action Reboot \n事件代碼： 0x0 \n原因： Kernel API",
+          "event" : {
+            "ingested" : "2024-03-29T07:30:47.599766156Z",
+            "code" : "109",
+            "provider" : "Microsoft-Windows-Kernel-Power",
+            "created" : "2024-03-29T07:30:47.543Z",
+            "kind" : "event",
+            "action" : "ShutdownAction"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "__geiY4B6U4O_9c5SpC0",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:27.623Z",
+          "winlog" : {
+            "record_id" : 1452,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 4,
+              "thread" : {
+                "id" : 4224
+              }
+            },
+            "event_id" : "13",
+            "task" : "None",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "StopTime" : "2018-01-22T19:11:27.6231617Z"
+            },
+            "opcode" : "資訊",
+            "provider_name" : "Microsoft-Windows-Kernel-General"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:30:47.600002248Z",
+            "code" : "13",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "created" : "2024-03-29T07:30:47.543Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "作業系統已經在系統時間 ‎2018‎-‎01‎-‎22T19:11:27.623161700Z 關閉。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "p_gfiY4B6U4O_9c547VE",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:19.732Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 540,
+              "thread" : {
+                "id" : 552
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param7" : "NT AUTHORITY\\SYSTEM",
+              "param5" : "restart",
+              "param3" : "No title for this reason could be found",
+              "param4" : "0x8000000c",
+              "param1" : "C:\\Program Files\\Amazon\\XenTools\\LiteAgent.exe (DESKTOP-AN3U28N)",
+              "param2" : "DESKTOP-AN3U28N"
+            },
+            "opcode" : "Info",
+            "record_id" : 1441,
+            "task" : "None",
+            "event_id" : "1074",
+            "provider_guid" : "{b0aa8734-56f7-41cc-b2f4-de228e98b946}",
+            "api" : "wineventlog",
+            "provider_name" : "User32",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:32.195906584Z",
+            "code" : "1074",
+            "provider" : "User32",
+            "created" : "2024-03-29T07:32:32.066Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "處理程序 C:\\Program Files\\Amazon\\XenTools\\LiteAgent.exe (DESKTOP-AN3U28N)已代表使用者 NT AUTHORITY\\SYSTEM，啟動電腦 DESKTOP-AN3U28N 的 restart，原因如下: No title for this reason could be found\n 理由代碼: 0x8000000c\n 關機類型: restart\n 註解: "
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "qPgfiY4B6U4O_9c547VE",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:20.045Z",
+          "winlog" : {
+            "record_id" : 1442,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 684,
+              "thread" : {
+                "id" : 4516
+              }
+            },
+            "task" : "None",
+            "event_id" : "7031",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "event_data" : {
+              "param5" : "Restart the service",
+              "Binary" : "4F006E006500530079006E0063005300760063005F00530065007300730069006F006E0032000000",
+              "param3" : "10000",
+              "param4" : "1",
+              "param1" : "Sync Host_Session2",
+              "param2" : "1"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:32.195952439Z",
+            "code" : "7031",
+            "provider" : "Service Control Manager",
+            "created" : "2024-03-29T07:32:32.066Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Sync Host_Session2 服務意外終止，服務曾完成這項動作 1 次。以下的修正操作將在 10000 毫秒內執行: Restart the service。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "qfgfiY4B6U4O_9c547VE",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:20.968Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 824,
+              "thread" : {
+                "id" : 852
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param1" : "{9BA05972-F6A8-11CF-A442-00A0C90A8F39}"
+            },
+            "opcode" : "資訊",
+            "record_id" : 1443,
+            "task" : "None",
+            "event_id" : "10010",
+            "provider_guid" : "{1B562E86-B7AA-4131-BADC-B6F3A001407E}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-DistributedCOM",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:32.195995736Z",
+            "code" : "10010",
+            "provider" : "Microsoft-Windows-DistributedCOM",
+            "created" : "2024-03-29T07:32:32.066Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "伺服器 {9BA05972-F6A8-11CF-A442-00A0C90A8F39} 沒有在指定的逾時內登錄 DCOM。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "qvgfiY4B6U4O_9c547VE",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:21.285Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 3460,
+              "thread" : {
+                "id" : 3596
+              }
+            },
+            "keywords" : [
+              "ms:Telemetry"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "UserSid" : "S-1-5-21-913095808-1976597276-3100954228-500",
+              "TSId" : "2"
+            },
+            "opcode" : "資訊",
+            "record_id" : 1444,
+            "event_id" : "7002",
+            "task" : "WinSqmUserLogoff",
+            "provider_guid" : "{dbe9b383-7cf3-4331-91cc-a3cb16a3b538}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-Winlogon",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:32.196036482Z",
+            "code" : "7002",
+            "provider" : "Microsoft-Windows-Winlogon",
+            "kind" : "event",
+            "created" : "2024-03-29T07:32:32.066Z",
+            "action" : "WinSqmUserLogoff"
+          },
+          "message" : "客戶經驗改進計畫的使用者登出通知"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "q_gfiY4B6U4O_9c547VE",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:22.000Z",
+          "winlog" : {
+            "record_id" : 1445,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "task" : "None",
+            "event_id" : "6006",
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "Binary" : "0100000000000000"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "EventLog"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "事件記錄檔服務已中止。",
+          "event" : {
+            "ingested" : "2024-03-29T07:32:32.196063706Z",
+            "code" : "6006",
+            "provider" : "EventLog",
+            "created" : "2024-03-29T07:32:32.066Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "r_gfiY4B6U4O_9c547VE",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:22.069Z",
+          "winlog" : {
+            "record_id" : 1449,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 492,
+              "thread" : {
+                "id" : 1520
+              }
+            },
+            "event_id" : "51047",
+            "task" : "Service State Event",
+            "provider_guid" : "{6a1f2b00-6a90-4c38-95a5-5cab3b056778}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "DwordVal" : "1"
+            },
+            "opcode" : "ServiceStop",
+            "provider_name" : "Microsoft-Windows-DHCPv6-Client",
+            "user" : {
+              "identifier" : "S-1-5-19",
+              "domain" : "NT AUTHORITY",
+              "name" : "LOCAL SERVICE",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "DHCPv6 用戶端服務已停止。關機旗標值是 1",
+          "event" : {
+            "ingested" : "2024-03-29T07:32:32.196205526Z",
+            "code" : "51047",
+            "provider" : "Microsoft-Windows-DHCPv6-Client",
+            "created" : "2024-03-29T07:32:32.066Z",
+            "kind" : "event",
+            "action" : "Service State Event"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "sPgfiY4B6U4O_9c547VE",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:22.089Z",
+          "winlog" : {
+            "record_id" : 1450,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 492,
+              "thread" : {
+                "id" : 1340
+              }
+            },
+            "task" : "服務狀態事件",
+            "event_id" : "50037",
+            "provider_guid" : "{15a7a4f8-0072-4eab-abad-f98a4d666aed}",
+            "channel" : "System",
+            "event_data" : {
+              "DwordVal" : "1"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-Dhcp-Client",
+            "opcode" : "ServiceStop",
+            "user" : {
+              "identifier" : "S-1-5-19",
+              "domain" : "NT AUTHORITY",
+              "name" : "LOCAL SERVICE",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:32.196247238Z",
+            "code" : "50037",
+            "provider" : "Microsoft-Windows-Dhcp-Client",
+            "created" : "2024-03-29T07:32:32.066Z",
+            "kind" : "event",
+            "action" : "服務狀態事件"
+          },
+          "message" : "DHCPv4 用戶端服務已停止。關機旗標值為 1"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "sfgfiY4B6U4O_9c547Vy",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:26.895Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "record_id" : 1451,
+            "process" : {
+              "pid" : 632,
+              "thread" : {
+                "id" : 636
+              }
+            },
+            "event_id" : "109",
+            "task" : "ShutdownAction",
+            "keywords" : [
+              "po:Diagnostic",
+              "ms:Telemetry"
+            ],
+            "provider_guid" : "{331c3b3a-2005-44c2-ac5e-77220c37d6b4}",
+            "channel" : "System",
+            "event_data" : {
+              "ShutdownActionType" : "5",
+              "ShutdownEventCode" : "0",
+              "ShutdownReason" : "5"
+            },
+            "api" : "wineventlog",
+            "opcode" : "資訊",
+            "provider_name" : "Microsoft-Windows-Kernel-Power"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:32.239470899Z",
+            "code" : "109",
+            "provider" : "Microsoft-Windows-Kernel-Power",
+            "created" : "2024-03-29T07:32:32.066Z",
+            "kind" : "event",
+            "action" : "ShutdownAction"
+          },
+          "message" : "核心電源管理員已起始關機轉換。\n\n動作： Power Action Reboot \n事件代碼： 0x0 \n原因： Kernel API"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "svgfiY4B6U4O_9c547Vy",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:27.623Z",
+          "winlog" : {
+            "record_id" : 1452,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 4,
+              "thread" : {
+                "id" : 4224
+              }
+            },
+            "task" : "None",
+            "event_id" : "13",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "StopTime" : "2018-01-22T19:11:27.6231617Z"
+            },
+            "opcode" : "資訊",
+            "provider_name" : "Microsoft-Windows-Kernel-General"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:32.239631070Z",
+            "code" : "13",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "created" : "2024-03-29T07:32:32.066Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "作業系統已經在系統時間 ‎2018‎-‎01‎-‎22T19:11:27.623161700Z 關閉。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "JPgfiY4B6U4O_9c5Vqhc",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:19.732Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 540,
+              "thread" : {
+                "id" : 552
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param7" : "NT AUTHORITY\\SYSTEM",
+              "param5" : "restart",
+              "param3" : "No title for this reason could be found",
+              "param4" : "0x8000000c",
+              "param1" : "C:\\Program Files\\Amazon\\XenTools\\LiteAgent.exe (DESKTOP-AN3U28N)",
+              "param2" : "DESKTOP-AN3U28N"
+            },
+            "opcode" : "Info",
+            "record_id" : 1441,
+            "event_id" : "1074",
+            "task" : "None",
+            "provider_guid" : "{b0aa8734-56f7-41cc-b2f4-de228e98b946}",
+            "api" : "wineventlog",
+            "provider_name" : "User32",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:56.123964176Z",
+            "code" : "1074",
+            "provider" : "User32",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:56.077Z",
+            "action" : "None"
+          },
+          "message" : "處理程序 C:\\Program Files\\Amazon\\XenTools\\LiteAgent.exe (DESKTOP-AN3U28N)已代表使用者 NT AUTHORITY\\SYSTEM，啟動電腦 DESKTOP-AN3U28N 的 restart，原因如下: No title for this reason could be found\n 理由代碼: 0x8000000c\n 關機類型: restart\n 註解: "
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "JfgfiY4B6U4O_9c5Vqhc",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:20.045Z",
+          "winlog" : {
+            "record_id" : 1442,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 684,
+              "thread" : {
+                "id" : 4516
+              }
+            },
+            "task" : "None",
+            "event_id" : "7031",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "event_data" : {
+              "param5" : "Restart the service",
+              "Binary" : "4F006E006500530079006E0063005300760063005F00530065007300730069006F006E0032000000",
+              "param3" : "10000",
+              "param4" : "1",
+              "param1" : "Sync Host_Session2",
+              "param2" : "1"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:56.124015362Z",
+            "code" : "7031",
+            "provider" : "Service Control Manager",
+            "created" : "2024-03-29T07:31:56.077Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Sync Host_Session2 服務意外終止，服務曾完成這項動作 1 次。以下的修正操作將在 10000 毫秒內執行: Restart the service。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "JvgfiY4B6U4O_9c5Vqhc",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:20.968Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 824,
+              "thread" : {
+                "id" : 852
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param1" : "{9BA05972-F6A8-11CF-A442-00A0C90A8F39}"
+            },
+            "opcode" : "資訊",
+            "record_id" : 1443,
+            "event_id" : "10010",
+            "task" : "None",
+            "provider_guid" : "{1B562E86-B7AA-4131-BADC-B6F3A001407E}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-DistributedCOM",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:56.124062384Z",
+            "code" : "10010",
+            "provider" : "Microsoft-Windows-DistributedCOM",
+            "created" : "2024-03-29T07:31:56.077Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "伺服器 {9BA05972-F6A8-11CF-A442-00A0C90A8F39} 沒有在指定的逾時內登錄 DCOM。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "J_gfiY4B6U4O_9c5Vqhc",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:21.285Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 3460,
+              "thread" : {
+                "id" : 3596
+              }
+            },
+            "keywords" : [
+              "ms:Telemetry"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "UserSid" : "S-1-5-21-913095808-1976597276-3100954228-500",
+              "TSId" : "2"
+            },
+            "opcode" : "資訊",
+            "record_id" : 1444,
+            "event_id" : "7002",
+            "task" : "WinSqmUserLogoff",
+            "provider_guid" : "{dbe9b383-7cf3-4331-91cc-a3cb16a3b538}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-Winlogon",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:56.124107895Z",
+            "code" : "7002",
+            "provider" : "Microsoft-Windows-Winlogon",
+            "created" : "2024-03-29T07:31:56.077Z",
+            "kind" : "event",
+            "action" : "WinSqmUserLogoff"
+          },
+          "message" : "客戶經驗改進計畫的使用者登出通知"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "KPgfiY4B6U4O_9c5Vqhc",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:22.000Z",
+          "winlog" : {
+            "record_id" : 1445,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "event_id" : "6006",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "0100000000000000"
+            },
+            "provider_name" : "EventLog"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:56.124150953Z",
+            "code" : "6006",
+            "provider" : "EventLog",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:56.077Z",
+            "action" : "None"
+          },
+          "message" : "事件記錄檔服務已中止。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "LPgfiY4B6U4O_9c5Vqhc",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:22.069Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "record_id" : 1449,
+            "process" : {
+              "pid" : 492,
+              "thread" : {
+                "id" : 1520
+              }
+            },
+            "task" : "Service State Event",
+            "event_id" : "51047",
+            "provider_guid" : "{6a1f2b00-6a90-4c38-95a5-5cab3b056778}",
+            "channel" : "System",
+            "event_data" : {
+              "DwordVal" : "1"
+            },
+            "api" : "wineventlog",
+            "opcode" : "ServiceStop",
+            "provider_name" : "Microsoft-Windows-DHCPv6-Client",
+            "user" : {
+              "identifier" : "S-1-5-19",
+              "domain" : "NT AUTHORITY",
+              "name" : "LOCAL SERVICE",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "DHCPv6 用戶端服務已停止。關機旗標值是 1",
+          "event" : {
+            "ingested" : "2024-03-29T07:31:56.124322007Z",
+            "code" : "51047",
+            "provider" : "Microsoft-Windows-DHCPv6-Client",
+            "created" : "2024-03-29T07:31:56.077Z",
+            "kind" : "event",
+            "action" : "Service State Event"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "LfgfiY4B6U4O_9c5Vqhc",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:22.089Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "record_id" : 1450,
+            "process" : {
+              "pid" : 492,
+              "thread" : {
+                "id" : 1340
+              }
+            },
+            "task" : "服務狀態事件",
+            "event_id" : "50037",
+            "provider_guid" : "{15a7a4f8-0072-4eab-abad-f98a4d666aed}",
+            "channel" : "System",
+            "event_data" : {
+              "DwordVal" : "1"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-Dhcp-Client",
+            "opcode" : "ServiceStop",
+            "user" : {
+              "identifier" : "S-1-5-19",
+              "domain" : "NT AUTHORITY",
+              "name" : "LOCAL SERVICE",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:56.124368173Z",
+            "code" : "50037",
+            "provider" : "Microsoft-Windows-Dhcp-Client",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:56.077Z",
+            "action" : "服務狀態事件"
+          },
+          "message" : "DHCPv4 用戶端服務已停止。關機旗標值為 1"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "LvgfiY4B6U4O_9c5VqiA",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:26.895Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "record_id" : 1451,
+            "process" : {
+              "pid" : 632,
+              "thread" : {
+                "id" : 636
+              }
+            },
+            "event_id" : "109",
+            "task" : "ShutdownAction",
+            "keywords" : [
+              "ms:Telemetry",
+              "po:Diagnostic"
+            ],
+            "provider_guid" : "{331c3b3a-2005-44c2-ac5e-77220c37d6b4}",
+            "channel" : "System",
+            "event_data" : {
+              "ShutdownActionType" : "5",
+              "ShutdownEventCode" : "0",
+              "ShutdownReason" : "5"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-Kernel-Power",
+            "opcode" : "資訊"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:56.157842897Z",
+            "code" : "109",
+            "provider" : "Microsoft-Windows-Kernel-Power",
+            "created" : "2024-03-29T07:31:56.077Z",
+            "kind" : "event",
+            "action" : "ShutdownAction"
+          },
+          "message" : "核心電源管理員已起始關機轉換。\n\n動作： Power Action Reboot \n事件代碼： 0x0 \n原因： Kernel API"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "L_gfiY4B6U4O_9c5VqiA",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T19:11:27.623Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "record_id" : 1452,
+            "process" : {
+              "pid" : 4,
+              "thread" : {
+                "id" : 4224
+              }
+            },
+            "event_id" : "13",
+            "task" : "None",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "event_data" : {
+              "StopTime" : "2018-01-22T19:11:27.6231617Z"
+            },
+            "api" : "wineventlog",
+            "opcode" : "資訊",
+            "provider_name" : "Microsoft-Windows-Kernel-General"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "作業系統已經在系統時間 ‎2018‎-‎01‎-‎22T19:11:27.623161700Z 關閉。",
+          "event" : {
+            "ingested" : "2024-03-29T07:31:56.158004791Z",
+            "code" : "13",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "created" : "2024-03-29T07:31:56.077Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      }
+    ]
+  }
+}
