@@ -9,7 +9,7 @@ class EventIDExtractor:
 
     def extract_event_ids(self):
         file_names = sorted([f for f in os.listdir(self.input_file_path) if f.endswith('.json')])
-        with open(self.output_file + ".txt", 'w', encoding='utf-8') as output_file:
+        with open(self.output_file, 'w', encoding='utf-8') as output_file:
             for file_name in file_names:
                 file_path = os.path.join(self.input_file_path, file_name)
                 with open(file_path, 'r', encoding='utf-8') as file:
@@ -21,10 +21,9 @@ class EventIDExtractor:
         print(f'所有 Event IDs 已成功儲存到 "{self.output_file}"。')
 
     def clean_and_save(self):
-        with open(self.output_file + ".txt", 'r', encoding='utf-8') as file:
+        with open(self.output_file, 'r', encoding='utf-8') as file:
             lines = file.readlines()
         cleaned_lines = [line for line in lines if line.strip() != '']
         with open(self.output_file, 'w', encoding='utf-8') as file:
             file.writelines(cleaned_lines)
-        os.remove(self.output_file + ".txt")
         print(f'已整理檔案並儲存到 {self.output_file}')
