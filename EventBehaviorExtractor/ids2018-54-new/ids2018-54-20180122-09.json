@@ -1,0 +1,5504 @@
+{
+  "took" : 4,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 75,
+      "relation" : "eq"
+    },
+    "max_score" : 0.0,
+    "hits" : [
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "d_gfiY4B6U4O_9c5Vafk",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:35.738Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 680,
+              "thread" : {
+                "id" : 4864
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param3" : "auto start",
+              "param4" : "BITS",
+              "param1" : "Background Intelligent Transfer Service",
+              "param2" : "demand start"
+            },
+            "opcode" : "Info",
+            "record_id" : 1268,
+            "event_id" : "7040",
+            "task" : "None",
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "Background Intelligent Transfer Service 服務的啟動類型已從 demand start 變更為 auto start。",
+          "event" : {
+            "ingested" : "2024-03-29T07:31:56.002373106Z",
+            "code" : "7040",
+            "provider" : "Service Control Manager",
+            "created" : "2024-03-29T07:31:55.814Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "ePgfiY4B6U4O_9c5Vafk",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:36.237Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{d770877e-5a92-4532-a2e3-1d9150ebbbf1}",
+              "updateTitle" : "9WZDNCRFJ9RM-Microsoft.VCLibs.120.00"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 1269,
+            "event_id" : "44",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "Windows Update 已開始下載更新。",
+          "event" : {
+            "ingested" : "2024-03-29T07:31:56.002407977Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:55.814Z",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "efgfiY4B6U4O_9c5Vafk",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:36.237Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{bd462f2b-85f4-4c61-9a0e-4c36a4a4fe25}",
+              "updateTitle" : "9WZDNCRFJBKH-Microsoft.Media.PlayReadyClient.2"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 1270,
+            "event_id" : "44",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:56.002441863Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:31:55.814Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "Windows Update 已開始下載更新。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "evgfiY4B6U4O_9c5Vafk",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:38.848Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{c1d25a14-d481-47c1-980a-d943d88c73ee}",
+              "updateTitle" : "9WZDNCRFJBJV-Microsoft.WindowsPreview.Kinect.8.1"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 1271,
+            "event_id" : "44",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "Windows Update 已開始下載更新。",
+          "event" : {
+            "ingested" : "2024-03-29T07:31:56.002472725Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:55.815Z",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "e_gfiY4B6U4O_9c5Vafk",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:44.226Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{d770877e-5a92-4532-a2e3-1d9150ebbbf1}",
+              "updateTitle" : "9WZDNCRFJ9RM-Microsoft.VCLibs.120.00"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1272,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "43",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: 9WZDNCRFJ9RM-Microsoft.VCLibs.120.00",
+          "event" : {
+            "ingested" : "2024-03-29T07:31:56.002505037Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:31:55.815Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "fPgfiY4B6U4O_9c5Vafk",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:44.226Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "成功"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{d770877e-5a92-4532-a2e3-1d9150ebbbf1}",
+              "serviceGuid" : "{855e8a7c-ecb4-4ca3-b045-1dfa50104289}",
+              "updateTitle" : "9WZDNCRFJ9RM-Microsoft.VCLibs.120.00"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1273,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "19",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:56.002825125Z",
+            "code" : "19",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:31:55.815Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "安裝成功: Windows 已順利安裝下列更新: 9WZDNCRFJ9RM-Microsoft.VCLibs.120.00"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "ffgfiY4B6U4O_9c5Vafk",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:45.561Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "record_id" : 1274,
+            "process" : {
+              "pid" : 3684,
+              "thread" : {
+                "id" : 2332
+              }
+            },
+            "event_id" : "16",
+            "task" : "None",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "event_data" : {
+              "HiveNameLength" : "198",
+              "DirtyPages" : "0",
+              "HiveName" : "\\??\\C:\\Users\\Administrator\\AppData\\Local\\Packages\\Microsoft.Media.PlayReadyClient.2_8wekyb3d8bbwe\\Microsoft.Media.PlayReadyClient.2_2.11.2154.0_x64__8wekyb3d8bbwe\\ActivationStore\\ActivationStore.dat",
+              "KeysUpdated" : "0"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-Kernel-General",
+            "opcode" : "資訊",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:56.003288969Z",
+            "code" : "16",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:55.815Z",
+            "action" : "None"
+          },
+          "message" : "已清除登錄區 \\??\\C:\\Users\\Administrator\\AppData\\Local\\Packages\\Microsoft.Media.PlayReadyClient.2_8wekyb3d8bbwe\\Microsoft.Media.PlayReadyClient.2_2.11.2154.0_x64__8wekyb3d8bbwe\\ActivationStore\\ActivationStore.dat 中的存取歷程記錄，更新了 0 個機碼並建立了 0 個修改的頁面。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "fvgfiY4B6U4O_9c5Vafk",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:48.490Z",
+          "winlog" : {
+            "record_id" : 1275,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 3684,
+              "thread" : {
+                "id" : 2332
+              }
+            },
+            "task" : "None",
+            "event_id" : "16",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "event_data" : {
+              "HiveNameLength" : "205",
+              "HiveName" : "\\??\\C:\\Users\\Administrator\\AppData\\Local\\Packages\\Microsoft.WindowsPreview.Kinect.8.1_8wekyb3d8bbwe\\Microsoft.WindowsPreview.Kinect.8.1_2.0.1410.19000_x64__8wekyb3d8bbwe\\ActivationStore\\ActivationStore.dat",
+              "DirtyPages" : "0",
+              "KeysUpdated" : "0"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-Kernel-General",
+            "opcode" : "資訊",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:56.003446969Z",
+            "code" : "16",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "created" : "2024-03-29T07:31:55.815Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "已清除登錄區 \\??\\C:\\Users\\Administrator\\AppData\\Local\\Packages\\Microsoft.WindowsPreview.Kinect.8.1_8wekyb3d8bbwe\\Microsoft.WindowsPreview.Kinect.8.1_2.0.1410.19000_x64__8wekyb3d8bbwe\\ActivationStore\\ActivationStore.dat 中的存取歷程記錄，更新了 0 個機碼並建立了 0 個修改的頁面。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "f_gfiY4B6U4O_9c5Vafk",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:49.026Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{bd462f2b-85f4-4c61-9a0e-4c36a4a4fe25}",
+              "updateTitle" : "9WZDNCRFJBKH-Microsoft.Media.PlayReadyClient.2"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1276,
+            "event_id" : "43",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:56.003510296Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:31:55.815Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: 9WZDNCRFJBKH-Microsoft.Media.PlayReadyClient.2"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "gPgfiY4B6U4O_9c5Vafk",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:49.026Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{1949b524-a586-4b98-bddb-62b8dbc82bcb}",
+              "updateTitle" : "9WZDNCRFHVJL-Microsoft.Office.OneNote"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 1277,
+            "event_id" : "44",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:56.003584922Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:55.815Z",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "Windows Update 已開始下載更新。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "gfgfiY4B6U4O_9c5Vafk",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:49.026Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "成功"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{bd462f2b-85f4-4c61-9a0e-4c36a4a4fe25}",
+              "serviceGuid" : "{855e8a7c-ecb4-4ca3-b045-1dfa50104289}",
+              "updateTitle" : "9WZDNCRFJBKH-Microsoft.Media.PlayReadyClient.2"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1278,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "19",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "安裝成功: Windows 已順利安裝下列更新: 9WZDNCRFJBKH-Microsoft.Media.PlayReadyClient.2",
+          "event" : {
+            "ingested" : "2024-03-29T07:31:56.003641731Z",
+            "code" : "19",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:31:55.815Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "gvgfiY4B6U4O_9c5Vafk",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:49.026Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{c1d25a14-d481-47c1-980a-d943d88c73ee}",
+              "updateTitle" : "9WZDNCRFJBJV-Microsoft.WindowsPreview.Kinect.8.1"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1279,
+            "event_id" : "43",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:56.003678637Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:31:55.815Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: 9WZDNCRFJBJV-Microsoft.WindowsPreview.Kinect.8.1"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "g_gfiY4B6U4O_9c5Vafk",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:54.098Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "成功"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{c1d25a14-d481-47c1-980a-d943d88c73ee}",
+              "serviceGuid" : "{855e8a7c-ecb4-4ca3-b045-1dfa50104289}",
+              "updateTitle" : "9WZDNCRFJBJV-Microsoft.WindowsPreview.Kinect.8.1"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1280,
+            "event_id" : "19",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "安裝成功: Windows 已順利安裝下列更新: 9WZDNCRFJBJV-Microsoft.WindowsPreview.Kinect.8.1",
+          "event" : {
+            "ingested" : "2024-03-29T07:31:56.003709351Z",
+            "code" : "19",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:55.815Z",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "hPgfiY4B6U4O_9c5Vafk",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:47:38.350Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{1949b524-a586-4b98-bddb-62b8dbc82bcb}",
+              "updateTitle" : "9WZDNCRFHVJL-Microsoft.Office.OneNote"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1281,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "43",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:56.003739153Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:31:55.815Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: 9WZDNCRFHVJL-Microsoft.Office.OneNote"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "hfgfiY4B6U4O_9c5Vafk",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a06e73b9-f1c1-4373-8054-f1bb7187bfa2",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:47:38.350Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "失敗"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{1949b524-a586-4b98-bddb-62b8dbc82bcb}",
+              "serviceGuid" : "{855e8a7c-ecb4-4ca3-b045-1dfa50104289}",
+              "errorCode" : "0x8004264b",
+              "updateTitle" : "9WZDNCRFHVJL-Microsoft.Office.OneNote"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1282,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "20",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-01\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:56.003841544Z",
+            "code" : "20",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:31:55.815Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "安裝失敗: Windows 無法安裝下列更新，錯誤 0x8004264B: 9WZDNCRFHVJL-Microsoft.Office.OneNote。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "SvgeiY4B6U4O_9c51ZtX",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:35.738Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 680,
+              "thread" : {
+                "id" : 4864
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param3" : "auto start",
+              "param4" : "BITS",
+              "param1" : "Background Intelligent Transfer Service",
+              "param2" : "demand start"
+            },
+            "opcode" : "Info",
+            "record_id" : 1268,
+            "event_id" : "7040",
+            "task" : "None",
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.093180462Z",
+            "code" : "7040",
+            "provider" : "Service Control Manager",
+            "created" : "2024-03-29T07:31:22.779Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Background Intelligent Transfer Service 服務的啟動類型已從 demand start 變更為 auto start。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "S_geiY4B6U4O_9c51ZtX",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:36.237Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{d770877e-5a92-4532-a2e3-1d9150ebbbf1}",
+              "updateTitle" : "9WZDNCRFJ9RM-Microsoft.VCLibs.120.00"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 1269,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "44",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "Windows Update 已開始下載更新。",
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.093236975Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:22.779Z",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "TPgeiY4B6U4O_9c51ZtX",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:36.237Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{bd462f2b-85f4-4c61-9a0e-4c36a4a4fe25}",
+              "updateTitle" : "9WZDNCRFJBKH-Microsoft.Media.PlayReadyClient.2"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 1270,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "44",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.093303687Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:31:22.779Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "Windows Update 已開始下載更新。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "TfgeiY4B6U4O_9c51ZtX",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:38.848Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{c1d25a14-d481-47c1-980a-d943d88c73ee}",
+              "updateTitle" : "9WZDNCRFJBJV-Microsoft.WindowsPreview.Kinect.8.1"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 1271,
+            "event_id" : "44",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "Windows Update 已開始下載更新。",
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.093361713Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:31:22.779Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "TvgeiY4B6U4O_9c51ZtX",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:44.226Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{d770877e-5a92-4532-a2e3-1d9150ebbbf1}",
+              "updateTitle" : "9WZDNCRFJ9RM-Microsoft.VCLibs.120.00"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1272,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "43",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: 9WZDNCRFJ9RM-Microsoft.VCLibs.120.00",
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.093418423Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:31:22.779Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "T_geiY4B6U4O_9c51ZtX",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:44.226Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "成功"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{d770877e-5a92-4532-a2e3-1d9150ebbbf1}",
+              "serviceGuid" : "{855e8a7c-ecb4-4ca3-b045-1dfa50104289}",
+              "updateTitle" : "9WZDNCRFJ9RM-Microsoft.VCLibs.120.00"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1273,
+            "event_id" : "19",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "安裝成功: Windows 已順利安裝下列更新: 9WZDNCRFJ9RM-Microsoft.VCLibs.120.00",
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.093477041Z",
+            "code" : "19",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:22.779Z",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "UPgeiY4B6U4O_9c51ZtX",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:45.561Z",
+          "winlog" : {
+            "record_id" : 1274,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 3684,
+              "thread" : {
+                "id" : 2332
+              }
+            },
+            "event_id" : "16",
+            "task" : "None",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "HiveNameLength" : "198",
+              "HiveName" : "\\??\\C:\\Users\\Administrator\\AppData\\Local\\Packages\\Microsoft.Media.PlayReadyClient.2_8wekyb3d8bbwe\\Microsoft.Media.PlayReadyClient.2_2.11.2154.0_x64__8wekyb3d8bbwe\\ActivationStore\\ActivationStore.dat",
+              "DirtyPages" : "0",
+              "KeysUpdated" : "0"
+            },
+            "opcode" : "資訊",
+            "provider_name" : "Microsoft-Windows-Kernel-General",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.093534787Z",
+            "code" : "16",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "created" : "2024-03-29T07:31:22.779Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "已清除登錄區 \\??\\C:\\Users\\Administrator\\AppData\\Local\\Packages\\Microsoft.Media.PlayReadyClient.2_8wekyb3d8bbwe\\Microsoft.Media.PlayReadyClient.2_2.11.2154.0_x64__8wekyb3d8bbwe\\ActivationStore\\ActivationStore.dat 中的存取歷程記錄，更新了 0 個機碼並建立了 0 個修改的頁面。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "UfgeiY4B6U4O_9c51ZtX",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:48.490Z",
+          "winlog" : {
+            "record_id" : 1275,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 3684,
+              "thread" : {
+                "id" : 2332
+              }
+            },
+            "event_id" : "16",
+            "task" : "None",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "event_data" : {
+              "HiveNameLength" : "205",
+              "HiveName" : "\\??\\C:\\Users\\Administrator\\AppData\\Local\\Packages\\Microsoft.WindowsPreview.Kinect.8.1_8wekyb3d8bbwe\\Microsoft.WindowsPreview.Kinect.8.1_2.0.1410.19000_x64__8wekyb3d8bbwe\\ActivationStore\\ActivationStore.dat",
+              "DirtyPages" : "0",
+              "KeysUpdated" : "0"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-Kernel-General",
+            "opcode" : "資訊",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.093592341Z",
+            "code" : "16",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:22.779Z",
+            "action" : "None"
+          },
+          "message" : "已清除登錄區 \\??\\C:\\Users\\Administrator\\AppData\\Local\\Packages\\Microsoft.WindowsPreview.Kinect.8.1_8wekyb3d8bbwe\\Microsoft.WindowsPreview.Kinect.8.1_2.0.1410.19000_x64__8wekyb3d8bbwe\\ActivationStore\\ActivationStore.dat 中的存取歷程記錄，更新了 0 個機碼並建立了 0 個修改的頁面。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "UvgeiY4B6U4O_9c51ZtX",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:49.026Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{bd462f2b-85f4-4c61-9a0e-4c36a4a4fe25}",
+              "updateTitle" : "9WZDNCRFJBKH-Microsoft.Media.PlayReadyClient.2"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1276,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "43",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.093650205Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:31:22.779Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: 9WZDNCRFJBKH-Microsoft.Media.PlayReadyClient.2"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "U_geiY4B6U4O_9c51ZtX",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:49.026Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{1949b524-a586-4b98-bddb-62b8dbc82bcb}",
+              "updateTitle" : "9WZDNCRFHVJL-Microsoft.Office.OneNote"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 1277,
+            "event_id" : "44",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.093711286Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:22.779Z",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "Windows Update 已開始下載更新。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "VPgeiY4B6U4O_9c51ZtX",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:49.026Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "成功"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{bd462f2b-85f4-4c61-9a0e-4c36a4a4fe25}",
+              "serviceGuid" : "{855e8a7c-ecb4-4ca3-b045-1dfa50104289}",
+              "updateTitle" : "9WZDNCRFJBKH-Microsoft.Media.PlayReadyClient.2"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1278,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "19",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.093769469Z",
+            "code" : "19",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:31:22.779Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "安裝成功: Windows 已順利安裝下列更新: 9WZDNCRFJBKH-Microsoft.Media.PlayReadyClient.2"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "VfgeiY4B6U4O_9c51ZtX",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:49.026Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{c1d25a14-d481-47c1-980a-d943d88c73ee}",
+              "updateTitle" : "9WZDNCRFJBJV-Microsoft.WindowsPreview.Kinect.8.1"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1279,
+            "event_id" : "43",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.093826165Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:31:22.779Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: 9WZDNCRFJBJV-Microsoft.WindowsPreview.Kinect.8.1"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "VvgeiY4B6U4O_9c51ZtX",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:54.098Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "成功"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{c1d25a14-d481-47c1-980a-d943d88c73ee}",
+              "serviceGuid" : "{855e8a7c-ecb4-4ca3-b045-1dfa50104289}",
+              "updateTitle" : "9WZDNCRFJBJV-Microsoft.WindowsPreview.Kinect.8.1"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1280,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "19",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.093883612Z",
+            "code" : "19",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:31:22.779Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "安裝成功: Windows 已順利安裝下列更新: 9WZDNCRFJBJV-Microsoft.WindowsPreview.Kinect.8.1"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "V_geiY4B6U4O_9c51ZtX",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:47:38.350Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{1949b524-a586-4b98-bddb-62b8dbc82bcb}",
+              "updateTitle" : "9WZDNCRFHVJL-Microsoft.Office.OneNote"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1281,
+            "event_id" : "43",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.093939534Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:31:22.779Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: 9WZDNCRFHVJL-Microsoft.Office.OneNote"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "WPgeiY4B6U4O_9c51ZtX",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "c6ebe2c3-8b53-4b62-91bb-78491404bbe4",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:47:38.350Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "失敗"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{1949b524-a586-4b98-bddb-62b8dbc82bcb}",
+              "serviceGuid" : "{855e8a7c-ecb4-4ca3-b045-1dfa50104289}",
+              "errorCode" : "0x8004264b",
+              "updateTitle" : "9WZDNCRFHVJL-Microsoft.Office.OneNote"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1282,
+            "event_id" : "20",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-23\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:31:23.093996662Z",
+            "code" : "20",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:31:22.779Z",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "安裝失敗: Windows 無法安裝下列更新，錯誤 0x8004264B: 9WZDNCRFHVJL-Microsoft.Office.OneNote。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "fvgaiY4B6U4O_9c524VI",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:35.738Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 680,
+              "thread" : {
+                "id" : 4864
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param3" : "auto start",
+              "param4" : "BITS",
+              "param1" : "Background Intelligent Transfer Service",
+              "param2" : "demand start"
+            },
+            "opcode" : "Info",
+            "record_id" : 1268,
+            "task" : "None",
+            "event_id" : "7040",
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:02.468866606Z",
+            "code" : "7040",
+            "provider" : "Service Control Manager",
+            "created" : "2024-03-29T07:26:57.979Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Background Intelligent Transfer Service 服務的啟動類型已從 demand start 變更為 auto start。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "f_gaiY4B6U4O_9c524VI",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:36.237Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{d770877e-5a92-4532-a2e3-1d9150ebbbf1}",
+              "updateTitle" : "9WZDNCRFJ9RM-Microsoft.VCLibs.120.00"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 1269,
+            "event_id" : "44",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:02.468997099Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:26:57.979Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "Windows Update 已開始下載更新。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "gPgaiY4B6U4O_9c524VI",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:36.237Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{bd462f2b-85f4-4c61-9a0e-4c36a4a4fe25}",
+              "updateTitle" : "9WZDNCRFJBKH-Microsoft.Media.PlayReadyClient.2"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 1270,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "44",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:02.469096153Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:26:57.979Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "Windows Update 已開始下載更新。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "gfgaiY4B6U4O_9c524VI",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:38.848Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{c1d25a14-d481-47c1-980a-d943d88c73ee}",
+              "updateTitle" : "9WZDNCRFJBJV-Microsoft.WindowsPreview.Kinect.8.1"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 1271,
+            "event_id" : "44",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:02.469187869Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:26:57.979Z",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "Windows Update 已開始下載更新。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "gvgaiY4B6U4O_9c524VI",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:44.226Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{d770877e-5a92-4532-a2e3-1d9150ebbbf1}",
+              "updateTitle" : "9WZDNCRFJ9RM-Microsoft.VCLibs.120.00"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1272,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "43",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:02.469290453Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:26:57.979Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: 9WZDNCRFJ9RM-Microsoft.VCLibs.120.00"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "g_gaiY4B6U4O_9c524VI",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:44.226Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "成功"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{d770877e-5a92-4532-a2e3-1d9150ebbbf1}",
+              "serviceGuid" : "{855e8a7c-ecb4-4ca3-b045-1dfa50104289}",
+              "updateTitle" : "9WZDNCRFJ9RM-Microsoft.VCLibs.120.00"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1273,
+            "event_id" : "19",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:02.469396407Z",
+            "code" : "19",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:26:57.979Z",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "安裝成功: Windows 已順利安裝下列更新: 9WZDNCRFJ9RM-Microsoft.VCLibs.120.00"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "hPgaiY4B6U4O_9c524VI",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:45.561Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "record_id" : 1274,
+            "process" : {
+              "pid" : 3684,
+              "thread" : {
+                "id" : 2332
+              }
+            },
+            "event_id" : "16",
+            "task" : "None",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "event_data" : {
+              "HiveNameLength" : "198",
+              "DirtyPages" : "0",
+              "HiveName" : "\\??\\C:\\Users\\Administrator\\AppData\\Local\\Packages\\Microsoft.Media.PlayReadyClient.2_8wekyb3d8bbwe\\Microsoft.Media.PlayReadyClient.2_2.11.2154.0_x64__8wekyb3d8bbwe\\ActivationStore\\ActivationStore.dat",
+              "KeysUpdated" : "0"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-Kernel-General",
+            "opcode" : "資訊",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:02.469486225Z",
+            "code" : "16",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "created" : "2024-03-29T07:26:57.979Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "已清除登錄區 \\??\\C:\\Users\\Administrator\\AppData\\Local\\Packages\\Microsoft.Media.PlayReadyClient.2_8wekyb3d8bbwe\\Microsoft.Media.PlayReadyClient.2_2.11.2154.0_x64__8wekyb3d8bbwe\\ActivationStore\\ActivationStore.dat 中的存取歷程記錄，更新了 0 個機碼並建立了 0 個修改的頁面。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "hfgaiY4B6U4O_9c524VI",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:48.490Z",
+          "winlog" : {
+            "record_id" : 1275,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 3684,
+              "thread" : {
+                "id" : 2332
+              }
+            },
+            "event_id" : "16",
+            "task" : "None",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "event_data" : {
+              "HiveNameLength" : "205",
+              "HiveName" : "\\??\\C:\\Users\\Administrator\\AppData\\Local\\Packages\\Microsoft.WindowsPreview.Kinect.8.1_8wekyb3d8bbwe\\Microsoft.WindowsPreview.Kinect.8.1_2.0.1410.19000_x64__8wekyb3d8bbwe\\ActivationStore\\ActivationStore.dat",
+              "DirtyPages" : "0",
+              "KeysUpdated" : "0"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-Kernel-General",
+            "opcode" : "資訊",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:02.469571611Z",
+            "code" : "16",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "created" : "2024-03-29T07:26:57.979Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "已清除登錄區 \\??\\C:\\Users\\Administrator\\AppData\\Local\\Packages\\Microsoft.WindowsPreview.Kinect.8.1_8wekyb3d8bbwe\\Microsoft.WindowsPreview.Kinect.8.1_2.0.1410.19000_x64__8wekyb3d8bbwe\\ActivationStore\\ActivationStore.dat 中的存取歷程記錄，更新了 0 個機碼並建立了 0 個修改的頁面。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "hvgaiY4B6U4O_9c524VI",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:49.026Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{bd462f2b-85f4-4c61-9a0e-4c36a4a4fe25}",
+              "updateTitle" : "9WZDNCRFJBKH-Microsoft.Media.PlayReadyClient.2"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1276,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "43",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:02.469655206Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:26:57.979Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: 9WZDNCRFJBKH-Microsoft.Media.PlayReadyClient.2"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "h_gaiY4B6U4O_9c524VI",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:49.026Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{1949b524-a586-4b98-bddb-62b8dbc82bcb}",
+              "updateTitle" : "9WZDNCRFHVJL-Microsoft.Office.OneNote"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 1277,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "44",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:02.469745730Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:26:57.979Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "Windows Update 已開始下載更新。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "iPgaiY4B6U4O_9c524VI",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:49.026Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "成功"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{bd462f2b-85f4-4c61-9a0e-4c36a4a4fe25}",
+              "serviceGuid" : "{855e8a7c-ecb4-4ca3-b045-1dfa50104289}",
+              "updateTitle" : "9WZDNCRFJBKH-Microsoft.Media.PlayReadyClient.2"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1278,
+            "event_id" : "19",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:02.469831109Z",
+            "code" : "19",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:26:57.979Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "安裝成功: Windows 已順利安裝下列更新: 9WZDNCRFJBKH-Microsoft.Media.PlayReadyClient.2"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "ifgaiY4B6U4O_9c524VI",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:49.026Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{c1d25a14-d481-47c1-980a-d943d88c73ee}",
+              "updateTitle" : "9WZDNCRFJBJV-Microsoft.WindowsPreview.Kinect.8.1"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1279,
+            "event_id" : "43",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:02.469915762Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:26:57.979Z",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: 9WZDNCRFJBJV-Microsoft.WindowsPreview.Kinect.8.1"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "ivgaiY4B6U4O_9c524VI",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:54.098Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "成功"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{c1d25a14-d481-47c1-980a-d943d88c73ee}",
+              "serviceGuid" : "{855e8a7c-ecb4-4ca3-b045-1dfa50104289}",
+              "updateTitle" : "9WZDNCRFJBJV-Microsoft.WindowsPreview.Kinect.8.1"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1280,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "19",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "安裝成功: Windows 已順利安裝下列更新: 9WZDNCRFJBJV-Microsoft.WindowsPreview.Kinect.8.1",
+          "event" : {
+            "ingested" : "2024-03-29T07:27:02.469998992Z",
+            "code" : "19",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:26:57.979Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "i_gaiY4B6U4O_9c524VI",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:47:38.350Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{1949b524-a586-4b98-bddb-62b8dbc82bcb}",
+              "updateTitle" : "9WZDNCRFHVJL-Microsoft.Office.OneNote"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1281,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "43",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:27:02.470083088Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:26:57.979Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: 9WZDNCRFHVJL-Microsoft.Office.OneNote"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "jPgaiY4B6U4O_9c524VI",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "a38bfb66-0be3-4ce7-b3df-f61ec8d052f8",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:47:38.350Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "失敗"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{1949b524-a586-4b98-bddb-62b8dbc82bcb}",
+              "serviceGuid" : "{855e8a7c-ecb4-4ca3-b045-1dfa50104289}",
+              "errorCode" : "0x8004264b",
+              "updateTitle" : "9WZDNCRFHVJL-Microsoft.Office.OneNote"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1282,
+            "event_id" : "20",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-15\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "安裝失敗: Windows 無法安裝下列更新，錯誤 0x8004264B: 9WZDNCRFHVJL-Microsoft.Office.OneNote。",
+          "event" : {
+            "ingested" : "2024-03-29T07:27:02.470166724Z",
+            "code" : "20",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:26:57.979Z",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "R_geiY4B6U4O_9c5SpAg",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:35.738Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 680,
+              "thread" : {
+                "id" : 4864
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param3" : "auto start",
+              "param4" : "BITS",
+              "param1" : "Background Intelligent Transfer Service",
+              "param2" : "demand start"
+            },
+            "opcode" : "Info",
+            "record_id" : 1268,
+            "event_id" : "7040",
+            "task" : "None",
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:30:47.453739521Z",
+            "code" : "7040",
+            "provider" : "Service Control Manager",
+            "created" : "2024-03-29T07:30:47.321Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Background Intelligent Transfer Service 服務的啟動類型已從 demand start 變更為 auto start。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "SPgeiY4B6U4O_9c5SpAg",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:36.237Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{d770877e-5a92-4532-a2e3-1d9150ebbbf1}",
+              "updateTitle" : "9WZDNCRFJ9RM-Microsoft.VCLibs.120.00"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 1269,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "44",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:30:47.453806277Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:30:47.321Z",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "Windows Update 已開始下載更新。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "SfgeiY4B6U4O_9c5SpAg",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:36.237Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{bd462f2b-85f4-4c61-9a0e-4c36a4a4fe25}",
+              "updateTitle" : "9WZDNCRFJBKH-Microsoft.Media.PlayReadyClient.2"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 1270,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "44",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "Windows Update 已開始下載更新。",
+          "event" : {
+            "ingested" : "2024-03-29T07:30:47.453877356Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:30:47.321Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "SvgeiY4B6U4O_9c5SpAg",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:38.848Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{c1d25a14-d481-47c1-980a-d943d88c73ee}",
+              "updateTitle" : "9WZDNCRFJBJV-Microsoft.WindowsPreview.Kinect.8.1"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 1271,
+            "event_id" : "44",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:30:47.453948205Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:30:47.321Z",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "Windows Update 已開始下載更新。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "S_geiY4B6U4O_9c5SpAg",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:44.226Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{d770877e-5a92-4532-a2e3-1d9150ebbbf1}",
+              "updateTitle" : "9WZDNCRFJ9RM-Microsoft.VCLibs.120.00"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1272,
+            "event_id" : "43",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: 9WZDNCRFJ9RM-Microsoft.VCLibs.120.00",
+          "event" : {
+            "ingested" : "2024-03-29T07:30:47.454015341Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:30:47.321Z",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "TPgeiY4B6U4O_9c5SpAg",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:44.226Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "成功"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{d770877e-5a92-4532-a2e3-1d9150ebbbf1}",
+              "serviceGuid" : "{855e8a7c-ecb4-4ca3-b045-1dfa50104289}",
+              "updateTitle" : "9WZDNCRFJ9RM-Microsoft.VCLibs.120.00"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1273,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "19",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "安裝成功: Windows 已順利安裝下列更新: 9WZDNCRFJ9RM-Microsoft.VCLibs.120.00",
+          "event" : {
+            "ingested" : "2024-03-29T07:30:47.454084665Z",
+            "code" : "19",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:30:47.321Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "TfgeiY4B6U4O_9c5SpAg",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:45.561Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "record_id" : 1274,
+            "process" : {
+              "pid" : 3684,
+              "thread" : {
+                "id" : 2332
+              }
+            },
+            "task" : "None",
+            "event_id" : "16",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "event_data" : {
+              "HiveNameLength" : "198",
+              "HiveName" : "\\??\\C:\\Users\\Administrator\\AppData\\Local\\Packages\\Microsoft.Media.PlayReadyClient.2_8wekyb3d8bbwe\\Microsoft.Media.PlayReadyClient.2_2.11.2154.0_x64__8wekyb3d8bbwe\\ActivationStore\\ActivationStore.dat",
+              "DirtyPages" : "0",
+              "KeysUpdated" : "0"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-Kernel-General",
+            "opcode" : "資訊",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "已清除登錄區 \\??\\C:\\Users\\Administrator\\AppData\\Local\\Packages\\Microsoft.Media.PlayReadyClient.2_8wekyb3d8bbwe\\Microsoft.Media.PlayReadyClient.2_2.11.2154.0_x64__8wekyb3d8bbwe\\ActivationStore\\ActivationStore.dat 中的存取歷程記錄，更新了 0 個機碼並建立了 0 個修改的頁面。",
+          "event" : {
+            "ingested" : "2024-03-29T07:30:47.454150452Z",
+            "code" : "16",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "created" : "2024-03-29T07:30:47.321Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "TvgeiY4B6U4O_9c5SpAg",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:48.490Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "record_id" : 1275,
+            "process" : {
+              "pid" : 3684,
+              "thread" : {
+                "id" : 2332
+              }
+            },
+            "task" : "None",
+            "event_id" : "16",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "event_data" : {
+              "HiveNameLength" : "205",
+              "HiveName" : "\\??\\C:\\Users\\Administrator\\AppData\\Local\\Packages\\Microsoft.WindowsPreview.Kinect.8.1_8wekyb3d8bbwe\\Microsoft.WindowsPreview.Kinect.8.1_2.0.1410.19000_x64__8wekyb3d8bbwe\\ActivationStore\\ActivationStore.dat",
+              "DirtyPages" : "0",
+              "KeysUpdated" : "0"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-Kernel-General",
+            "opcode" : "資訊",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:30:47.454217810Z",
+            "code" : "16",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "created" : "2024-03-29T07:30:47.321Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "已清除登錄區 \\??\\C:\\Users\\Administrator\\AppData\\Local\\Packages\\Microsoft.WindowsPreview.Kinect.8.1_8wekyb3d8bbwe\\Microsoft.WindowsPreview.Kinect.8.1_2.0.1410.19000_x64__8wekyb3d8bbwe\\ActivationStore\\ActivationStore.dat 中的存取歷程記錄，更新了 0 個機碼並建立了 0 個修改的頁面。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "T_geiY4B6U4O_9c5SpAg",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:49.026Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{bd462f2b-85f4-4c61-9a0e-4c36a4a4fe25}",
+              "updateTitle" : "9WZDNCRFJBKH-Microsoft.Media.PlayReadyClient.2"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1276,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "43",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: 9WZDNCRFJBKH-Microsoft.Media.PlayReadyClient.2",
+          "event" : {
+            "ingested" : "2024-03-29T07:30:47.454284275Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:30:47.321Z",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "UPgeiY4B6U4O_9c5SpAg",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:49.026Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{1949b524-a586-4b98-bddb-62b8dbc82bcb}",
+              "updateTitle" : "9WZDNCRFHVJL-Microsoft.Office.OneNote"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 1277,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "44",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:30:47.454348872Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:30:47.321Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "Windows Update 已開始下載更新。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "UfgeiY4B6U4O_9c5SpAg",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:49.026Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "成功"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{bd462f2b-85f4-4c61-9a0e-4c36a4a4fe25}",
+              "serviceGuid" : "{855e8a7c-ecb4-4ca3-b045-1dfa50104289}",
+              "updateTitle" : "9WZDNCRFJBKH-Microsoft.Media.PlayReadyClient.2"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1278,
+            "event_id" : "19",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:30:47.454414222Z",
+            "code" : "19",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:30:47.321Z",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "安裝成功: Windows 已順利安裝下列更新: 9WZDNCRFJBKH-Microsoft.Media.PlayReadyClient.2"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "UvgeiY4B6U4O_9c5SpAg",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:49.026Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{c1d25a14-d481-47c1-980a-d943d88c73ee}",
+              "updateTitle" : "9WZDNCRFJBJV-Microsoft.WindowsPreview.Kinect.8.1"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1279,
+            "event_id" : "43",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:30:47.454480942Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:30:47.321Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: 9WZDNCRFJBJV-Microsoft.WindowsPreview.Kinect.8.1"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "U_geiY4B6U4O_9c5SpAg",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:54.098Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "成功"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{c1d25a14-d481-47c1-980a-d943d88c73ee}",
+              "serviceGuid" : "{855e8a7c-ecb4-4ca3-b045-1dfa50104289}",
+              "updateTitle" : "9WZDNCRFJBJV-Microsoft.WindowsPreview.Kinect.8.1"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1280,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "19",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:30:47.454547456Z",
+            "code" : "19",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:30:47.321Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "安裝成功: Windows 已順利安裝下列更新: 9WZDNCRFJBJV-Microsoft.WindowsPreview.Kinect.8.1"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "VPgeiY4B6U4O_9c5SpAg",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:47:38.350Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{1949b524-a586-4b98-bddb-62b8dbc82bcb}",
+              "updateTitle" : "9WZDNCRFHVJL-Microsoft.Office.OneNote"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1281,
+            "event_id" : "43",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:30:47.454612853Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:30:47.321Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: 9WZDNCRFHVJL-Microsoft.Office.OneNote"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "VfgeiY4B6U4O_9c5SpAg",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "cbc62cd6-a758-4639-8eeb-85bf53ffa004",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:47:38.350Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "失敗"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{1949b524-a586-4b98-bddb-62b8dbc82bcb}",
+              "serviceGuid" : "{855e8a7c-ecb4-4ca3-b045-1dfa50104289}",
+              "errorCode" : "0x8004264b",
+              "updateTitle" : "9WZDNCRFHVJL-Microsoft.Office.OneNote"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1282,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "20",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-02-16\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:30:47.454679676Z",
+            "code" : "20",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:30:47.321Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "安裝失敗: Windows 無法安裝下列更新，錯誤 0x8004264B: 9WZDNCRFHVJL-Microsoft.Office.OneNote。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "-vgfiY4B6U4O_9c54rTL",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:35.738Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 680,
+              "thread" : {
+                "id" : 4864
+              }
+            },
+            "keywords" : [
+              "傳統"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "param3" : "auto start",
+              "param4" : "BITS",
+              "param1" : "Background Intelligent Transfer Service",
+              "param2" : "demand start"
+            },
+            "opcode" : "Info",
+            "record_id" : 1268,
+            "event_id" : "7040",
+            "task" : "None",
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:32.074067613Z",
+            "code" : "7040",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-03-29T07:32:31.817Z",
+            "action" : "None"
+          },
+          "message" : "Background Intelligent Transfer Service 服務的啟動類型已從 demand start 變更為 auto start。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "-_gfiY4B6U4O_9c54rTL",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:36.237Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{d770877e-5a92-4532-a2e3-1d9150ebbbf1}",
+              "updateTitle" : "9WZDNCRFJ9RM-Microsoft.VCLibs.120.00"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 1269,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "44",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:32.074114305Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:32:31.817Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "Windows Update 已開始下載更新。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "_PgfiY4B6U4O_9c54rTL",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:36.237Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{bd462f2b-85f4-4c61-9a0e-4c36a4a4fe25}",
+              "updateTitle" : "9WZDNCRFJBKH-Microsoft.Media.PlayReadyClient.2"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 1270,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "44",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "Windows Update 已開始下載更新。",
+          "event" : {
+            "ingested" : "2024-03-29T07:32:32.074161198Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:32:31.817Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "_fgfiY4B6U4O_9c54rTL",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:38.848Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{c1d25a14-d481-47c1-980a-d943d88c73ee}",
+              "updateTitle" : "9WZDNCRFJBJV-Microsoft.WindowsPreview.Kinect.8.1"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 1271,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "44",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:32.074207707Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:32:31.817Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "Windows Update 已開始下載更新。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "_vgfiY4B6U4O_9c54rTL",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:44.226Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{d770877e-5a92-4532-a2e3-1d9150ebbbf1}",
+              "updateTitle" : "9WZDNCRFJ9RM-Microsoft.VCLibs.120.00"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1272,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "43",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:32.074253951Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:32:31.817Z",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: 9WZDNCRFJ9RM-Microsoft.VCLibs.120.00"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "__gfiY4B6U4O_9c54rTL",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:44.226Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "成功"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{d770877e-5a92-4532-a2e3-1d9150ebbbf1}",
+              "serviceGuid" : "{855e8a7c-ecb4-4ca3-b045-1dfa50104289}",
+              "updateTitle" : "9WZDNCRFJ9RM-Microsoft.VCLibs.120.00"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1273,
+            "event_id" : "19",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:32.074302406Z",
+            "code" : "19",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:32:31.817Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "安裝成功: Windows 已順利安裝下列更新: 9WZDNCRFJ9RM-Microsoft.VCLibs.120.00"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "APgfiY4B6U4O_9c54rXL",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:45.561Z",
+          "winlog" : {
+            "record_id" : 1274,
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 3684,
+              "thread" : {
+                "id" : 2332
+              }
+            },
+            "task" : "None",
+            "event_id" : "16",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "HiveNameLength" : "198",
+              "DirtyPages" : "0",
+              "HiveName" : "\\??\\C:\\Users\\Administrator\\AppData\\Local\\Packages\\Microsoft.Media.PlayReadyClient.2_8wekyb3d8bbwe\\Microsoft.Media.PlayReadyClient.2_2.11.2154.0_x64__8wekyb3d8bbwe\\ActivationStore\\ActivationStore.dat",
+              "KeysUpdated" : "0"
+            },
+            "opcode" : "資訊",
+            "provider_name" : "Microsoft-Windows-Kernel-General",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:32.074350658Z",
+            "code" : "16",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "kind" : "event",
+            "created" : "2024-03-29T07:32:31.817Z",
+            "action" : "None"
+          },
+          "message" : "已清除登錄區 \\??\\C:\\Users\\Administrator\\AppData\\Local\\Packages\\Microsoft.Media.PlayReadyClient.2_8wekyb3d8bbwe\\Microsoft.Media.PlayReadyClient.2_2.11.2154.0_x64__8wekyb3d8bbwe\\ActivationStore\\ActivationStore.dat 中的存取歷程記錄，更新了 0 個機碼並建立了 0 個修改的頁面。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "AfgfiY4B6U4O_9c54rXM",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:48.490Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "record_id" : 1275,
+            "process" : {
+              "pid" : 3684,
+              "thread" : {
+                "id" : 2332
+              }
+            },
+            "event_id" : "16",
+            "task" : "None",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "event_data" : {
+              "HiveNameLength" : "205",
+              "DirtyPages" : "0",
+              "HiveName" : "\\??\\C:\\Users\\Administrator\\AppData\\Local\\Packages\\Microsoft.WindowsPreview.Kinect.8.1_8wekyb3d8bbwe\\Microsoft.WindowsPreview.Kinect.8.1_2.0.1410.19000_x64__8wekyb3d8bbwe\\ActivationStore\\ActivationStore.dat",
+              "KeysUpdated" : "0"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-Kernel-General",
+            "opcode" : "資訊",
+            "user" : {
+              "identifier" : "S-1-5-21-913095808-1976597276-3100954228-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:32.074398123Z",
+            "code" : "16",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "created" : "2024-03-29T07:32:31.817Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "已清除登錄區 \\??\\C:\\Users\\Administrator\\AppData\\Local\\Packages\\Microsoft.WindowsPreview.Kinect.8.1_8wekyb3d8bbwe\\Microsoft.WindowsPreview.Kinect.8.1_2.0.1410.19000_x64__8wekyb3d8bbwe\\ActivationStore\\ActivationStore.dat 中的存取歷程記錄，更新了 0 個機碼並建立了 0 個修改的頁面。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "AvgfiY4B6U4O_9c54rXM",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:49.026Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{bd462f2b-85f4-4c61-9a0e-4c36a4a4fe25}",
+              "updateTitle" : "9WZDNCRFJBKH-Microsoft.Media.PlayReadyClient.2"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1276,
+            "event_id" : "43",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:32.074446758Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:32:31.817Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: 9WZDNCRFJBKH-Microsoft.Media.PlayReadyClient.2"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "A_gfiY4B6U4O_9c54rXM",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:49.026Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "下載",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{1949b524-a586-4b98-bddb-62b8dbc82bcb}",
+              "updateTitle" : "9WZDNCRFHVJL-Microsoft.Office.OneNote"
+            },
+            "opcode" : "下載",
+            "version" : 1,
+            "record_id" : 1277,
+            "task" : "Windows Update 代理程式",
+            "event_id" : "44",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:32.074493187Z",
+            "code" : "44",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:32:31.817Z",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "Windows Update 已開始下載更新。"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "BPgfiY4B6U4O_9c54rXM",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:49.026Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "成功"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{bd462f2b-85f4-4c61-9a0e-4c36a4a4fe25}",
+              "serviceGuid" : "{855e8a7c-ecb4-4ca3-b045-1dfa50104289}",
+              "updateTitle" : "9WZDNCRFJBKH-Microsoft.Media.PlayReadyClient.2"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1278,
+            "event_id" : "19",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "安裝成功: Windows 已順利安裝下列更新: 9WZDNCRFJBKH-Microsoft.Media.PlayReadyClient.2",
+          "event" : {
+            "ingested" : "2024-03-29T07:32:32.074539266Z",
+            "code" : "19",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:32:31.817Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "BfgfiY4B6U4O_9c54rXM",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:49.026Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{c1d25a14-d481-47c1-980a-d943d88c73ee}",
+              "updateTitle" : "9WZDNCRFJBJV-Microsoft.WindowsPreview.Kinect.8.1"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1279,
+            "event_id" : "43",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:32.074586577Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:32:31.817Z",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: 9WZDNCRFJBJV-Microsoft.WindowsPreview.Kinect.8.1"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "BvgfiY4B6U4O_9c54rXM",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:46:54.098Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "成功"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{c1d25a14-d481-47c1-980a-d943d88c73ee}",
+              "serviceGuid" : "{855e8a7c-ecb4-4ca3-b045-1dfa50104289}",
+              "updateTitle" : "9WZDNCRFJBJV-Microsoft.WindowsPreview.Kinect.8.1"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1280,
+            "event_id" : "19",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "安裝成功: Windows 已順利安裝下列更新: 9WZDNCRFJBJV-Microsoft.WindowsPreview.Kinect.8.1",
+          "event" : {
+            "ingested" : "2024-03-29T07:32:32.074633470Z",
+            "code" : "19",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:32:31.817Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "B_gfiY4B6U4O_9c54rXM",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:47:38.350Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "已開始"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{1949b524-a586-4b98-bddb-62b8dbc82bcb}",
+              "updateTitle" : "9WZDNCRFHVJL-Microsoft.Office.OneNote"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1281,
+            "event_id" : "43",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "event" : {
+            "ingested" : "2024-03-29T07:32:32.074679301Z",
+            "code" : "43",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "kind" : "event",
+            "created" : "2024-03-29T07:32:31.817Z",
+            "action" : "Windows Update 代理程式"
+          },
+          "message" : "已開始安裝: Windows 已開始安裝下列更新: 9WZDNCRFHVJL-Microsoft.Office.OneNote"
+        }
+      },
+      {
+        "_index" : "ids-2018-172.31.64.54",
+        "_id" : "CPgfiY4B6U4O_9c54rXM",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "6a77f265-064f-4f9a-b644-2b115b221d8a",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-01-22T03:47:38.350Z",
+          "winlog" : {
+            "computer_name" : "DESKTOP-AN3U28N",
+            "process" : {
+              "pid" : 1016,
+              "thread" : {
+                "id" : 3708
+              }
+            },
+            "keywords" : [
+              "安裝",
+              "失敗"
+            ],
+            "channel" : "System",
+            "event_data" : {
+              "updateRevisionNumber" : "1",
+              "updateGuid" : "{1949b524-a586-4b98-bddb-62b8dbc82bcb}",
+              "serviceGuid" : "{855e8a7c-ecb4-4ca3-b045-1dfa50104289}",
+              "errorCode" : "0x8004264b",
+              "updateTitle" : "9WZDNCRFHVJL-Microsoft.Office.OneNote"
+            },
+            "opcode" : "安裝",
+            "version" : 1,
+            "record_id" : 1282,
+            "event_id" : "20",
+            "task" : "Windows Update 代理程式",
+            "provider_guid" : "{945a8954-c147-4acd-923f-40c45405a658}",
+            "activity_id" : "{9fa5e194-909b-0000-f24d-a69f9b90d301}",
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-WindowsUpdateClient",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\IDS_2018\\logs_2018-03-02\\DESKTOP-AN3U28N-172.31.64.54.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "DESKTOP-AN3U28N"
+          },
+          "message" : "安裝失敗: Windows 無法安裝下列更新，錯誤 0x8004264B: 9WZDNCRFHVJL-Microsoft.Office.OneNote。",
+          "event" : {
+            "ingested" : "2024-03-29T07:32:32.074725435Z",
+            "code" : "20",
+            "provider" : "Microsoft-Windows-WindowsUpdateClient",
+            "created" : "2024-03-29T07:32:31.817Z",
+            "kind" : "event",
+            "action" : "Windows Update 代理程式"
+          }
+        }
+      }
+    ]
+  }
+}
