@@ -8,7 +8,7 @@
 using namespace std;
 
 
-DEFINE_string(config, "../configuration/lrscan/http_lrscan.json",  "Configuration file location.");
+DEFINE_string(config, "../configuration/config.json",  "Configuration file location.");
 
 
 int main(int argc, char * argv[]) {
@@ -33,3 +33,4 @@ int main(int argc, char * argv[]) {
 
     return 0;
 }
+
