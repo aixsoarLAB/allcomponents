@@ -22,7 +22,9 @@ Build HyperVision and run the provided scripts as follows:
 ```bash
 ./script/rebuild.sh
 ./script/expand.sh
-cd build && ../script/run_all_brute.sh && cd ..
+cd build
+set -eux
+ninja
 ```
 Running the HyperVision Module:
 Finally, execute HyperVision with the following command:
