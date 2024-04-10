@@ -27,7 +27,7 @@ input_file_path = ['../examples/data/IDS2018Bot',
                    '../examples/data/IDS2018-benign'] 
 output_file_path = ['../examples/data/IDS2018_test_abnormal_Bot', 
                     '../examples/data/IDS2018_test_abnormal_Infiltration', 
-                    '../examples/data/IDS2018_test_benign']
+                    '../examples/data/IDS2018_train_benign']
 
 for i in range(len(input_file_path)):
     extractor = EventIDExtractor(input_file_path[i], output_file_path[i])
