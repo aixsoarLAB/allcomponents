@@ -1,0 +1,1069 @@
+{
+  "took" : 2,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 16,
+      "relation" : "eq"
+    },
+    "max_score" : 0.0,
+    "hits" : [
+      {
+        "_index" : "ids-2018-infiltration-172.31.69.13",
+        "_id" : "Auxgwo4BjoyUY5txyy8Z",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "977ae3fd-ddb9-4deb-9199-a7bf210c6cd5",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-03-01T14:02:27.518Z",
+          "winlog" : {
+            "record_id" : 29259,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 560,
+              "thread" : {
+                "id" : 3236
+              }
+            },
+            "event_id" : "104",
+            "task" : "記錄檔清除",
+            "provider_guid" : "{fc65ddd8-d6ef-4962-83d5-6e5cfe9ce148}",
+            "channel" : "System",
+            "user_data" : {
+              "SubjectUserName" : "Administrator",
+              "Channel" : "System",
+              "SubjectDomainName" : "EC2AMAZ-O4EL3NG",
+              "xml_name" : "LogFileCleared"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-Eventlog",
+            "opcode" : "資訊",
+            "user" : {
+              "identifier" : "S-1-5-21-2658501782-1119487302-2855053826-500"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\abnormal\\Thursday-01-03-2018\\EC2AMAZ-O4EL3NG-172.31.69.13.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "message" : "System 記錄檔已清除。",
+          "event" : {
+            "ingested" : "2024-04-09T10:21:46.868837238Z",
+            "code" : "104",
+            "provider" : "Microsoft-Windows-Eventlog",
+            "created" : "2024-04-09T10:21:46.391Z",
+            "kind" : "event",
+            "action" : "記錄檔清除"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-infiltration-172.31.69.13",
+        "_id" : "A-xgwo4BjoyUY5txyy8Z",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "977ae3fd-ddb9-4deb-9199-a7bf210c6cd5",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-03-01T14:02:30.020Z",
+          "winlog" : {
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "record_id" : 29260,
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2752
+              }
+            },
+            "task" : "None",
+            "event_id" : "7036",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "event_data" : {
+              "Binary" : "77006C00690064007300760063002F0031000000",
+              "param1" : "Microsoft Account Sign-in Assistant",
+              "param2" : "stopped"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\abnormal\\Thursday-01-03-2018\\EC2AMAZ-O4EL3NG-172.31.69.13.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "message" : "Microsoft Account Sign-in Assistant 服務已進入 stopped 狀態。",
+          "event" : {
+            "ingested" : "2024-04-09T10:21:46.869004881Z",
+            "code" : "7036",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-09T10:21:46.391Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-infiltration-172.31.69.13",
+        "_id" : "BOxgwo4BjoyUY5txyy8Z",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "977ae3fd-ddb9-4deb-9199-a7bf210c6cd5",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-03-01T14:03:01.634Z",
+          "winlog" : {
+            "record_id" : 29261,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 4020,
+              "thread" : {
+                "id" : 1768
+              }
+            },
+            "task" : "None",
+            "event_id" : "16",
+            "provider_guid" : "{a68ca8b7-004f-d7b6-a698-07e2de0f1f5d}",
+            "channel" : "System",
+            "event_data" : {
+              "HiveNameLength" : "52",
+              "DirtyPages" : "1",
+              "HiveName" : "\\??\\C:\\Windows\\System32\\SMI\\Store\\Machine\\SCHEMA.DAT",
+              "KeysUpdated" : "1"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-Kernel-General",
+            "opcode" : "資訊",
+            "user" : {
+              "identifier" : "S-1-5-18",
+              "domain" : "NT AUTHORITY",
+              "name" : "SYSTEM",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\abnormal\\Thursday-01-03-2018\\EC2AMAZ-O4EL3NG-172.31.69.13.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "message" : "已清除登錄區 \\??\\C:\\Windows\\System32\\SMI\\Store\\Machine\\SCHEMA.DAT 中的存取歷程記錄，更新了 1 個機碼並建立了 1 個修改的頁面。",
+          "event" : {
+            "ingested" : "2024-04-09T10:21:46.869083992Z",
+            "code" : "16",
+            "provider" : "Microsoft-Windows-Kernel-General",
+            "kind" : "event",
+            "created" : "2024-04-09T10:21:46.391Z",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-infiltration-172.31.69.13",
+        "_id" : "Bexgwo4BjoyUY5txyy8Z",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "977ae3fd-ddb9-4deb-9199-a7bf210c6cd5",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-03-01T14:04:27.786Z",
+          "winlog" : {
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "record_id" : 29262,
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2752
+              }
+            },
+            "event_id" : "7036",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074002F0031000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "stopped"
+            },
+            "api" : "wineventlog",
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\abnormal\\Thursday-01-03-2018\\EC2AMAZ-O4EL3NG-172.31.69.13.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "message" : "Amazon SSM Agent 服務已進入 stopped 狀態。",
+          "event" : {
+            "ingested" : "2024-04-09T10:21:46.869124955Z",
+            "code" : "7036",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-09T10:21:46.391Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-infiltration-172.31.69.13",
+        "_id" : "Buxgwo4BjoyUY5txyy8Z",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "977ae3fd-ddb9-4deb-9199-a7bf210c6cd5",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-03-01T14:04:27.786Z",
+          "winlog" : {
+            "record_id" : 29263,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2752
+              }
+            },
+            "event_id" : "7024",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "%%1"
+            },
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\abnormal\\Thursday-01-03-2018\\EC2AMAZ-O4EL3NG-172.31.69.13.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "message" : "Amazon SSM Agent 服務因下列服務特定錯誤而終止: \n功能錯誤。",
+          "event" : {
+            "ingested" : "2024-04-09T10:21:46.869159994Z",
+            "code" : "7024",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-09T10:21:46.391Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-infiltration-172.31.69.13",
+        "_id" : "B-xgwo4BjoyUY5txyy8Z",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "977ae3fd-ddb9-4deb-9199-a7bf210c6cd5",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-03-01T14:04:27.789Z",
+          "winlog" : {
+            "record_id" : 29264,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 3828
+              }
+            },
+            "event_id" : "7031",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "event_data" : {
+              "param5" : "Restart the service",
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param3" : "30000",
+              "param4" : "1",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "49"
+            },
+            "api" : "wineventlog",
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\abnormal\\Thursday-01-03-2018\\EC2AMAZ-O4EL3NG-172.31.69.13.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "message" : "Amazon SSM Agent 服務意外終止，服務曾完成這項動作 49 次。以下的修正操作將在 30000 毫秒內執行: Restart the service。",
+          "event" : {
+            "ingested" : "2024-04-09T10:21:46.869194260Z",
+            "code" : "7031",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-09T10:21:46.391Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-infiltration-172.31.69.13",
+        "_id" : "COxgwo4BjoyUY5txyy8Z",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "977ae3fd-ddb9-4deb-9199-a7bf210c6cd5",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-03-01T14:05:11.700Z",
+          "winlog" : {
+            "record_id" : 29265,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 3424
+              }
+            },
+            "task" : "None",
+            "event_id" : "7036",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "540072007500730074006500640049006E007300740061006C006C00650072002F0031000000",
+              "param1" : "Windows Modules Installer",
+              "param2" : "stopped"
+            },
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\abnormal\\Thursday-01-03-2018\\EC2AMAZ-O4EL3NG-172.31.69.13.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-09T10:21:46.869226918Z",
+            "code" : "7036",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-09T10:21:46.391Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Windows Modules Installer 服務已進入 stopped 狀態。"
+        }
+      },
+      {
+        "_index" : "ids-2018-infiltration-172.31.69.13",
+        "_id" : "Cexgwo4BjoyUY5txyy8Z",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "977ae3fd-ddb9-4deb-9199-a7bf210c6cd5",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-03-01T14:05:27.792Z",
+          "winlog" : {
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "record_id" : 29266,
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2752
+              }
+            },
+            "task" : "None",
+            "event_id" : "7009",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param1" : "30000",
+              "param2" : "Amazon SSM Agent"
+            },
+            "api" : "wineventlog",
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\abnormal\\Thursday-01-03-2018\\EC2AMAZ-O4EL3NG-172.31.69.13.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-09T10:21:46.869258206Z",
+            "code" : "7009",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-04-09T10:21:46.391Z",
+            "action" : "None"
+          },
+          "message" : "等候 Amazon SSM Agent 服務連線時發生逾時 (30000 毫秒)。"
+        }
+      },
+      {
+        "_index" : "ids-2018-infiltration-172.31.69.13",
+        "_id" : "Cuxgwo4BjoyUY5txyy8Z",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "977ae3fd-ddb9-4deb-9199-a7bf210c6cd5",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-03-01T14:05:27.792Z",
+          "winlog" : {
+            "record_id" : 29267,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2752
+              }
+            },
+            "event_id" : "7000",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "%%1053"
+            },
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\abnormal\\Thursday-01-03-2018\\EC2AMAZ-O4EL3NG-172.31.69.13.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "message" : "Amazon SSM Agent 服務無法啟動，因為下列錯誤: \n服務並未以適時的方式回應啟動或控制請求。",
+          "event" : {
+            "ingested" : "2024-04-09T10:21:46.869289094Z",
+            "code" : "7000",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-04-09T10:21:46.391Z",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-infiltration-172.31.69.13",
+        "_id" : "C-xgwo4BjoyUY5txyy8Z",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "977ae3fd-ddb9-4deb-9199-a7bf210c6cd5",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-03-01T14:08:03.206Z",
+          "winlog" : {
+            "record_id" : 29268,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2752
+              }
+            },
+            "task" : "None",
+            "event_id" : "7036",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "event_data" : {
+              "Binary" : "6D00730069007300650072007600650072002F0031000000",
+              "param1" : "Windows Installer",
+              "param2" : "stopped"
+            },
+            "api" : "wineventlog",
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\abnormal\\Thursday-01-03-2018\\EC2AMAZ-O4EL3NG-172.31.69.13.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-09T10:21:46.869319860Z",
+            "code" : "7036",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-09T10:21:46.391Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Windows Installer 服務已進入 stopped 狀態。"
+        }
+      },
+      {
+        "_index" : "ids-2018-infiltration-172.31.69.13",
+        "_id" : "DOxgwo4BjoyUY5txyy8Z",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "977ae3fd-ddb9-4deb-9199-a7bf210c6cd5",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-03-01T14:08:13.175Z",
+          "winlog" : {
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "record_id" : 29269,
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2752
+              }
+            },
+            "task" : "None",
+            "event_id" : "7036",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "41007000700058005300760063002F0031000000",
+              "param1" : "AppX Deployment Service (AppXSVC)",
+              "param2" : "stopped"
+            },
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\abnormal\\Thursday-01-03-2018\\EC2AMAZ-O4EL3NG-172.31.69.13.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "message" : "AppX Deployment Service (AppXSVC) 服務已進入 stopped 狀態。",
+          "event" : {
+            "ingested" : "2024-04-09T10:21:46.869349474Z",
+            "code" : "7036",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-09T10:21:46.391Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-infiltration-172.31.69.13",
+        "_id" : "Dexgwo4BjoyUY5txyy8Z",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "977ae3fd-ddb9-4deb-9199-a7bf210c6cd5",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-03-01T14:11:11.230Z",
+          "winlog" : {
+            "record_id" : 29270,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2752
+              }
+            },
+            "event_id" : "7036",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "event_data" : {
+              "Binary" : "770075006100750073006500720076002F0031000000",
+              "param1" : "Windows Update",
+              "param2" : "stopped"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\abnormal\\Thursday-01-03-2018\\EC2AMAZ-O4EL3NG-172.31.69.13.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-09T10:21:46.869380429Z",
+            "code" : "7036",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-04-09T10:21:46.391Z",
+            "action" : "None"
+          },
+          "message" : "Windows Update 服務已進入 stopped 狀態。"
+        }
+      },
+      {
+        "_index" : "ids-2018-infiltration-172.31.69.13",
+        "_id" : "Duxgwo4BjoyUY5txyy8Z",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "977ae3fd-ddb9-4deb-9199-a7bf210c6cd5",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-03-01T14:17:20.096Z",
+          "winlog" : {
+            "record_id" : 29271,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 1116,
+              "thread" : {
+                "id" : 2828
+              }
+            },
+            "event_id" : "37",
+            "task" : "None",
+            "provider_guid" : "{06edcfeb-0fd0-4e53-acca-a6f8bbf81bcb}",
+            "channel" : "System",
+            "event_data" : {
+              "TimeSource" : "time.windows.com,0x8 (ntp.m|0x8|0.0.0.0:123->52.179.17.38:123)"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Microsoft-Windows-Time-Service",
+            "opcode" : "資訊",
+            "user" : {
+              "identifier" : "S-1-5-19",
+              "domain" : "NT AUTHORITY",
+              "name" : "LOCAL SERVICE",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\abnormal\\Thursday-01-03-2018\\EC2AMAZ-O4EL3NG-172.31.69.13.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-09T10:21:46.869411220Z",
+            "code" : "37",
+            "provider" : "Microsoft-Windows-Time-Service",
+            "created" : "2024-04-09T10:21:46.391Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "時間提供者 NtpClient 目前接收從 time.windows.com,0x8 (ntp.m|0x8|0.0.0.0:123->52.179.17.38:123) 正確的時間資料。"
+        }
+      },
+      {
+        "_index" : "ids-2018-infiltration-172.31.69.13",
+        "_id" : "D-xgwo4BjoyUY5txyy8Z",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "977ae3fd-ddb9-4deb-9199-a7bf210c6cd5",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-03-01T14:17:20.113Z",
+          "winlog" : {
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "record_id" : 29272,
+            "process" : {
+              "pid" : 1116,
+              "thread" : {
+                "id" : 4400
+              }
+            },
+            "task" : "None",
+            "event_id" : "35",
+            "provider_guid" : "{06edcfeb-0fd0-4e53-acca-a6f8bbf81bcb}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "TimeSource" : "time.windows.com,0x8 (ntp.m|0x8|0.0.0.0:123->52.179.17.38:123)"
+            },
+            "opcode" : "資訊",
+            "provider_name" : "Microsoft-Windows-Time-Service",
+            "user" : {
+              "identifier" : "S-1-5-19",
+              "domain" : "NT AUTHORITY",
+              "name" : "LOCAL SERVICE",
+              "type" : "Well Known Group"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\abnormal\\Thursday-01-03-2018\\EC2AMAZ-O4EL3NG-172.31.69.13.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-09T10:21:46.869442476Z",
+            "code" : "35",
+            "provider" : "Microsoft-Windows-Time-Service",
+            "kind" : "event",
+            "created" : "2024-04-09T10:21:46.391Z",
+            "action" : "None"
+          },
+          "message" : "時間服務正在進行系統時間與參照識別碼為 %2 之時間來源 %1 的同步處理。目前本機組織層號碼為 %3。"
+        }
+      },
+      {
+        "_index" : "ids-2018-infiltration-172.31.69.13",
+        "_id" : "EOxgwo4BjoyUY5txyy8Z",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "977ae3fd-ddb9-4deb-9199-a7bf210c6cd5",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-03-01T14:29:06.908Z",
+          "winlog" : {
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "record_id" : 29273,
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2004
+              }
+            },
+            "event_id" : "7036",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "event_data" : {
+              "Binary" : "570069006E0048007400740070004100750074006F00500072006F00780079005300760063002F0031000000",
+              "param1" : "WinHTTP Web Proxy Auto-Discovery Service",
+              "param2" : "stopped"
+            },
+            "api" : "wineventlog",
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\abnormal\\Thursday-01-03-2018\\EC2AMAZ-O4EL3NG-172.31.69.13.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "message" : "WinHTTP Web Proxy Auto-Discovery Service 服務已進入 stopped 狀態。",
+          "event" : {
+            "ingested" : "2024-04-09T10:21:46.869471866Z",
+            "code" : "7036",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-09T10:21:46.391Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-infiltration-172.31.69.13",
+        "_id" : "Eexgwo4BjoyUY5txyy8Z",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "977ae3fd-ddb9-4deb-9199-a7bf210c6cd5",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-03-01T14:36:03.441Z",
+          "winlog" : {
+            "record_id" : 29274,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 1796
+              }
+            },
+            "task" : "None",
+            "event_id" : "7036",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "4100700070004D0067006D0074002F0034000000",
+              "param1" : "Application Management",
+              "param2" : "running"
+            },
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\abnormal\\Thursday-01-03-2018\\EC2AMAZ-O4EL3NG-172.31.69.13.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-09T10:21:46.869500413Z",
+            "code" : "7036",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-09T10:21:46.391Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Application Management 服務已進入 running 狀態。"
+        }
+      }
+    ]
+  }
+}

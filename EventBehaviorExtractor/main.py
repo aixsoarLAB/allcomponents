@@ -21,8 +21,15 @@ processor.run()
 #########################
 #     DeepCase 使用     # 
 #########################
-input_file_path = 'ids2018-54-new'
-output_file_path = 'sequence/ids2018-54'
-extractor = EventIDExtractor(input_file_path, output_file_path)
-extractor.extract_event_ids()
-extractor.clean_and_save()
+
+input_file_path = ['../examples/data/IDS2018Bot', 
+                   '../examples/data/IDS2018Infiltration', 
+                   '../examples/data/IDS2018-benign'] 
+output_file_path = ['../examples/data/IDS2018_test_abnormal_Bot', 
+                    '../examples/data/IDS2018_test_abnormal_Infiltration', 
+                    '../examples/data/IDS2018_test_benign']
+
+for i in range(len(input_file_path)):
+    extractor = EventIDExtractor(input_file_path[i], output_file_path[i])
+    extractor.extract_event_ids()
+    extractor.clean_and_save()
