@@ -14,7 +14,7 @@ import torch
 
 # Create preprocessor for cd loading data
 preprocessor = Preprocessor(
-    length  = 20,           # Extract sequences of 20 items
+    length  = 10,           # Extract sequences of 20 items
     timeout = float('inf'), # Do not include a maximum allowed time between events
 )
 
@@ -48,79 +48,68 @@ if torch.cuda.is_available():
 deeplog.fit(
     X          = X,
     y          = y,
-    epochs     = 10,
+    epochs     = 3,
     batch_size = 128,
 )
 
 ##############################################################################
 #                                  Predict                                   #
 ##############################################################################
+def predict_and_evaluate(preprocessor, deeplog, data_path, k=9):
+    """
+    使用 DeepLog 模型對指定路徑的數據進行預測並評估異常率。
 
-data_path = "./data/IDS2018_test_abnormal_Infiltration"
+    參數：
+    - preprocessor: Preprocessor 的實例。
+    - deeplog: DeepLog 的實例。
+    - data_path: 要進行預測的數據文件路徑。
+    - k: 預測時考慮的最可能事件數量。
 
-# Load data from csv file
-#Xp, yp, label, mapping_p = preprocessor.csv("/home/ubuntu/DeepLog/examples/data/hdfs_train")
-# Load data from txt file
-Xp, yp, label, mapping_p = preprocessor.text(data_path)
-print("Xp:", Xp, "\nShape:", X.shape, "\nmapping_p:", mapping_p)
+    返回：
+    - abnormal_rate: 計算得到的異常率。
+    """
+    # Load data from text file
+    Xp, yp, label, mapping_p = preprocessor.text(data_path, verbose=True)
+    print("Xp:", Xp, "\nShape:", Xp.shape, "\nmapping_p:", mapping_p)
 
-# Predict using deeplog
-y_pred, confidence = deeplog.predict(
-    X = Xp,
-    k = 9,
-)
+    # Predict using deeplog
+    y_pred, confidence = deeplog.predict(X=Xp, k=k)
+    print("y_pred:", y_pred, "\nshape:", y_pred.shape)
 
-print("y_pred:", y_pred, "\nshape:", y_pred.shape)
+    # Load test data for comparison
+    with open(data_path, 'r') as file:
+        data = file.readlines()
 
-##############################################################################
-#                                 Comparison                                 #
-##############################################################################
+    cleaned_data = [item.strip() for item in data]
+    data = [item for sublist in cleaned_data for item in sublist.split()]
 
-# 讀取測試文件
-with open(data_path, 'r') as file:
-    data = file.readlines()
+    print("data:", data, "\nsize:", len(data))
 
-cleaned_data = [item.strip() for item in data]
+    # Reverse the mapping
+    reverse_mapping = {v: k for k, v in mapping_p.items()}
 
-# 使用列表推導式分隔每個字串，並將結果扁平化形成一個新的串列
-data = [item for sublist in cleaned_data for item in sublist.split()]
+    # Map the events
+    mapped_data = [reverse_mapping[int(event)] for event in data]
 
-print("data:", data, "\nsize:", len(data))
+    print("mapped_data:", mapped_data, "\nsize:", len(mapped_data))
 
-# 反轉 mapping，以便我們可以根據事件ID找到對應的編號
-reverse_mapping = {v: k for k, v in mapping_p.items()}
+    # Initialize a list for comparison results
+    results = [1 if reverse_mapping[int(data[i])] in y_pred[i] else 0 for i in range(len(mapped_data))]
 
-# 轉換 events 列表中的每個字串為數字，然後根據 reverse_mapping 進行映射
-mapped_data = [reverse_mapping[int(event)] for event in data]
+    print("results:", results, "\nsize:", len(results))
 
-print("mapped_data:", mapped_data, "\nsize:", len(mapped_data))
+    # Calculate abnormal rate
+    num_of_zero = results.count(0)
+    abnormal_rate = num_of_zero / len(results)
 
-# 初始化一個零張量，用於存儲比較結果，長度與 test_normal_data 相同
-results = []
+    print("異常率：%.3f" %abnormal_rate)
+    print("predict file: %s" %data_path)
 
-# 遍歷 test_normal_data 的每一行
-for i in range(0, len(mapped_data)):
-    match = False
-    for j in y_pred[i]:
-        if mapped_data[i] == j:
-            match = True
-            break
-    
-    # 如果有匹配，設置結果為1
-    if match:
-        results.append(1)
-    else:
-        results.append(0)
+    return abnormal_rate
 
-print("results:", results, "\nsize:", len(results))
+# 使用範例
+data_paths = ["./data/IDS2018_test_abnormal_Infiltration", "./data/IDS2018_test_abnormal_Bot"]
 
-# 計算列表中0的數量
-num_of_zero = results.count(0)
-print("異常數量：%d" %num_of_zero)
-
-# 計算機率
-abnormal_rate = num_of_zero / len(results)
-
-print("training data: %s" %training_data_path)
-print("predict file: %s" %data_path)
-print("異常率：%.3f" %abnormal_rate)
+for data_path in data_paths:
+    predict_and_evaluate(preprocessor, deeplog, data_path, k=9)
+    print("training file: %s" %training_data_path)
