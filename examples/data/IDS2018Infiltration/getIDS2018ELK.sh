@@ -1,15 +1,31 @@
 #!/bin/bash
 
 # 定義單一索引名稱
-index="ids-2018-infiltration-13"
-#index="ids-2018-infiltration-24"
+# 設定查詢開始和結束日期
+#index="ids-2018-infiltration-13"
+
+#startDate="2018-03-01 09:57"
+#endDate="2018-03-01 10:55"
+
+#startDate="2018-03-01 14:00"
+#endDate="2018-03-01 15:37"
+
+# 定義單一索引名稱
+# 設定查詢開始和結束日期
+index="ids-2018-infiltration-24"
+
+#startDate="2018-02-28 10:50"
+#endDate="2018-02-28 12:05"
+
+startDate="2018-02-28 13:42"
+endDate="2018-02-28 14:40"
 
 # 獲取索引末兩碼
-indexSuffix=$(echo $index | grep -o '...$')
+indexSuffix=$(echo $index | grep -o '..$')
 
-# 設定查詢開始和結束日期
-startDate="2018-03-01 09:57"
-endDate="2018-03-01 10:55"
+# 將 startDate 和 endDate 自動加上 5 小時
+startDate=$(date -d "$startDate 5 hours" +"%Y-%m-%d %H:%M")
+endDate=$(date -d "$endDate 5 hours" +"%Y-%m-%d %H:%M")
 
 # 轉換為秒，用於計算
 startSec=$(date -d "$startDate" +%s)
@@ -31,7 +47,7 @@ for (( currentSec=startSec; currentSec<=endSec; currentSec+=increment )); do
     lte=$(date -d @"$nextSec" +%Y-%m-%dT%H:%M:%S)+08:00
     
     # 輸出檔案名稱，格式為ids2018-{index末兩碼}-{當前時間}.json
-    outputFile="ids2018-${indexSuffix}-$(date -d @"$currentSec" +%Y%m%d-%H%M).json"
+    outputFile="ids2018-${indexSuffix}-$(date -d @"$((currentSec - 5*3600))" +%Y%m%d-%H%M).json"
 
     # 執行查詢
     curl -X GET "http://localhost:9200/${index}/_search?pretty" -H 'Content-Type: application/json' -d'
