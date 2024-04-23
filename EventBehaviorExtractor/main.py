@@ -2,7 +2,7 @@ from DataProcessor_event import DataProcessor
 from DataProcessor_event import EventIDExtractor
 
 #########################
-#     DeepCase 使用     # 
+#      SID 使用         # 
 #########################
 '''
 # 請確保您的文件路徑是正確的，這裡使用原始字串表示法
@@ -19,15 +19,17 @@ processor.run()
 '''
 
 #########################
-#     DeepCase 使用     # 
+#     EventID 使用      # 
 #########################
 
 input_file_path = ['../examples/data/IDS2018Bot', 
                    '../examples/data/IDS2018Infiltration', 
-                   '../examples/data/IDS2018-benign'] 
+                   '../examples/data/IDS2018Benign-test',
+                   '../examples/data/IDS2018Benign'] 
 output_file_path = ['../examples/data/IDS2018_test_abnormal_Bot', 
                     '../examples/data/IDS2018_test_abnormal_Infiltration', 
-                    '../examples/data/IDS2018_train_benign']
+                    '../examples/data/IDS2018_test_Benign',
+                    '../examples/data/IDS2018_train_Benign']
 
 for i in range(len(input_file_path)):
     extractor = EventIDExtractor(input_file_path[i], output_file_path[i])
