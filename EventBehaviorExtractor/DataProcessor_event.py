@@ -53,17 +53,12 @@ class DataProcessor:
         self.write_to_files()
 
 class EventIDExtractor:
-    # 初始化函式，設定輸入檔案路徑和輸出檔案
-    def __init__(self, input_file_path, output_file):
-        self.input_file_path = input_file_path
-        self.output_file = output_file
-
     # 提取事件ID並寫入檔案
-    def extract_event_ids(self):
-        file_names = sorted([f for f in os.listdir(self.input_file_path) if f.endswith('.json')])
-        with open(self.output_file, 'w', encoding='utf-8') as output_file:
+    def extract_event_ids(input_file_path, output_file_path):
+        file_names = sorted([f for f in os.listdir(input_file_path) if f.endswith('.json')])
+        with open(output_file_path, 'w', encoding='utf-8') as output_file:
             for file_name in file_names:
-                file_path = os.path.join(self.input_file_path, file_name)
+                file_path = os.path.join(input_file_path, file_name)
                 with open(file_path, 'r', encoding='utf-8') as file:
                     data = json.load(file)
                     # 提取事件ID並寫入檔案
@@ -71,13 +66,64 @@ class EventIDExtractor:
                                  for item in data['hits']['hits'] 
                                  if 'event_id' in item['_source']['winlog']]
                     output_file.write(' '.join(event_ids) + '\n')
-        print(f'所有 Event IDs 已成功儲存到 "{self.output_file}"。')
+        print(f'所有 Event IDs 已成功儲存到 "{output_file_path}"。')
 
-    # 清理和保存檔案
-    def clean_and_save(self):
-        with open(self.output_file, 'r', encoding='utf-8') as file:
+    # 提取Rule ID並寫入檔案
+    def extract_rule_ids(input_file_path, output_file_path):
+        with open(input_file_path, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+            # 提取 rule 的 id 並寫入檔案
+            event_ids = [str(item['_source']['rule']['id']) 
+                         for item in data['hits']['hits'] 
+                         if 'rule' in item['_source'] and 'id' in item['_source']['rule']]
+        with open(output_file_path, 'w', encoding='utf-8') as output_file:
+            output_file.write(' '.join(event_ids) + '\n')
+        print(f'所有 Rule ID 已成功儲存到 "{output_file_path}"。')
+
+    # 提取Security Event ID並寫入檔案
+    def extract_SEIDS(input_file_path, output_file_path):
+        with open(input_file_path, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+            # 提取 rule 的 id 並寫入檔案
+            event_ids = [str(item['_source']['id']) 
+                         for item in data['hits']['hits'] 
+                         if'id' in item['_source']]
+        with open(output_file_path, 'w', encoding='utf-8') as output_file:
+            output_file.write(' '.join(event_ids) + '\n')
+        print(f'所有 Security Event ID 已成功儲存到 "{output_file_path}"。')
+
+    # 刪除空白檔案(多個檔案轉換合併後包含空白適用)
+    def clean_and_save(output_file_path):
+        with open(output_file_path, 'r', encoding='utf-8') as file:
             lines = file.readlines()
         cleaned_lines = [line for line in lines if line.strip() != '']
-        with open(self.output_file, 'w', encoding='utf-8') as file:
+        with open(output_file_path, 'w', encoding='utf-8') as file:
             file.writelines(cleaned_lines)
-        print(f'已整理檔案並儲存到 {self.output_file}')
+        print(f'已整理檔案並儲存到 {output_file_path}')
+
+    # 刪除僅包含換行符號的檔案
+    def delete_empty_file(output_file_path):
+        with open(output_file_path, 'r', encoding='utf-8') as file:
+            content = file.read().strip()
+        
+        if not content:
+            os.remove(output_file_path)
+            print(f'空白或僅包含換行符號的檔案 "{output_file_path}" 已被刪除。')
+        else:
+            print(f'檔案 "{output_file_path}" 不是空白的。')
+
+    def merge_data(directory, output_file):
+        # 獲取資料夾中的所有檔案名稱，並按名稱排序
+        files = sorted([f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f)) and '.' not in f])
+        
+        with open(output_file, 'w', encoding='utf-8') as outfile:
+            for filename in files:
+                file_path = os.path.join(directory, filename)
+                with open(file_path, 'r', encoding='utf-8') as infile:
+                    content = infile.read()
+                    outfile.write(content + '\n')
+                # 刪除原始檔案
+                os.remove(file_path)
+                print(f'已刪除檔案: {file_path}')
+        
+        print(f'所有檔案已成功合併到 "{output_file}" 並刪除原始檔案。')
