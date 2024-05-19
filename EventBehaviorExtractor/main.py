@@ -1,8 +1,23 @@
+import os
 from DataProcessor_event import DataProcessor
 from DataProcessor_event import EventIDExtractor
 
+def get_json_filefolder(directory):
+    # 創建一個空串列來存儲JSON檔案名稱
+    json_files = []
+
+    # 遍歷資料夾中的所有文件
+    for filename in os.listdir(directory):
+        # 檢查文件是否為JSON檔案
+        if filename.endswith('.json'):
+            json_files.append(directory + "/" + filename)
+    
+    json_files.sort()
+
+    return json_files
+
 #########################
-#      SID 使用         # 
+#       SID 使用        # 
 #########################
 '''
 # 請確保您的文件路徑是正確的，這裡使用原始字串表示法
@@ -19,19 +34,47 @@ processor.run()
 '''
 
 #########################
-#     EventID 使用      # 
+#   Event/rule ID 使用  #
 #########################
 
-input_file_path = ['../examples/data/IDS2018Bot', 
-                   '../examples/data/IDS2018Infiltration', 
-                   '../examples/data/IDS2018Benign-test',
-                   '../examples/data/IDS2018Benign'] 
-output_file_path = ['../examples/data/IDS2018_test_abnormal_Bot', 
-                    '../examples/data/IDS2018_test_abnormal_Infiltration', 
-                    '../examples/data/IDS2018_test_Benign',
-                    '../examples/data/IDS2018_train_Benign']
+filefolder_path = "../data/wazuh-20240519"
+input_file_path = get_json_filefolder(filefolder_path) 
+head, sep, tail = filefolder_path.rpartition('/')
+foldername = tail
+output_file_path = '../data/convertData/'+ foldername
 
 for i in range(len(input_file_path)):
-    extractor = EventIDExtractor(input_file_path[i], output_file_path[i])
-    extractor.extract_event_ids()
-    extractor.clean_and_save()
+    head, sep, tail = input_file_path[i].rpartition('/')
+    filename = tail[:-5]
+
+    outputFileName = output_file_path + "-" + filename + "-ruleID"
+    EventIDExtractor.extract_rule_ids(input_file_path[i], outputFileName)
+    EventIDExtractor.delete_empty_file(outputFileName)
+
+    outputFileName = output_file_path + "-" + filename + "-SEID"
+    EventIDExtractor.extract_SEIDS(input_file_path[i], outputFileName)
+    EventIDExtractor.delete_empty_file(outputFileName)
+
+#########################
+#   Training data 使用  # 
+#########################
+'''
+filefolder_path = "../data/wazuh-trainingData"
+input_file_path = get_json_filefolder(filefolder_path) 
+head, sep, tail = filefolder_path.rpartition('/')
+foldername = tail
+output_file_path = '../data/convertDataTraining/'+ foldername
+
+for i in range(len(input_file_path)):
+    head, sep, tail = input_file_path[i].rpartition('/')
+    filename = tail[:-5]
+
+    outputFileName = output_file_path + "-" + filename + "-ruleID"
+    EventIDExtractor.extract_rule_ids(input_file_path[i], outputFileName)
+    EventIDExtractor.delete_empty_file(outputFileName)
+
+filefolder_path = "../data/convertDataTraining"
+output_file_path = '../data/convertDataTraining/' + "wazuh_training_data"
+EventIDExtractor.merge_data(filefolder_path, output_file_path)
+EventIDExtractor.clean_and_save(output_file_path)
+'''
