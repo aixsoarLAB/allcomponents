@@ -1,0 +1,372 @@
+{
+  "took" : 16,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 18,
+    "successful" : 18,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 5,
+      "relation" : "eq"
+    },
+    "max_score" : 0.0,
+    "hits" : [
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.18",
+        "_id" : "0IlvjI8Bfeo9SynnNuLd",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "rule" : {
+            "firedtimes" : 3,
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.5.2",
+              "10.5.5"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.1",
+              "CC7.2",
+              "CC7.3",
+              "PI1.4",
+              "PI1.5",
+              "CC7.1",
+              "CC8.1"
+            ],
+            "description" : "Log file rotated.",
+            "groups" : [
+              "ossec"
+            ],
+            "id" : "591",
+            "nist_800_53" : [
+              "AU.9"
+            ],
+            "gpg13" : [
+              "10.1"
+            ],
+            "gdpr" : [
+              "II_5.1.f",
+              "IV_35.7.d"
+            ]
+          },
+          "decoder" : {
+            "name" : "ossec"
+          },
+          "full_log" : "ossec: File rotated (inode changed): '/var/log/kern.log'.",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-18T16:00:38.585Z",
+          "location" : "logcollector",
+          "id" : "1716048038.730",
+          "timestamp" : "2024-05-19T00:00:38.585+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.18",
+        "_id" : "0YlvjI8Bfeo9SynnNuLd",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "sshd",
+            "timestamp" : "May 19 00:00:40"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "uid" : "0",
+            "dstuser" : "ubuntu(uid=1000)"
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "PAM: Login session opened.",
+            "groups" : [
+              "pam",
+              "syslog",
+              "authentication_success"
+            ],
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 1,
+            "mitre" : {
+              "technique" : [
+                "Valid Accounts"
+              ],
+              "id" : [
+                "T1078"
+              ],
+              "tactic" : [
+                "Defense Evasion",
+                "Persistence",
+                "Privilege Escalation",
+                "Initial Access"
+              ]
+            },
+            "id" : "5501",
+            "gpg13" : [
+              "7.8",
+              "7.9"
+            ]
+          },
+          "decoder" : {
+            "parent" : "pam",
+            "name" : "pam"
+          },
+          "full_log" : "May 19 00:00:40 ubuntu-virtual-machine sshd[5746]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by (uid=0)",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-18T16:00:41.457Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1716048041.1097",
+          "timestamp" : "2024-05-19T00:00:41.457+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.18",
+        "_id" : "zolvjI8Bfeo9SynnNuLd",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "rule" : {
+            "firedtimes" : 1,
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.5.2",
+              "10.5.5"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.1",
+              "CC7.2",
+              "CC7.3",
+              "PI1.4",
+              "PI1.5",
+              "CC7.1",
+              "CC8.1"
+            ],
+            "description" : "Log file rotated.",
+            "groups" : [
+              "ossec"
+            ],
+            "id" : "591",
+            "nist_800_53" : [
+              "AU.9"
+            ],
+            "gpg13" : [
+              "10.1"
+            ],
+            "gdpr" : [
+              "II_5.1.f",
+              "IV_35.7.d"
+            ]
+          },
+          "decoder" : {
+            "name" : "ossec"
+          },
+          "full_log" : "ossec: File rotated (inode changed): '/var/log/auth.log'.",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-18T16:00:38.585Z",
+          "location" : "logcollector",
+          "id" : "1716048038.0",
+          "timestamp" : "2024-05-19T00:00:38.585+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.18",
+        "_id" : "z4lvjI8Bfeo9SynnNuLd",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "rule" : {
+            "firedtimes" : 2,
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.5.2",
+              "10.5.5"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.1",
+              "CC7.2",
+              "CC7.3",
+              "PI1.4",
+              "PI1.5",
+              "CC7.1",
+              "CC8.1"
+            ],
+            "description" : "Log file rotated.",
+            "groups" : [
+              "ossec"
+            ],
+            "id" : "591",
+            "nist_800_53" : [
+              "AU.9"
+            ],
+            "gpg13" : [
+              "10.1"
+            ],
+            "gdpr" : [
+              "II_5.1.f",
+              "IV_35.7.d"
+            ]
+          },
+          "decoder" : {
+            "name" : "ossec"
+          },
+          "full_log" : "ossec: File rotated (inode changed): '/var/log/syslog'.",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-18T16:00:38.585Z",
+          "location" : "logcollector",
+          "id" : "1716048038.365",
+          "timestamp" : "2024-05-19T00:00:38.585+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.18",
+        "_id" : "0olvjI8Bfeo9SynnNuLd",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "sshd",
+            "timestamp" : "May 19 00:00:40"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "srcip" : "192.168.1.216",
+            "dstuser" : "ubuntu",
+            "srcport" : "65486"
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "sshd: authentication success.",
+            "groups" : [
+              "syslog",
+              "sshd",
+              "authentication_success"
+            ],
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 1,
+            "mitre" : {
+              "technique" : [
+                "Valid Accounts",
+                "Remote Services"
+              ],
+              "id" : [
+                "T1078",
+                "T1021"
+              ],
+              "tactic" : [
+                "Defense Evasion",
+                "Persistence",
+                "Privilege Escalation",
+                "Initial Access",
+                "Lateral Movement"
+              ]
+            },
+            "id" : "5715",
+            "gpg13" : [
+              "7.1",
+              "7.2"
+            ]
+          },
+          "decoder" : {
+            "parent" : "sshd",
+            "name" : "sshd"
+          },
+          "full_log" : "May 19 00:00:40 ubuntu-virtual-machine sshd[5746]: Accepted password for ubuntu from 192.168.1.216 port 65486 ssh2",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-18T16:00:41.457Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1716048041.1563",
+          "timestamp" : "2024-05-19T00:00:41.457+0800"
+        }
+      }
+    ]
+  }
+}

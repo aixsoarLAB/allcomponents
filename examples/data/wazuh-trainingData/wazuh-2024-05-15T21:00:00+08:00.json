@@ -1,0 +1,243 @@
+{
+  "took" : 19,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 18,
+    "successful" : 18,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 4,
+      "relation" : "eq"
+    },
+    "max_score" : 0.0,
+    "hits" : [
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.15",
+        "_id" : "bjGefI8BQbRLUgoqNNem",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "pkexec",
+            "timestamp" : "May 15 22:18:03"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "uid" : "1000",
+            "dstuser" : "root(uid=0)"
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "PAM: Login session opened.",
+            "groups" : [
+              "pam",
+              "syslog",
+              "authentication_success"
+            ],
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 1,
+            "mitre" : {
+              "technique" : [
+                "Valid Accounts"
+              ],
+              "id" : [
+                "T1078"
+              ],
+              "tactic" : [
+                "Defense Evasion",
+                "Persistence",
+                "Privilege Escalation",
+                "Initial Access"
+              ]
+            },
+            "id" : "5501",
+            "gpg13" : [
+              "7.8",
+              "7.9"
+            ]
+          },
+          "decoder" : {
+            "parent" : "pam",
+            "name" : "pam"
+          },
+          "full_log" : "May 15 22:18:03 ubuntu-virtual-machine pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by (uid=1000)",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-15T14:18:04.848Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1715782684.25708",
+          "timestamp" : "2024-05-15T22:18:04.848+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.15",
+        "_id" : "71-IgY8BwCm8j6USS2qb",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "systemd",
+            "timestamp" : "May 15 23:12:33"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "rule" : {
+            "firedtimes" : 2,
+            "mail" : false,
+            "level" : 5,
+            "description" : "Systemd: Service exited due to a failure.",
+            "groups" : [
+              "local",
+              "systemd"
+            ],
+            "id" : "40704",
+            "gpg13" : [
+              "4.3"
+            ],
+            "gdpr" : [
+              "IV_35.7.d"
+            ]
+          },
+          "decoder" : {
+            "name" : "systemd"
+          },
+          "full_log" : "May 15 23:12:33 ubuntu-virtual-machine systemd[2038]: xdg-desktop-portal-gnome.service: Main process exited, code=exited, status=1/FAILURE",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-15T15:12:34.113Z",
+          "location" : "/var/log/syslog",
+          "id" : "1715785954.26508",
+          "timestamp" : "2024-05-15T23:12:34.113+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.15",
+        "_id" : "8F-IgY8BwCm8j6USS2qb",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "systemd",
+            "timestamp" : "May 15 23:12:33"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "rule" : {
+            "firedtimes" : 3,
+            "mail" : false,
+            "level" : 5,
+            "description" : "Systemd: Service exited due to a failure.",
+            "groups" : [
+              "local",
+              "systemd"
+            ],
+            "id" : "40704",
+            "gpg13" : [
+              "4.3"
+            ],
+            "gdpr" : [
+              "IV_35.7.d"
+            ]
+          },
+          "decoder" : {
+            "name" : "systemd"
+          },
+          "full_log" : "May 15 23:12:33 ubuntu-virtual-machine systemd[2038]: xdg-permission-store.service: Main process exited, code=exited, status=1/FAILURE",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-15T15:12:34.116Z",
+          "location" : "/var/log/syslog",
+          "id" : "1715785954.26847",
+          "timestamp" : "2024-05-15T23:12:34.116+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.15",
+        "_id" : "7l-IgY8BwCm8j6USS2pK",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "systemd",
+            "timestamp" : "May 15 23:12:33"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "rule" : {
+            "firedtimes" : 1,
+            "mail" : false,
+            "level" : 5,
+            "description" : "Systemd: Service exited due to a failure.",
+            "groups" : [
+              "local",
+              "systemd"
+            ],
+            "id" : "40704",
+            "gpg13" : [
+              "4.3"
+            ],
+            "gdpr" : [
+              "IV_35.7.d"
+            ]
+          },
+          "decoder" : {
+            "name" : "systemd"
+          },
+          "full_log" : "May 15 23:12:33 ubuntu-virtual-machine systemd[2038]: xdg-desktop-portal-gtk.service: Main process exited, code=exited, status=1/FAILURE",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-15T15:12:34.112Z",
+          "location" : "/var/log/syslog",
+          "id" : "1715785954.26171",
+          "timestamp" : "2024-05-15T23:12:34.112+0800"
+        }
+      }
+    ]
+  }
+}

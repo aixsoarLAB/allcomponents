@@ -1,0 +1,1985 @@
+{
+  "took" : 12,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 18,
+    "successful" : 18,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 26,
+      "relation" : "eq"
+    },
+    "max_score" : 0.0,
+    "hits" : [
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.16",
+        "_id" : "D5U2go8Bb7zc5dLBQ6dC",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "sudo",
+            "timestamp" : "May 17 00:22:20"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "srcuser" : "root",
+            "dstuser" : "root",
+            "tty" : "pts/1",
+            "pwd" : "/var/ossec/api/configuration",
+            "command" : "/usr/bin/systemctl restart wazuh-api"
+          },
+          "rule" : {
+            "firedtimes" : 1,
+            "mail" : false,
+            "level" : 4,
+            "description" : "First time user executed sudo.",
+            "groups" : [
+              "syslog",
+              "sudo"
+            ],
+            "mitre" : {
+              "technique" : [
+                "Sudo and Sudo Caching"
+              ],
+              "id" : [
+                "T1548.003"
+              ],
+              "tactic" : [
+                "Privilege Escalation",
+                "Defense Evasion"
+              ]
+            },
+            "id" : "5403"
+          },
+          "decoder" : {
+            "parent" : "sudo",
+            "name" : "sudo",
+            "ftscomment" : "First time user executed the sudo command"
+          },
+          "full_log" : "May 17 00:22:20 ubuntu-virtual-machine sudo:     root : TTY=pts/1 ; PWD=/var/ossec/api/configuration ; USER=root ; COMMAND=/usr/bin/systemctl restart wazuh-api",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-16T16:22:20.687Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1715876540.2133",
+          "timestamp" : "2024-05-17T00:22:20.687+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.16",
+        "_id" : "EJU2go8Bb7zc5dLBQ6dC",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "sudo",
+            "timestamp" : "May 17 00:22:20"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "srcuser" : "ubuntu",
+            "uid" : "0",
+            "dstuser" : "root(uid=0)"
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "PAM: Login session opened.",
+            "groups" : [
+              "pam",
+              "syslog",
+              "authentication_success"
+            ],
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 2,
+            "mitre" : {
+              "technique" : [
+                "Valid Accounts"
+              ],
+              "id" : [
+                "T1078"
+              ],
+              "tactic" : [
+                "Defense Evasion",
+                "Persistence",
+                "Privilege Escalation",
+                "Initial Access"
+              ]
+            },
+            "id" : "5501",
+            "gpg13" : [
+              "7.8",
+              "7.9"
+            ]
+          },
+          "decoder" : {
+            "parent" : "pam",
+            "name" : "pam"
+          },
+          "full_log" : "May 17 00:22:20 ubuntu-virtual-machine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=0)",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-16T16:22:20.687Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1715876540.2557",
+          "timestamp" : "2024-05-17T00:22:20.687+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.16",
+        "_id" : "CpUvgo8Bb7zc5dLB2qeT",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "sudo",
+            "timestamp" : "May 17 00:15:20"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "uid" : "1000",
+            "dstuser" : "root(uid=0)"
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "PAM: Login session opened.",
+            "groups" : [
+              "pam",
+              "syslog",
+              "authentication_success"
+            ],
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 1,
+            "mitre" : {
+              "technique" : [
+                "Valid Accounts"
+              ],
+              "id" : [
+                "T1078"
+              ],
+              "tactic" : [
+                "Defense Evasion",
+                "Persistence",
+                "Privilege Escalation",
+                "Initial Access"
+              ]
+            },
+            "id" : "5501",
+            "gpg13" : [
+              "7.8",
+              "7.9"
+            ]
+          },
+          "decoder" : {
+            "parent" : "pam",
+            "name" : "pam"
+          },
+          "full_log" : "May 17 00:15:20 ubuntu-virtual-machine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-16T16:15:22.246Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1715876122.786",
+          "timestamp" : "2024-05-17T00:15:22.246+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.16",
+        "_id" : "C5Uvgo8Bb7zc5dLB2qeT",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "sudo",
+            "timestamp" : "May 17 00:15:20"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "srcuser" : "ubuntu",
+            "dstuser" : "root",
+            "tty" : "pts/0",
+            "pwd" : "/var",
+            "command" : "/bin/bash"
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.2.5",
+              "10.2.2"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "Successful sudo to ROOT executed.",
+            "groups" : [
+              "syslog",
+              "sudo"
+            ],
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7",
+              "AC.6"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 1,
+            "mitre" : {
+              "technique" : [
+                "Sudo and Sudo Caching"
+              ],
+              "id" : [
+                "T1548.003"
+              ],
+              "tactic" : [
+                "Privilege Escalation",
+                "Defense Evasion"
+              ]
+            },
+            "id" : "5402",
+            "gpg13" : [
+              "7.6",
+              "7.8",
+              "7.13"
+            ]
+          },
+          "decoder" : {
+            "parent" : "sudo",
+            "name" : "sudo",
+            "ftscomment" : "First time user executed the sudo command"
+          },
+          "full_log" : "May 17 00:15:20 ubuntu-virtual-machine sudo:   ubuntu : TTY=pts/0 ; PWD=/var ; USER=root ; COMMAND=/bin/bash",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-16T16:15:22.246Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1715876122.1241",
+          "timestamp" : "2024-05-17T00:15:22.246+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.16",
+        "_id" : "E5U7go8Bb7zc5dLBmqeA",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "sudo",
+            "timestamp" : "May 17 00:28:04"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "dstuser" : "root"
+          },
+          "rule" : {
+            "firedtimes" : 2,
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "PAM: Login session closed.",
+            "groups" : [
+              "pam",
+              "syslog"
+            ],
+            "id" : "5502",
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7"
+            ],
+            "gpg13" : [
+              "7.8",
+              "7.9"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ]
+          },
+          "decoder" : {
+            "parent" : "pam",
+            "name" : "pam"
+          },
+          "full_log" : "May 17 00:28:04 ubuntu-virtual-machine sudo: pam_unix(sudo:session): session closed for user root",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-16T16:28:05.020Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1715876885.3013",
+          "timestamp" : "2024-05-17T00:28:05.020+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.16",
+        "_id" : "GpVJgo8Bb7zc5dLBCKcl",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "sudo",
+            "timestamp" : "May 17 00:42:48"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "uid" : "1000",
+            "dstuser" : "root(uid=0)"
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "PAM: Login session opened.",
+            "groups" : [
+              "pam",
+              "syslog",
+              "authentication_success"
+            ],
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 3,
+            "mitre" : {
+              "technique" : [
+                "Valid Accounts"
+              ],
+              "id" : [
+                "T1078"
+              ],
+              "tactic" : [
+                "Defense Evasion",
+                "Persistence",
+                "Privilege Escalation",
+                "Initial Access"
+              ]
+            },
+            "id" : "5501",
+            "gpg13" : [
+              "7.8",
+              "7.9"
+            ]
+          },
+          "decoder" : {
+            "parent" : "pam",
+            "name" : "pam"
+          },
+          "full_log" : "May 17 00:42:48 ubuntu-virtual-machine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-16T16:42:49.890Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1715877769.3408",
+          "timestamp" : "2024-05-17T00:42:49.890+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.16",
+        "_id" : "G5VJgo8Bb7zc5dLBCKcl",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "sudo",
+            "timestamp" : "May 17 00:42:48"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "srcuser" : "ubuntu",
+            "dstuser" : "root",
+            "tty" : "pts/0",
+            "pwd" : "/home/ubuntu",
+            "command" : "/bin/bash"
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.2.5",
+              "10.2.2"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "Successful sudo to ROOT executed.",
+            "groups" : [
+              "syslog",
+              "sudo"
+            ],
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7",
+              "AC.6"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 2,
+            "mitre" : {
+              "technique" : [
+                "Sudo and Sudo Caching"
+              ],
+              "id" : [
+                "T1548.003"
+              ],
+              "tactic" : [
+                "Privilege Escalation",
+                "Defense Evasion"
+              ]
+            },
+            "id" : "5402",
+            "gpg13" : [
+              "7.6",
+              "7.8",
+              "7.13"
+            ]
+          },
+          "decoder" : {
+            "parent" : "sudo",
+            "name" : "sudo",
+            "ftscomment" : "First time user executed the sudo command"
+          },
+          "full_log" : "May 17 00:42:48 ubuntu-virtual-machine sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/bash",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-16T16:42:49.890Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1715877769.3864",
+          "timestamp" : "2024-05-17T00:42:49.890+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.16",
+        "_id" : "IJVLgo8Bb7zc5dLBUqcS",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "sudo",
+            "timestamp" : "May 17 00:45:21"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "srcuser" : "ubuntu",
+            "dstuser" : "root",
+            "tty" : "pts/0",
+            "pwd" : "/home/ubuntu",
+            "command" : "/usr/bin/systemctl status wazuh-api"
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.2.5",
+              "10.2.2"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "Successful sudo to ROOT executed.",
+            "groups" : [
+              "syslog",
+              "sudo"
+            ],
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7",
+              "AC.6"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 3,
+            "mitre" : {
+              "technique" : [
+                "Sudo and Sudo Caching"
+              ],
+              "id" : [
+                "T1548.003"
+              ],
+              "tactic" : [
+                "Privilege Escalation",
+                "Defense Evasion"
+              ]
+            },
+            "id" : "5402",
+            "gpg13" : [
+              "7.6",
+              "7.8",
+              "7.13"
+            ]
+          },
+          "decoder" : {
+            "parent" : "sudo",
+            "name" : "sudo",
+            "ftscomment" : "First time user executed the sudo command"
+          },
+          "full_log" : "May 17 00:45:21 ubuntu-virtual-machine sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/systemctl status wazuh-api",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-16T16:45:22.042Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1715877922.5167",
+          "timestamp" : "2024-05-17T00:45:22.042+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.16",
+        "_id" : "JJVLgo8Bb7zc5dLBs6e1",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "sudo",
+            "timestamp" : "May 17 00:45:43"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "uid" : "1000",
+            "dstuser" : "root(uid=0)"
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "PAM: Login session opened.",
+            "groups" : [
+              "pam",
+              "syslog",
+              "authentication_success"
+            ],
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 5,
+            "mitre" : {
+              "technique" : [
+                "Valid Accounts"
+              ],
+              "id" : [
+                "T1078"
+              ],
+              "tactic" : [
+                "Defense Evasion",
+                "Persistence",
+                "Privilege Escalation",
+                "Initial Access"
+              ]
+            },
+            "id" : "5501",
+            "gpg13" : [
+              "7.8",
+              "7.9"
+            ]
+          },
+          "decoder" : {
+            "parent" : "pam",
+            "name" : "pam"
+          },
+          "full_log" : "May 17 00:45:43 ubuntu-virtual-machine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-16T16:45:44.066Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1715877944.7144",
+          "timestamp" : "2024-05-17T00:45:44.066+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.16",
+        "_id" : "JZVMgo8Bb7zc5dLBPKdv",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "sudo",
+            "timestamp" : "May 17 00:46:12"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "uid" : "1000",
+            "dstuser" : "root(uid=0)"
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "PAM: Login session opened.",
+            "groups" : [
+              "pam",
+              "syslog",
+              "authentication_success"
+            ],
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 6,
+            "mitre" : {
+              "technique" : [
+                "Valid Accounts"
+              ],
+              "id" : [
+                "T1078"
+              ],
+              "tactic" : [
+                "Defense Evasion",
+                "Persistence",
+                "Privilege Escalation",
+                "Initial Access"
+              ]
+            },
+            "id" : "5501",
+            "gpg13" : [
+              "7.8",
+              "7.9"
+            ]
+          },
+          "decoder" : {
+            "parent" : "pam",
+            "name" : "pam"
+          },
+          "full_log" : "May 17 00:46:12 ubuntu-virtual-machine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-16T16:46:14.095Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1715877974.7600",
+          "timestamp" : "2024-05-17T00:46:14.095+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.16",
+        "_id" : "K5VNgo8Bb7zc5dLBJqfS",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "sudo",
+            "timestamp" : "May 17 00:47:18"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "uid" : "1000",
+            "dstuser" : "root(uid=0)"
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "PAM: Login session opened.",
+            "groups" : [
+              "pam",
+              "syslog",
+              "authentication_success"
+            ],
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 8,
+            "mitre" : {
+              "technique" : [
+                "Valid Accounts"
+              ],
+              "id" : [
+                "T1078"
+              ],
+              "tactic" : [
+                "Defense Evasion",
+                "Persistence",
+                "Privilege Escalation",
+                "Initial Access"
+              ]
+            },
+            "id" : "5501",
+            "gpg13" : [
+              "7.8",
+              "7.9"
+            ]
+          },
+          "decoder" : {
+            "parent" : "pam",
+            "name" : "pam"
+          },
+          "full_log" : "May 17 00:47:18 ubuntu-virtual-machine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-16T16:47:20.158Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1715878040.10374",
+          "timestamp" : "2024-05-17T00:47:20.158+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.16",
+        "_id" : "A5Uigo8Bb7zc5dLBA6d3",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "kernel",
+            "timestamp" : "May 17 00:00:13"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "extra_data" : "capable",
+            "status" : "DENIED"
+          },
+          "rule" : {
+            "firedtimes" : 2,
+            "mail" : false,
+            "level" : 3,
+            "description" : "Apparmor DENIED",
+            "groups" : [
+              "local",
+              "syslog",
+              "apparmor"
+            ],
+            "id" : "52002"
+          },
+          "decoder" : {
+            "parent" : "kernel",
+            "name" : "kernel"
+          },
+          "full_log" : "May 17 00:00:13 ubuntu-virtual-machine kernel: [ 7295.027409] audit: type=1400 audit(1715875213.410:68): apparmor=\"DENIED\" operation=\"capable\" class=\"cap\" profile=\"/usr/sbin/cupsd\" pid=9001 comm=\"cupsd\" capability=12  capname=\"net_admin\"",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-16T16:00:15.397Z",
+          "location" : "/var/log/kern.log",
+          "id" : "1715875215.391",
+          "timestamp" : "2024-05-17T00:00:15.397+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.16",
+        "_id" : "DpU2go8Bb7zc5dLBQ6dC",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "sudo",
+            "timestamp" : "May 17 00:22:20"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "dstuser" : "root"
+          },
+          "rule" : {
+            "firedtimes" : 1,
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "PAM: Login session closed.",
+            "groups" : [
+              "pam",
+              "syslog"
+            ],
+            "id" : "5502",
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7"
+            ],
+            "gpg13" : [
+              "7.8",
+              "7.9"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ]
+          },
+          "decoder" : {
+            "parent" : "pam",
+            "name" : "pam"
+          },
+          "full_log" : "May 17 00:22:20 ubuntu-virtual-machine sudo: pam_unix(sudo:session): session closed for user root",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-16T16:22:20.687Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1715876540.1738",
+          "timestamp" : "2024-05-17T00:22:20.687+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.16",
+        "_id" : "HJVKgo8Bb7zc5dLBLacb",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "sudo",
+            "timestamp" : "May 17 00:44:03"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "dstuser" : "root"
+          },
+          "rule" : {
+            "firedtimes" : 3,
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "PAM: Login session closed.",
+            "groups" : [
+              "pam",
+              "syslog"
+            ],
+            "id" : "5502",
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7"
+            ],
+            "gpg13" : [
+              "7.8",
+              "7.9"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ]
+          },
+          "decoder" : {
+            "parent" : "pam",
+            "name" : "pam"
+          },
+          "full_log" : "May 17 00:44:03 ubuntu-virtual-machine sudo: pam_unix(sudo:session): session closed for user root",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-16T16:44:03.967Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1715877843.4377",
+          "timestamp" : "2024-05-17T00:44:03.967+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.16",
+        "_id" : "IpVLgo8Bb7zc5dLBs6e1",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "sudo",
+            "timestamp" : "May 17 00:45:43"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "srcuser" : "ubuntu",
+            "dstuser" : "root",
+            "tty" : "pts/0",
+            "pwd" : "/home/ubuntu",
+            "command" : "/var/ossec/bin/wazuh-control info"
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.2.5",
+              "10.2.2"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "Successful sudo to ROOT executed.",
+            "groups" : [
+              "syslog",
+              "sudo"
+            ],
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7",
+              "AC.6"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 4,
+            "mitre" : {
+              "technique" : [
+                "Sudo and Sudo Caching"
+              ],
+              "id" : [
+                "T1548.003"
+              ],
+              "tactic" : [
+                "Privilege Escalation",
+                "Defense Evasion"
+              ]
+            },
+            "id" : "5402",
+            "gpg13" : [
+              "7.6",
+              "7.8",
+              "7.13"
+            ]
+          },
+          "decoder" : {
+            "parent" : "sudo",
+            "name" : "sudo",
+            "ftscomment" : "First time user executed the sudo command"
+          },
+          "full_log" : "May 17 00:45:43 ubuntu-virtual-machine sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/var/ossec/bin/wazuh-control info",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-16T16:45:44.066Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1715877944.6188",
+          "timestamp" : "2024-05-17T00:45:44.066+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.16",
+        "_id" : "J5VMgo8Bb7zc5dLBPKdv",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "sudo",
+            "timestamp" : "May 17 00:46:12"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "dstuser" : "root"
+          },
+          "rule" : {
+            "firedtimes" : 6,
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "PAM: Login session closed.",
+            "groups" : [
+              "pam",
+              "syslog"
+            ],
+            "id" : "5502",
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7"
+            ],
+            "gpg13" : [
+              "7.8",
+              "7.9"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ]
+          },
+          "decoder" : {
+            "parent" : "pam",
+            "name" : "pam"
+          },
+          "full_log" : "May 17 00:46:12 ubuntu-virtual-machine sudo: pam_unix(sudo:session): session closed for user root",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-16T16:46:14.095Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1715877974.8603",
+          "timestamp" : "2024-05-17T00:46:14.095+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.16",
+        "_id" : "KJVMgo8Bb7zc5dLBd6cH",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "sudo",
+            "timestamp" : "May 17 00:46:34"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "srcuser" : "ubuntu",
+            "dstuser" : "root",
+            "tty" : "pts/0",
+            "pwd" : "/home/ubuntu",
+            "command" : "/usr/bin/bash -"
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.2.5",
+              "10.2.2"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "Successful sudo to ROOT executed.",
+            "groups" : [
+              "syslog",
+              "sudo"
+            ],
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7",
+              "AC.6"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 6,
+            "mitre" : {
+              "technique" : [
+                "Sudo and Sudo Caching"
+              ],
+              "id" : [
+                "T1548.003"
+              ],
+              "tactic" : [
+                "Privilege Escalation",
+                "Defense Evasion"
+              ]
+            },
+            "id" : "5402",
+            "gpg13" : [
+              "7.6",
+              "7.8",
+              "7.13"
+            ]
+          },
+          "decoder" : {
+            "parent" : "sudo",
+            "name" : "sudo",
+            "ftscomment" : "First time user executed the sudo command"
+          },
+          "full_log" : "May 17 00:46:34 ubuntu-virtual-machine sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/bash -",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-16T16:46:36.115Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1715877996.8998",
+          "timestamp" : "2024-05-17T00:46:36.115+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.16",
+        "_id" : "KpVNgo8Bb7zc5dLBJqfS",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "sudo",
+            "timestamp" : "May 17 00:47:18"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "dstuser" : "root"
+          },
+          "rule" : {
+            "firedtimes" : 7,
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "PAM: Login session closed.",
+            "groups" : [
+              "pam",
+              "syslog"
+            ],
+            "id" : "5502",
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7"
+            ],
+            "gpg13" : [
+              "7.8",
+              "7.9"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ]
+          },
+          "decoder" : {
+            "parent" : "pam",
+            "name" : "pam"
+          },
+          "full_log" : "May 17 00:47:18 ubuntu-virtual-machine sudo: pam_unix(sudo:session): session closed for user root",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-16T16:47:20.158Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1715878040.9979",
+          "timestamp" : "2024-05-17T00:47:20.158+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.16",
+        "_id" : "H5VLgo8Bb7zc5dLBUqcS",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "sudo",
+            "timestamp" : "May 17 00:45:21"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "dstuser" : "root"
+          },
+          "rule" : {
+            "firedtimes" : 4,
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "PAM: Login session closed.",
+            "groups" : [
+              "pam",
+              "syslog"
+            ],
+            "id" : "5502",
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7"
+            ],
+            "gpg13" : [
+              "7.8",
+              "7.9"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ]
+          },
+          "decoder" : {
+            "parent" : "pam",
+            "name" : "pam"
+          },
+          "full_log" : "May 17 00:45:21 ubuntu-virtual-machine sudo: pam_unix(sudo:session): session closed for user root",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-16T16:45:22.042Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1715877922.4772",
+          "timestamp" : "2024-05-17T00:45:22.042+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.16",
+        "_id" : "IZVLgo8Bb7zc5dLBUqcS",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "sudo",
+            "timestamp" : "May 17 00:45:21"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "uid" : "1000",
+            "dstuser" : "root(uid=0)"
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "PAM: Login session opened.",
+            "groups" : [
+              "pam",
+              "syslog",
+              "authentication_success"
+            ],
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 4,
+            "mitre" : {
+              "technique" : [
+                "Valid Accounts"
+              ],
+              "id" : [
+                "T1078"
+              ],
+              "tactic" : [
+                "Defense Evasion",
+                "Persistence",
+                "Privilege Escalation",
+                "Initial Access"
+              ]
+            },
+            "id" : "5501",
+            "gpg13" : [
+              "7.8",
+              "7.9"
+            ]
+          },
+          "decoder" : {
+            "parent" : "pam",
+            "name" : "pam"
+          },
+          "full_log" : "May 17 00:45:21 ubuntu-virtual-machine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-16T16:45:22.042Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1715877922.5732",
+          "timestamp" : "2024-05-17T00:45:22.042+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.16",
+        "_id" : "ApUigo8Bb7zc5dLBA6d3",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "kernel",
+            "timestamp" : "May 17 00:00:13"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "extra_data" : "capable",
+            "status" : "DENIED"
+          },
+          "rule" : {
+            "firedtimes" : 1,
+            "mail" : false,
+            "level" : 3,
+            "description" : "Apparmor DENIED",
+            "groups" : [
+              "local",
+              "syslog",
+              "apparmor"
+            ],
+            "id" : "52002"
+          },
+          "decoder" : {
+            "parent" : "kernel",
+            "name" : "kernel"
+          },
+          "full_log" : "May 17 00:00:13 ubuntu-virtual-machine kernel: [ 7295.027409] audit: type=1400 audit(1715875213.410:68): apparmor=\"DENIED\" operation=\"capable\" class=\"cap\" profile=\"/usr/sbin/cupsd\" pid=9001 comm=\"cupsd\" capability=12  capname=\"net_admin\"",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-16T16:00:15.397Z",
+          "location" : "/var/log/syslog",
+          "id" : "1715875215.0",
+          "timestamp" : "2024-05-17T00:00:15.397+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.16",
+        "_id" : "I5VLgo8Bb7zc5dLBs6e1",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "sudo",
+            "timestamp" : "May 17 00:45:43"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "dstuser" : "root"
+          },
+          "rule" : {
+            "firedtimes" : 5,
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "PAM: Login session closed.",
+            "groups" : [
+              "pam",
+              "syslog"
+            ],
+            "id" : "5502",
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7"
+            ],
+            "gpg13" : [
+              "7.8",
+              "7.9"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ]
+          },
+          "decoder" : {
+            "parent" : "pam",
+            "name" : "pam"
+          },
+          "full_log" : "May 17 00:45:43 ubuntu-virtual-machine sudo: pam_unix(sudo:session): session closed for user root",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-16T16:45:44.066Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1715877944.6749",
+          "timestamp" : "2024-05-17T00:45:44.066+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.16",
+        "_id" : "JpVMgo8Bb7zc5dLBPKdv",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "sudo",
+            "timestamp" : "May 17 00:46:12"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "srcuser" : "ubuntu",
+            "dstuser" : "root",
+            "tty" : "pts/0",
+            "pwd" : "/home/ubuntu",
+            "command" : "/usr/bin/ls /var/ossec/api"
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.2.5",
+              "10.2.2"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "Successful sudo to ROOT executed.",
+            "groups" : [
+              "syslog",
+              "sudo"
+            ],
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7",
+              "AC.6"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 5,
+            "mitre" : {
+              "technique" : [
+                "Sudo and Sudo Caching"
+              ],
+              "id" : [
+                "T1548.003"
+              ],
+              "tactic" : [
+                "Privilege Escalation",
+                "Defense Evasion"
+              ]
+            },
+            "id" : "5402",
+            "gpg13" : [
+              "7.6",
+              "7.8",
+              "7.13"
+            ]
+          },
+          "decoder" : {
+            "parent" : "sudo",
+            "name" : "sudo",
+            "ftscomment" : "First time user executed the sudo command"
+          },
+          "full_log" : "May 17 00:46:12 ubuntu-virtual-machine sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/ls /var/ossec/api",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-16T16:46:14.095Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1715877974.8056",
+          "timestamp" : "2024-05-17T00:46:14.095+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.16",
+        "_id" : "KZVMgo8Bb7zc5dLBd6cH",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "sudo",
+            "timestamp" : "May 17 00:46:34"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "uid" : "1000",
+            "dstuser" : "root(uid=0)"
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "PAM: Login session opened.",
+            "groups" : [
+              "pam",
+              "syslog",
+              "authentication_success"
+            ],
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 7,
+            "mitre" : {
+              "technique" : [
+                "Valid Accounts"
+              ],
+              "id" : [
+                "T1078"
+              ],
+              "tactic" : [
+                "Defense Evasion",
+                "Persistence",
+                "Privilege Escalation",
+                "Initial Access"
+              ]
+            },
+            "id" : "5501",
+            "gpg13" : [
+              "7.8",
+              "7.9"
+            ]
+          },
+          "decoder" : {
+            "parent" : "pam",
+            "name" : "pam"
+          },
+          "full_log" : "May 17 00:46:34 ubuntu-virtual-machine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-16T16:46:36.115Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1715877996.9523",
+          "timestamp" : "2024-05-17T00:46:36.115+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.16",
+        "_id" : "LJVNgo8Bb7zc5dLBJqfS",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "sudo",
+            "timestamp" : "May 17 00:47:18"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "dstuser" : "root"
+          },
+          "rule" : {
+            "firedtimes" : 8,
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "PAM: Login session closed.",
+            "groups" : [
+              "pam",
+              "syslog"
+            ],
+            "id" : "5502",
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7"
+            ],
+            "gpg13" : [
+              "7.8",
+              "7.9"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ]
+          },
+          "decoder" : {
+            "parent" : "pam",
+            "name" : "pam"
+          },
+          "full_log" : "May 17 00:47:18 ubuntu-virtual-machine sudo: pam_unix(sudo:session): session closed for user root",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-16T16:47:20.158Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1715878040.10831",
+          "timestamp" : "2024-05-17T00:47:20.158+0800"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.16",
+        "_id" : "LZVNgo8Bb7zc5dLBJqfS",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "sudo",
+            "timestamp" : "May 17 00:47:18"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "srcuser" : "ubuntu",
+            "dstuser" : "root",
+            "tty" : "pts/0",
+            "pwd" : "/home/ubuntu",
+            "command" : "/usr/bin/apt-get install -y nodejs"
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.2.5",
+              "10.2.2"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "Successful sudo to ROOT executed.",
+            "groups" : [
+              "syslog",
+              "sudo"
+            ],
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7",
+              "AC.6"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 7,
+            "mitre" : {
+              "technique" : [
+                "Sudo and Sudo Caching"
+              ],
+              "id" : [
+                "T1548.003"
+              ],
+              "tactic" : [
+                "Privilege Escalation",
+                "Defense Evasion"
+              ]
+            },
+            "id" : "5402",
+            "gpg13" : [
+              "7.6",
+              "7.8",
+              "7.13"
+            ]
+          },
+          "decoder" : {
+            "parent" : "sudo",
+            "name" : "sudo",
+            "ftscomment" : "First time user executed the sudo command"
+          },
+          "full_log" : "May 17 00:47:18 ubuntu-virtual-machine sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt-get install -y nodejs",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-16T16:47:20.158Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1715878040.11227",
+          "timestamp" : "2024-05-17T00:47:20.158+0800"
+        }
+      }
+    ]
+  }
+}

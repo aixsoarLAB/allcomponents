@@ -1,0 +1,102 @@
+{
+  "took" : 16,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 18,
+    "successful" : 18,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 1,
+      "relation" : "eq"
+    },
+    "max_score" : 0.0,
+    "hits" : [
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.18",
+        "_id" : "IYnjjY8Bfeo9Synn7uRS",
+        "_score" : 0.0,
+        "_source" : {
+          "predecoder" : {
+            "hostname" : "ubuntu-virtual-machine",
+            "program_name" : "pkexec",
+            "timestamp" : "May 19 06:47:48"
+          },
+          "agent" : {
+            "name" : "ubuntu-virtual-machine",
+            "id" : "000"
+          },
+          "manager" : {
+            "name" : "ubuntu-virtual-machine"
+          },
+          "data" : {
+            "uid" : "1000",
+            "dstuser" : "root(uid=0)"
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "PAM: Login session opened.",
+            "groups" : [
+              "pam",
+              "syslog",
+              "authentication_success"
+            ],
+            "nist_800_53" : [
+              "AU.14",
+              "AC.7"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 1,
+            "mitre" : {
+              "technique" : [
+                "Valid Accounts"
+              ],
+              "id" : [
+                "T1078"
+              ],
+              "tactic" : [
+                "Defense Evasion",
+                "Persistence",
+                "Privilege Escalation",
+                "Initial Access"
+              ]
+            },
+            "id" : "5501",
+            "gpg13" : [
+              "7.8",
+              "7.9"
+            ]
+          },
+          "decoder" : {
+            "parent" : "pam",
+            "name" : "pam"
+          },
+          "full_log" : "May 19 06:47:48 ubuntu-virtual-machine pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by (uid=1000)",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-18T22:47:50.047Z",
+          "location" : "/var/log/auth.log",
+          "id" : "1716072470.84212",
+          "timestamp" : "2024-05-19T06:47:50.047+0800"
+        }
+      }
+    ]
+  }
+}
