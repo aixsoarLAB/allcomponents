@@ -37,21 +37,22 @@ processor.run()
 #   Event/rule ID 使用  #
 #########################
 
-filefolder_path = "../data/wazuh-20240519"
+filefolder_path = "../DeepCASE/eventDetection/data/wazuh-20240518"
 input_file_path = get_json_filefolder(filefolder_path) 
 head, sep, tail = filefolder_path.rpartition('/')
 foldername = tail
-output_file_path = '../data/convertData/'+ foldername
+ruleID_output_file_path = '../DeepCASE/eventDetection/data/convertData/ruleID/'+ foldername
+SEID_output_file_path = '../DeepCASE/eventDetection/data/convertData/SEID/'+ foldername
 
 for i in range(len(input_file_path)):
     head, sep, tail = input_file_path[i].rpartition('/')
     filename = tail[:-5]
 
-    outputFileName = output_file_path + "-" + filename + "-ruleID"
+    outputFileName = ruleID_output_file_path + "-" + filename + "-ruleID"
     EventIDExtractor.extract_rule_ids(input_file_path[i], outputFileName)
     EventIDExtractor.delete_empty_file(outputFileName)
 
-    outputFileName = output_file_path + "-" + filename + "-SEID"
+    outputFileName = SEID_output_file_path + "-" + filename + "-SEID"
     EventIDExtractor.extract_SEIDS(input_file_path[i], outputFileName)
     EventIDExtractor.delete_empty_file(outputFileName)
 
@@ -59,11 +60,11 @@ for i in range(len(input_file_path)):
 #   Training data 使用  # 
 #########################
 '''
-filefolder_path = "../data/wazuh-trainingData"
+filefolder_path = "../DeepCASE/eventDetection/data/wazuh-trainingData"
 input_file_path = get_json_filefolder(filefolder_path) 
 head, sep, tail = filefolder_path.rpartition('/')
 foldername = tail
-output_file_path = '../data/convertDataTraining/'+ foldername
+output_file_path = '../DeepCASE/eventDetection/data/convertDataTraining/'+ foldername
 
 for i in range(len(input_file_path)):
     head, sep, tail = input_file_path[i].rpartition('/')
@@ -73,8 +74,8 @@ for i in range(len(input_file_path)):
     EventIDExtractor.extract_rule_ids(input_file_path[i], outputFileName)
     EventIDExtractor.delete_empty_file(outputFileName)
 
-filefolder_path = "../data/convertDataTraining"
-output_file_path = '../data/convertDataTraining/' + "wazuh_training_data"
+filefolder_path = "../DeepCASE/eventDetection/data/convertDataTraining"
+output_file_path = '../DeepCASE/eventDetection/data/convertDataTraining/' + "wazuh_training_data"
 EventIDExtractor.merge_data(filefolder_path, output_file_path)
 EventIDExtractor.clean_and_save(output_file_path)
 '''
