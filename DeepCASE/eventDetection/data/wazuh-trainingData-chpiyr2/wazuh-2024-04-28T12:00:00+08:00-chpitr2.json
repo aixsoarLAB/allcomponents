@@ -1,0 +1,89 @@
+{
+  "took" : 8,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 162,
+    "successful" : 162,
+    "skipped" : 159,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 1,
+      "relation" : "eq"
+    },
+    "max_score" : 0.0,
+    "hits" : [
+      {
+        "_index" : "wazuh-alerts-4.x-2024.04.28",
+        "_id" : "5CzlIo8BwKHU0X25w5Z1",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "ip" : "192.168.78.191",
+            "name" : "chpiyr2",
+            "id" : "014"
+          },
+          "manager" : {
+            "name" : "wazuh-server"
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.6.1",
+              "10.2.6"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC7.2",
+              "CC7.3",
+              "CC6.8"
+            ],
+            "description" : "Wazuh agent disconnected.",
+            "groups" : [
+              "ossec"
+            ],
+            "nist_800_53" : [
+              "AU.6",
+              "AU.14",
+              "AU.5"
+            ],
+            "gdpr" : [
+              "IV_35.7.d"
+            ],
+            "firedtimes" : 1,
+            "mitre" : {
+              "technique" : [
+                "Disable or Modify Tools"
+              ],
+              "id" : [
+                "T1562.001"
+              ],
+              "tactic" : [
+                "Defense Evasion"
+              ]
+            },
+            "id" : "504",
+            "gpg13" : [
+              "10.1"
+            ]
+          },
+          "decoder" : {
+            "name" : "ossec"
+          },
+          "full_log" : "ossec: Agent disconnected: 'chpiyr2-any'.",
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-04-28T04:10:27.111Z",
+          "location" : "wazuh-monitord",
+          "id" : "1714277427.1318753",
+          "timestamp" : "2024-04-28T04:10:27.111+0000"
+        }
+      }
+    ]
+  }
+}

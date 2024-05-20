@@ -1,0 +1,2009 @@
+{
+  "took" : 8,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 162,
+    "successful" : 162,
+    "skipped" : 159,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 18,
+      "relation" : "eq"
+    },
+    "max_score" : 0.0,
+    "hits" : [
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.19",
+        "_id" : "nbTRkY8BSo6fEa2HBVdw",
+        "_score" : 0.0,
+        "_source" : {
+          "cluster" : {
+            "node" : "node01",
+            "name" : "wazuh"
+          },
+          "agent" : {
+            "ip" : "192.168.1.216",
+            "name" : "chpiyr2",
+            "id" : "014"
+          },
+          "manager" : {
+            "name" : "wazuh-server"
+          },
+          "data" : {
+            "win" : {
+              "eventdata" : {
+                "subjectLogonId" : "0x3e7",
+                "subjectDomainName" : "WORKGROUP",
+                "targetLinkedLogonId" : "0x0",
+                "impersonationLevel" : "%%1833",
+                "authenticationPackageName" : "Negotiate",
+                "targetLogonId" : "0x3e7",
+                "logonProcessName" : "Advapi",
+                "logonGuid" : "{00000000-0000-0000-0000-000000000000}",
+                "targetUserName" : "SYSTEM",
+                "keyLength" : "0",
+                "elevatedToken" : "%%1842",
+                "subjectUserSid" : "S-1-5-18",
+                "processId" : "0x6fc",
+                "processName" : "C:\\\\Windows\\\\System32\\\\services.exe",
+                "targetDomainName" : "NT AUTHORITY",
+                "targetUserSid" : "S-1-5-18",
+                "virtualAccount" : "%%1843",
+                "logonType" : "5",
+                "subjectUserName" : "CHPIYR2$"
+              },
+              "system" : {
+                "eventID" : "4624",
+                "keywords" : "0x8020000000000000",
+                "providerGuid" : "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+                "level" : "0",
+                "channel" : "Security",
+                "opcode" : "0",
+                "message" : "\"帳戶已順利登入。\r\n\r\n主體:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\tA帳戶名稱:\t\tCHPIYR2$\r\n\t帳戶網域:\t\tWORKGROUP\r\n\t登入識別碼:\t\t0x3E7\r\n\r\n登入資訊:\r\n\t登入類型:\t\t5\r\n\t受限制的系統管理模式:\t-\r\n\tRemote Credential Guard:\t-\r\n\t虛擬帳戶:\t\t否\r\n\t提高權限的權杖:\t\t是\r\n\r\n模擬層級:\t\t模擬\r\n\r\n新登入:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\t帳戶名稱:\t\tSYSTEM\r\n\t帳戶網域:\t\tNT AUTHORITY\r\n\t登入識別碼:\t\t0x3E7\r\n\t連結的登入識別碼:\t\t0x0\r\n\t網路帳戶名稱:\t-\r\n\t網路帳戶網域:\t-\r\n\t登入 GUID:\t\t{00000000-0000-0000-0000-000000000000}\r\n\r\n處理程序資訊:\r\n\t處理程序識別碼:\t\t0x6fc\r\n\t處理程序名稱:\t\tC:\\Windows\\System32\\services.exe\r\n\r\n網路資訊:\r\n\t工作站名稱:\t-\r\n\t來源網路位址:\t-\r\n\t來源連接埠:\t\t-\r\n\r\n詳細的驗證資訊:\r\n\t登入處理程序:\t\tAdvapi  \r\n\t驗證封裝:\tNegotiate\r\n\t轉送的服務:\t-\r\n\t封裝名稱 (僅 NTLM):\t-\r\n\t金鑰長度:\t\t0\r\n\r\n建立登入工作階段時會產生此事件。它是在所存取的電腦上產生。\r\n\r\n主體欄位指出要求登入之本機系統上的帳戶。這通常是發生在服務 (例如伺服器服務) 或是本機處理程序 (例如 Winlogon.exe 或 Services.exe)。\r\n\r\n登入類型欄位指出發生的登入類型。最常見的類型是 2 (互動式) 與 3 (網路)。\r\n\r\n新登入欄位指出是哪個帳戶建立新登入，例如登入的帳戶。\r\n\r\n網路欄位指出遠端登入要求的來源。工作站名稱並非一律可用，在某些情況下可能會是空白。\r\n\r\n模擬層級欄位指出登入工作階段中的處理程序可以模擬的範圍。\r\n\r\n驗證資訊欄位提供關於此特定登入要求的詳細資訊。\r\n\t- 登入 GUID 是唯一識別碼，可用於關聯這個事件與 KDC 事件。\r\n\t- 轉送的服務指出哪一個中介服務已經加入這個登入要求。\r\n\t- 封裝名稱指出在 NTLM 通訊協定中使用哪一個子協定。\r\n\t- 金鑰長度指出產生的工作階段金鑰長度。如果沒有要求工作階段金鑰則為 0。\"",
+                "version" : "3",
+                "systemTime" : "2024-05-19T17:05:40.3292446Z",
+                "eventRecordID" : "3474548",
+                "threadID" : "50224",
+                "computer" : "CHPIYR2",
+                "task" : "12544",
+                "processID" : "1824",
+                "severityValue" : "AUDIT_SUCCESS",
+                "providerName" : "Microsoft-Windows-Security-Auditing"
+              }
+            }
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "Windows logon success.",
+            "groups" : [
+              "windows",
+              "windows_security",
+              "authentication_success"
+            ],
+            "nist_800_53" : [
+              "AC.7",
+              "AU.14"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 4,
+            "mitre" : {
+              "technique" : [
+                "Valid Accounts"
+              ],
+              "id" : [
+                "T1078"
+              ],
+              "tactic" : [
+                "Defense Evasion",
+                "Persistence",
+                "Privilege Escalation",
+                "Initial Access"
+              ]
+            },
+            "id" : "60106",
+            "gpg13" : [
+              "7.1",
+              "7.2"
+            ]
+          },
+          "decoder" : {
+            "name" : "windows_eventchannel"
+          },
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-19T17:05:39.976Z",
+          "location" : "EventChannel",
+          "id" : "1716138339.11661423",
+          "timestamp" : "2024-05-19T17:05:39.976+0000"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.19",
+        "_id" : "DLTjkY8BSo6fEa2HUWBc",
+        "_score" : 0.0,
+        "_source" : {
+          "cluster" : {
+            "node" : "node01",
+            "name" : "wazuh"
+          },
+          "agent" : {
+            "ip" : "192.168.1.216",
+            "name" : "chpiyr2",
+            "id" : "014"
+          },
+          "manager" : {
+            "name" : "wazuh-server"
+          },
+          "data" : {
+            "win" : {
+              "eventdata" : {
+                "subjectLogonId" : "0x3e7",
+                "subjectDomainName" : "WORKGROUP",
+                "targetLinkedLogonId" : "0x0",
+                "impersonationLevel" : "%%1833",
+                "authenticationPackageName" : "Negotiate",
+                "targetLogonId" : "0x3e7",
+                "logonProcessName" : "Advapi",
+                "logonGuid" : "{00000000-0000-0000-0000-000000000000}",
+                "targetUserName" : "SYSTEM",
+                "keyLength" : "0",
+                "elevatedToken" : "%%1842",
+                "subjectUserSid" : "S-1-5-18",
+                "processId" : "0x6fc",
+                "processName" : "C:\\\\Windows\\\\System32\\\\services.exe",
+                "targetDomainName" : "NT AUTHORITY",
+                "targetUserSid" : "S-1-5-18",
+                "virtualAccount" : "%%1843",
+                "logonType" : "5",
+                "subjectUserName" : "CHPIYR2$"
+              },
+              "system" : {
+                "eventID" : "4624",
+                "keywords" : "0x8020000000000000",
+                "providerGuid" : "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+                "level" : "0",
+                "channel" : "Security",
+                "opcode" : "0",
+                "message" : "\"帳戶已順利登入。\r\n\r\n主體:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\tA帳戶名稱:\t\tCHPIYR2$\r\n\t帳戶網域:\t\tWORKGROUP\r\n\t登入識別碼:\t\t0x3E7\r\n\r\n登入資訊:\r\n\t登入類型:\t\t5\r\n\t受限制的系統管理模式:\t-\r\n\tRemote Credential Guard:\t-\r\n\t虛擬帳戶:\t\t否\r\n\t提高權限的權杖:\t\t是\r\n\r\n模擬層級:\t\t模擬\r\n\r\n新登入:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\t帳戶名稱:\t\tSYSTEM\r\n\t帳戶網域:\t\tNT AUTHORITY\r\n\t登入識別碼:\t\t0x3E7\r\n\t連結的登入識別碼:\t\t0x0\r\n\t網路帳戶名稱:\t-\r\n\t網路帳戶網域:\t-\r\n\t登入 GUID:\t\t{00000000-0000-0000-0000-000000000000}\r\n\r\n處理程序資訊:\r\n\t處理程序識別碼:\t\t0x6fc\r\n\t處理程序名稱:\t\tC:\\Windows\\System32\\services.exe\r\n\r\n網路資訊:\r\n\t工作站名稱:\t-\r\n\t來源網路位址:\t-\r\n\t來源連接埠:\t\t-\r\n\r\n詳細的驗證資訊:\r\n\t登入處理程序:\t\tAdvapi  \r\n\t驗證封裝:\tNegotiate\r\n\t轉送的服務:\t-\r\n\t封裝名稱 (僅 NTLM):\t-\r\n\t金鑰長度:\t\t0\r\n\r\n建立登入工作階段時會產生此事件。它是在所存取的電腦上產生。\r\n\r\n主體欄位指出要求登入之本機系統上的帳戶。這通常是發生在服務 (例如伺服器服務) 或是本機處理程序 (例如 Winlogon.exe 或 Services.exe)。\r\n\r\n登入類型欄位指出發生的登入類型。最常見的類型是 2 (互動式) 與 3 (網路)。\r\n\r\n新登入欄位指出是哪個帳戶建立新登入，例如登入的帳戶。\r\n\r\n網路欄位指出遠端登入要求的來源。工作站名稱並非一律可用，在某些情況下可能會是空白。\r\n\r\n模擬層級欄位指出登入工作階段中的處理程序可以模擬的範圍。\r\n\r\n驗證資訊欄位提供關於此特定登入要求的詳細資訊。\r\n\t- 登入 GUID 是唯一識別碼，可用於關聯這個事件與 KDC 事件。\r\n\t- 轉送的服務指出哪一個中介服務已經加入這個登入要求。\r\n\t- 封裝名稱指出在 NTLM 通訊協定中使用哪一個子協定。\r\n\t- 金鑰長度指出產生的工作階段金鑰長度。如果沒有要求工作階段金鑰則為 0。\"",
+                "version" : "3",
+                "systemTime" : "2024-05-19T17:25:37.6925859Z",
+                "eventRecordID" : "3474868",
+                "threadID" : "15388",
+                "computer" : "CHPIYR2",
+                "task" : "12544",
+                "processID" : "1824",
+                "severityValue" : "AUDIT_SUCCESS",
+                "providerName" : "Microsoft-Windows-Security-Auditing"
+              }
+            }
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "Windows logon success.",
+            "groups" : [
+              "windows",
+              "windows_security",
+              "authentication_success"
+            ],
+            "nist_800_53" : [
+              "AC.7",
+              "AU.14"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 38,
+            "mitre" : {
+              "technique" : [
+                "Valid Accounts"
+              ],
+              "id" : [
+                "T1078"
+              ],
+              "tactic" : [
+                "Defense Evasion",
+                "Persistence",
+                "Privilege Escalation",
+                "Initial Access"
+              ]
+            },
+            "id" : "60106",
+            "gpg13" : [
+              "7.1",
+              "7.2"
+            ]
+          },
+          "decoder" : {
+            "name" : "windows_eventchannel"
+          },
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-19T17:25:37.899Z",
+          "location" : "EventChannel",
+          "id" : "1716139537.12986586",
+          "timestamp" : "2024-05-19T17:25:37.899+0000"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.19",
+        "_id" : "CbTikY8BSo6fEa2HyGCi",
+        "_score" : 0.0,
+        "_source" : {
+          "cluster" : {
+            "node" : "node01",
+            "name" : "wazuh"
+          },
+          "agent" : {
+            "ip" : "192.168.1.216",
+            "name" : "chpiyr2",
+            "id" : "014"
+          },
+          "manager" : {
+            "name" : "wazuh-server"
+          },
+          "data" : {
+            "win" : {
+              "eventdata" : {
+                "subjectLogonId" : "0x3e7",
+                "subjectDomainName" : "WORKGROUP",
+                "targetLinkedLogonId" : "0x0",
+                "impersonationLevel" : "%%1833",
+                "authenticationPackageName" : "Negotiate",
+                "targetLogonId" : "0x3e7",
+                "logonProcessName" : "Advapi",
+                "logonGuid" : "{00000000-0000-0000-0000-000000000000}",
+                "targetUserName" : "SYSTEM",
+                "keyLength" : "0",
+                "elevatedToken" : "%%1842",
+                "subjectUserSid" : "S-1-5-18",
+                "processId" : "0x6fc",
+                "processName" : "C:\\\\Windows\\\\System32\\\\services.exe",
+                "targetDomainName" : "NT AUTHORITY",
+                "targetUserSid" : "S-1-5-18",
+                "virtualAccount" : "%%1843",
+                "logonType" : "5",
+                "subjectUserName" : "CHPIYR2$"
+              },
+              "system" : {
+                "eventID" : "4624",
+                "keywords" : "0x8020000000000000",
+                "providerGuid" : "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+                "level" : "0",
+                "channel" : "Security",
+                "opcode" : "0",
+                "message" : "\"帳戶已順利登入。\r\n\r\n主體:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\tA帳戶名稱:\t\tCHPIYR2$\r\n\t帳戶網域:\t\tWORKGROUP\r\n\t登入識別碼:\t\t0x3E7\r\n\r\n登入資訊:\r\n\t登入類型:\t\t5\r\n\t受限制的系統管理模式:\t-\r\n\tRemote Credential Guard:\t-\r\n\t虛擬帳戶:\t\t否\r\n\t提高權限的權杖:\t\t是\r\n\r\n模擬層級:\t\t模擬\r\n\r\n新登入:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\t帳戶名稱:\t\tSYSTEM\r\n\t帳戶網域:\t\tNT AUTHORITY\r\n\t登入識別碼:\t\t0x3E7\r\n\t連結的登入識別碼:\t\t0x0\r\n\t網路帳戶名稱:\t-\r\n\t網路帳戶網域:\t-\r\n\t登入 GUID:\t\t{00000000-0000-0000-0000-000000000000}\r\n\r\n處理程序資訊:\r\n\t處理程序識別碼:\t\t0x6fc\r\n\t處理程序名稱:\t\tC:\\Windows\\System32\\services.exe\r\n\r\n網路資訊:\r\n\t工作站名稱:\t-\r\n\t來源網路位址:\t-\r\n\t來源連接埠:\t\t-\r\n\r\n詳細的驗證資訊:\r\n\t登入處理程序:\t\tAdvapi  \r\n\t驗證封裝:\tNegotiate\r\n\t轉送的服務:\t-\r\n\t封裝名稱 (僅 NTLM):\t-\r\n\t金鑰長度:\t\t0\r\n\r\n建立登入工作階段時會產生此事件。它是在所存取的電腦上產生。\r\n\r\n主體欄位指出要求登入之本機系統上的帳戶。這通常是發生在服務 (例如伺服器服務) 或是本機處理程序 (例如 Winlogon.exe 或 Services.exe)。\r\n\r\n登入類型欄位指出發生的登入類型。最常見的類型是 2 (互動式) 與 3 (網路)。\r\n\r\n新登入欄位指出是哪個帳戶建立新登入，例如登入的帳戶。\r\n\r\n網路欄位指出遠端登入要求的來源。工作站名稱並非一律可用，在某些情況下可能會是空白。\r\n\r\n模擬層級欄位指出登入工作階段中的處理程序可以模擬的範圍。\r\n\r\n驗證資訊欄位提供關於此特定登入要求的詳細資訊。\r\n\t- 登入 GUID 是唯一識別碼，可用於關聯這個事件與 KDC 事件。\r\n\t- 轉送的服務指出哪一個中介服務已經加入這個登入要求。\r\n\t- 封裝名稱指出在 NTLM 通訊協定中使用哪一個子協定。\r\n\t- 金鑰長度指出產生的工作階段金鑰長度。如果沒有要求工作階段金鑰則為 0。\"",
+                "version" : "3",
+                "systemTime" : "2024-05-19T17:25:02.1272737Z",
+                "eventRecordID" : "3474731",
+                "threadID" : "2408",
+                "computer" : "CHPIYR2",
+                "task" : "12544",
+                "processID" : "1824",
+                "severityValue" : "AUDIT_SUCCESS",
+                "providerName" : "Microsoft-Windows-Security-Auditing"
+              }
+            }
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "Windows logon success.",
+            "groups" : [
+              "windows",
+              "windows_security",
+              "authentication_success"
+            ],
+            "nist_800_53" : [
+              "AC.7",
+              "AU.14"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 36,
+            "mitre" : {
+              "technique" : [
+                "Valid Accounts"
+              ],
+              "id" : [
+                "T1078"
+              ],
+              "tactic" : [
+                "Defense Evasion",
+                "Persistence",
+                "Privilege Escalation",
+                "Initial Access"
+              ]
+            },
+            "id" : "60106",
+            "gpg13" : [
+              "7.1",
+              "7.2"
+            ]
+          },
+          "decoder" : {
+            "name" : "windows_eventchannel"
+          },
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-19T17:25:02.322Z",
+          "location" : "EventChannel",
+          "id" : "1716139502.12971068",
+          "timestamp" : "2024-05-19T17:25:02.322+0000"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.19",
+        "_id" : "SLTPkY8BSo6fEa2HRFcy",
+        "_score" : 0.0,
+        "_source" : {
+          "cluster" : {
+            "node" : "node01",
+            "name" : "wazuh"
+          },
+          "agent" : {
+            "ip" : "192.168.1.216",
+            "name" : "chpiyr2",
+            "id" : "014"
+          },
+          "manager" : {
+            "name" : "wazuh-server"
+          },
+          "data" : {
+            "win" : {
+              "eventdata" : {
+                "subjectLogonId" : "0x3e7",
+                "subjectDomainName" : "WORKGROUP",
+                "targetLinkedLogonId" : "0x0",
+                "impersonationLevel" : "%%1833",
+                "authenticationPackageName" : "Negotiate",
+                "targetLogonId" : "0x3e7",
+                "logonProcessName" : "Advapi",
+                "logonGuid" : "{00000000-0000-0000-0000-000000000000}",
+                "targetUserName" : "SYSTEM",
+                "keyLength" : "0",
+                "elevatedToken" : "%%1842",
+                "subjectUserSid" : "S-1-5-18",
+                "processId" : "0x6fc",
+                "processName" : "C:\\\\Windows\\\\System32\\\\services.exe",
+                "targetDomainName" : "NT AUTHORITY",
+                "targetUserSid" : "S-1-5-18",
+                "virtualAccount" : "%%1843",
+                "logonType" : "5",
+                "subjectUserName" : "CHPIYR2$"
+              },
+              "system" : {
+                "eventID" : "4624",
+                "keywords" : "0x8020000000000000",
+                "providerGuid" : "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+                "level" : "0",
+                "channel" : "Security",
+                "opcode" : "0",
+                "message" : "\"帳戶已順利登入。\r\n\r\n主體:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\tA帳戶名稱:\t\tCHPIYR2$\r\n\t帳戶網域:\t\tWORKGROUP\r\n\t登入識別碼:\t\t0x3E7\r\n\r\n登入資訊:\r\n\t登入類型:\t\t5\r\n\t受限制的系統管理模式:\t-\r\n\tRemote Credential Guard:\t-\r\n\t虛擬帳戶:\t\t否\r\n\t提高權限的權杖:\t\t是\r\n\r\n模擬層級:\t\t模擬\r\n\r\n新登入:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\t帳戶名稱:\t\tSYSTEM\r\n\t帳戶網域:\t\tNT AUTHORITY\r\n\t登入識別碼:\t\t0x3E7\r\n\t連結的登入識別碼:\t\t0x0\r\n\t網路帳戶名稱:\t-\r\n\t網路帳戶網域:\t-\r\n\t登入 GUID:\t\t{00000000-0000-0000-0000-000000000000}\r\n\r\n處理程序資訊:\r\n\t處理程序識別碼:\t\t0x6fc\r\n\t處理程序名稱:\t\tC:\\Windows\\System32\\services.exe\r\n\r\n網路資訊:\r\n\t工作站名稱:\t-\r\n\t來源網路位址:\t-\r\n\t來源連接埠:\t\t-\r\n\r\n詳細的驗證資訊:\r\n\t登入處理程序:\t\tAdvapi  \r\n\t驗證封裝:\tNegotiate\r\n\t轉送的服務:\t-\r\n\t封裝名稱 (僅 NTLM):\t-\r\n\t金鑰長度:\t\t0\r\n\r\n建立登入工作階段時會產生此事件。它是在所存取的電腦上產生。\r\n\r\n主體欄位指出要求登入之本機系統上的帳戶。這通常是發生在服務 (例如伺服器服務) 或是本機處理程序 (例如 Winlogon.exe 或 Services.exe)。\r\n\r\n登入類型欄位指出發生的登入類型。最常見的類型是 2 (互動式) 與 3 (網路)。\r\n\r\n新登入欄位指出是哪個帳戶建立新登入，例如登入的帳戶。\r\n\r\n網路欄位指出遠端登入要求的來源。工作站名稱並非一律可用，在某些情況下可能會是空白。\r\n\r\n模擬層級欄位指出登入工作階段中的處理程序可以模擬的範圍。\r\n\r\n驗證資訊欄位提供關於此特定登入要求的詳細資訊。\r\n\t- 登入 GUID 是唯一識別碼，可用於關聯這個事件與 KDC 事件。\r\n\t- 轉送的服務指出哪一個中介服務已經加入這個登入要求。\r\n\t- 封裝名稱指出在 NTLM 通訊協定中使用哪一個子協定。\r\n\t- 金鑰長度指出產生的工作階段金鑰長度。如果沒有要求工作階段金鑰則為 0。\"",
+                "version" : "3",
+                "systemTime" : "2024-05-19T17:03:43.6565001Z",
+                "eventRecordID" : "3474499",
+                "threadID" : "68252",
+                "computer" : "CHPIYR2",
+                "task" : "12544",
+                "processID" : "1824",
+                "severityValue" : "AUDIT_SUCCESS",
+                "providerName" : "Microsoft-Windows-Security-Auditing"
+              }
+            }
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "Windows logon success.",
+            "groups" : [
+              "windows",
+              "windows_security",
+              "authentication_success"
+            ],
+            "nist_800_53" : [
+              "AC.7",
+              "AU.14"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 1,
+            "mitre" : {
+              "technique" : [
+                "Valid Accounts"
+              ],
+              "id" : [
+                "T1078"
+              ],
+              "tactic" : [
+                "Defense Evasion",
+                "Persistence",
+                "Privilege Escalation",
+                "Initial Access"
+              ]
+            },
+            "id" : "60106",
+            "gpg13" : [
+              "7.1",
+              "7.2"
+            ]
+          },
+          "decoder" : {
+            "name" : "windows_eventchannel"
+          },
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-19T17:03:43.853Z",
+          "location" : "EventChannel",
+          "id" : "1716138223.11638324",
+          "timestamp" : "2024-05-19T17:03:43.853+0000"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.19",
+        "_id" : "mrTQkY8BSo6fEa2Ho1fG",
+        "_score" : 0.0,
+        "_source" : {
+          "cluster" : {
+            "node" : "node01",
+            "name" : "wazuh"
+          },
+          "agent" : {
+            "ip" : "192.168.1.216",
+            "name" : "chpiyr2",
+            "id" : "014"
+          },
+          "manager" : {
+            "name" : "wazuh-server"
+          },
+          "data" : {
+            "win" : {
+              "eventdata" : {
+                "subjectLogonId" : "0x3e7",
+                "subjectDomainName" : "WORKGROUP",
+                "targetLinkedLogonId" : "0x0",
+                "impersonationLevel" : "%%1833",
+                "authenticationPackageName" : "Negotiate",
+                "targetLogonId" : "0x3e7",
+                "logonProcessName" : "Advapi",
+                "logonGuid" : "{00000000-0000-0000-0000-000000000000}",
+                "targetUserName" : "SYSTEM",
+                "keyLength" : "0",
+                "elevatedToken" : "%%1842",
+                "subjectUserSid" : "S-1-5-18",
+                "processId" : "0x6fc",
+                "processName" : "C:\\\\Windows\\\\System32\\\\services.exe",
+                "targetDomainName" : "NT AUTHORITY",
+                "targetUserSid" : "S-1-5-18",
+                "virtualAccount" : "%%1843",
+                "logonType" : "5",
+                "subjectUserName" : "CHPIYR2$"
+              },
+              "system" : {
+                "eventID" : "4624",
+                "keywords" : "0x8020000000000000",
+                "providerGuid" : "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+                "level" : "0",
+                "channel" : "Security",
+                "opcode" : "0",
+                "message" : "\"帳戶已順利登入。\r\n\r\n主體:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\tA帳戶名稱:\t\tCHPIYR2$\r\n\t帳戶網域:\t\tWORKGROUP\r\n\t登入識別碼:\t\t0x3E7\r\n\r\n登入資訊:\r\n\t登入類型:\t\t5\r\n\t受限制的系統管理模式:\t-\r\n\tRemote Credential Guard:\t-\r\n\t虛擬帳戶:\t\t否\r\n\t提高權限的權杖:\t\t是\r\n\r\n模擬層級:\t\t模擬\r\n\r\n新登入:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\t帳戶名稱:\t\tSYSTEM\r\n\t帳戶網域:\t\tNT AUTHORITY\r\n\t登入識別碼:\t\t0x3E7\r\n\t連結的登入識別碼:\t\t0x0\r\n\t網路帳戶名稱:\t-\r\n\t網路帳戶網域:\t-\r\n\t登入 GUID:\t\t{00000000-0000-0000-0000-000000000000}\r\n\r\n處理程序資訊:\r\n\t處理程序識別碼:\t\t0x6fc\r\n\t處理程序名稱:\t\tC:\\Windows\\System32\\services.exe\r\n\r\n網路資訊:\r\n\t工作站名稱:\t-\r\n\t來源網路位址:\t-\r\n\t來源連接埠:\t\t-\r\n\r\n詳細的驗證資訊:\r\n\t登入處理程序:\t\tAdvapi  \r\n\t驗證封裝:\tNegotiate\r\n\t轉送的服務:\t-\r\n\t封裝名稱 (僅 NTLM):\t-\r\n\t金鑰長度:\t\t0\r\n\r\n建立登入工作階段時會產生此事件。它是在所存取的電腦上產生。\r\n\r\n主體欄位指出要求登入之本機系統上的帳戶。這通常是發生在服務 (例如伺服器服務) 或是本機處理程序 (例如 Winlogon.exe 或 Services.exe)。\r\n\r\n登入類型欄位指出發生的登入類型。最常見的類型是 2 (互動式) 與 3 (網路)。\r\n\r\n新登入欄位指出是哪個帳戶建立新登入，例如登入的帳戶。\r\n\r\n網路欄位指出遠端登入要求的來源。工作站名稱並非一律可用，在某些情況下可能會是空白。\r\n\r\n模擬層級欄位指出登入工作階段中的處理程序可以模擬的範圍。\r\n\r\n驗證資訊欄位提供關於此特定登入要求的詳細資訊。\r\n\t- 登入 GUID 是唯一識別碼，可用於關聯這個事件與 KDC 事件。\r\n\t- 轉送的服務指出哪一個中介服務已經加入這個登入要求。\r\n\t- 封裝名稱指出在 NTLM 通訊協定中使用哪一個子協定。\r\n\t- 金鑰長度指出產生的工作階段金鑰長度。如果沒有要求工作階段金鑰則為 0。\"",
+                "version" : "3",
+                "systemTime" : "2024-05-19T17:05:11.5069978Z",
+                "eventRecordID" : "3474501",
+                "threadID" : "50224",
+                "computer" : "CHPIYR2",
+                "task" : "12544",
+                "processID" : "1824",
+                "severityValue" : "AUDIT_SUCCESS",
+                "providerName" : "Microsoft-Windows-Security-Auditing"
+              }
+            }
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "Windows logon success.",
+            "groups" : [
+              "windows",
+              "windows_security",
+              "authentication_success"
+            ],
+            "nist_800_53" : [
+              "AC.7",
+              "AU.14"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 2,
+            "mitre" : {
+              "technique" : [
+                "Valid Accounts"
+              ],
+              "id" : [
+                "T1078"
+              ],
+              "tactic" : [
+                "Defense Evasion",
+                "Persistence",
+                "Privilege Escalation",
+                "Initial Access"
+              ]
+            },
+            "id" : "60106",
+            "gpg13" : [
+              "7.1",
+              "7.2"
+            ]
+          },
+          "decoder" : {
+            "name" : "windows_eventchannel"
+          },
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-19T17:05:11.714Z",
+          "location" : "EventChannel",
+          "id" : "1716138311.11646297",
+          "timestamp" : "2024-05-19T17:05:11.714+0000"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.19",
+        "_id" : "rbTbkY8BSo6fEa2HrF44",
+        "_score" : 0.0,
+        "_source" : {
+          "cluster" : {
+            "node" : "node01",
+            "name" : "wazuh"
+          },
+          "agent" : {
+            "ip" : "192.168.1.216",
+            "name" : "chpiyr2",
+            "id" : "014"
+          },
+          "manager" : {
+            "name" : "wazuh-server"
+          },
+          "data" : {
+            "win" : {
+              "eventdata" : {
+                "subjectLogonId" : "0x3e7",
+                "subjectDomainName" : "WORKGROUP",
+                "targetLinkedLogonId" : "0x0",
+                "impersonationLevel" : "%%1833",
+                "authenticationPackageName" : "Negotiate",
+                "targetLogonId" : "0x3e7",
+                "logonProcessName" : "Advapi",
+                "logonGuid" : "{00000000-0000-0000-0000-000000000000}",
+                "targetUserName" : "SYSTEM",
+                "keyLength" : "0",
+                "elevatedToken" : "%%1842",
+                "subjectUserSid" : "S-1-5-18",
+                "processId" : "0x6fc",
+                "processName" : "C:\\\\Windows\\\\System32\\\\services.exe",
+                "targetDomainName" : "NT AUTHORITY",
+                "targetUserSid" : "S-1-5-18",
+                "virtualAccount" : "%%1843",
+                "logonType" : "5",
+                "subjectUserName" : "CHPIYR2$"
+              },
+              "system" : {
+                "eventID" : "4624",
+                "keywords" : "0x8020000000000000",
+                "providerGuid" : "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+                "level" : "0",
+                "channel" : "Security",
+                "opcode" : "0",
+                "message" : "\"帳戶已順利登入。\r\n\r\n主體:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\tA帳戶名稱:\t\tCHPIYR2$\r\n\t帳戶網域:\t\tWORKGROUP\r\n\t登入識別碼:\t\t0x3E7\r\n\r\n登入資訊:\r\n\t登入類型:\t\t5\r\n\t受限制的系統管理模式:\t-\r\n\tRemote Credential Guard:\t-\r\n\t虛擬帳戶:\t\t否\r\n\t提高權限的權杖:\t\t是\r\n\r\n模擬層級:\t\t模擬\r\n\r\n新登入:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\t帳戶名稱:\t\tSYSTEM\r\n\t帳戶網域:\t\tNT AUTHORITY\r\n\t登入識別碼:\t\t0x3E7\r\n\t連結的登入識別碼:\t\t0x0\r\n\t網路帳戶名稱:\t-\r\n\t網路帳戶網域:\t-\r\n\t登入 GUID:\t\t{00000000-0000-0000-0000-000000000000}\r\n\r\n處理程序資訊:\r\n\t處理程序識別碼:\t\t0x6fc\r\n\t處理程序名稱:\t\tC:\\Windows\\System32\\services.exe\r\n\r\n網路資訊:\r\n\t工作站名稱:\t-\r\n\t來源網路位址:\t-\r\n\t來源連接埠:\t\t-\r\n\r\n詳細的驗證資訊:\r\n\t登入處理程序:\t\tAdvapi  \r\n\t驗證封裝:\tNegotiate\r\n\t轉送的服務:\t-\r\n\t封裝名稱 (僅 NTLM):\t-\r\n\t金鑰長度:\t\t0\r\n\r\n建立登入工作階段時會產生此事件。它是在所存取的電腦上產生。\r\n\r\n主體欄位指出要求登入之本機系統上的帳戶。這通常是發生在服務 (例如伺服器服務) 或是本機處理程序 (例如 Winlogon.exe 或 Services.exe)。\r\n\r\n登入類型欄位指出發生的登入類型。最常見的類型是 2 (互動式) 與 3 (網路)。\r\n\r\n新登入欄位指出是哪個帳戶建立新登入，例如登入的帳戶。\r\n\r\n網路欄位指出遠端登入要求的來源。工作站名稱並非一律可用，在某些情況下可能會是空白。\r\n\r\n模擬層級欄位指出登入工作階段中的處理程序可以模擬的範圍。\r\n\r\n驗證資訊欄位提供關於此特定登入要求的詳細資訊。\r\n\t- 登入 GUID 是唯一識別碼，可用於關聯這個事件與 KDC 事件。\r\n\t- 轉送的服務指出哪一個中介服務已經加入這個登入要求。\r\n\t- 封裝名稱指出在 NTLM 通訊協定中使用哪一個子協定。\r\n\t- 金鑰長度指出產生的工作階段金鑰長度。如果沒有要求工作階段金鑰則為 0。\"",
+                "version" : "3",
+                "systemTime" : "2024-05-19T17:17:22.0667101Z",
+                "eventRecordID" : "3474587",
+                "threadID" : "1860",
+                "computer" : "CHPIYR2",
+                "task" : "12544",
+                "processID" : "1824",
+                "severityValue" : "AUDIT_SUCCESS",
+                "providerName" : "Microsoft-Windows-Security-Auditing"
+              }
+            }
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "Windows logon success.",
+            "groups" : [
+              "windows",
+              "windows_security",
+              "authentication_success"
+            ],
+            "nist_800_53" : [
+              "AC.7",
+              "AU.14"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 15,
+            "mitre" : {
+              "technique" : [
+                "Valid Accounts"
+              ],
+              "id" : [
+                "T1078"
+              ],
+              "tactic" : [
+                "Defense Evasion",
+                "Persistence",
+                "Privilege Escalation",
+                "Initial Access"
+              ]
+            },
+            "id" : "60106",
+            "gpg13" : [
+              "7.1",
+              "7.2"
+            ]
+          },
+          "decoder" : {
+            "name" : "windows_eventchannel"
+          },
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-19T17:17:22.269Z",
+          "location" : "EventChannel",
+          "id" : "1716139042.12796849",
+          "timestamp" : "2024-05-19T17:17:22.269+0000"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.19",
+        "_id" : "rrTbkY8BSo6fEa2HsF4g",
+        "_score" : 0.0,
+        "_source" : {
+          "cluster" : {
+            "node" : "node01",
+            "name" : "wazuh"
+          },
+          "agent" : {
+            "ip" : "192.168.1.216",
+            "name" : "chpiyr2",
+            "id" : "014"
+          },
+          "manager" : {
+            "name" : "wazuh-server"
+          },
+          "data" : {
+            "win" : {
+              "eventdata" : {
+                "subjectLogonId" : "0x3e7",
+                "subjectDomainName" : "WORKGROUP",
+                "targetLinkedLogonId" : "0x0",
+                "impersonationLevel" : "%%1833",
+                "authenticationPackageName" : "Negotiate",
+                "targetLogonId" : "0x3e7",
+                "logonProcessName" : "Advapi",
+                "logonGuid" : "{00000000-0000-0000-0000-000000000000}",
+                "targetUserName" : "SYSTEM",
+                "keyLength" : "0",
+                "elevatedToken" : "%%1842",
+                "subjectUserSid" : "S-1-5-18",
+                "processId" : "0x6fc",
+                "processName" : "C:\\\\Windows\\\\System32\\\\services.exe",
+                "targetDomainName" : "NT AUTHORITY",
+                "targetUserSid" : "S-1-5-18",
+                "virtualAccount" : "%%1843",
+                "logonType" : "5",
+                "subjectUserName" : "CHPIYR2$"
+              },
+              "system" : {
+                "eventID" : "4624",
+                "keywords" : "0x8020000000000000",
+                "providerGuid" : "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+                "level" : "0",
+                "channel" : "Security",
+                "opcode" : "0",
+                "message" : "\"帳戶已順利登入。\r\n\r\n主體:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\tA帳戶名稱:\t\tCHPIYR2$\r\n\t帳戶網域:\t\tWORKGROUP\r\n\t登入識別碼:\t\t0x3E7\r\n\r\n登入資訊:\r\n\t登入類型:\t\t5\r\n\t受限制的系統管理模式:\t-\r\n\tRemote Credential Guard:\t-\r\n\t虛擬帳戶:\t\t否\r\n\t提高權限的權杖:\t\t是\r\n\r\n模擬層級:\t\t模擬\r\n\r\n新登入:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\t帳戶名稱:\t\tSYSTEM\r\n\t帳戶網域:\t\tNT AUTHORITY\r\n\t登入識別碼:\t\t0x3E7\r\n\t連結的登入識別碼:\t\t0x0\r\n\t網路帳戶名稱:\t-\r\n\t網路帳戶網域:\t-\r\n\t登入 GUID:\t\t{00000000-0000-0000-0000-000000000000}\r\n\r\n處理程序資訊:\r\n\t處理程序識別碼:\t\t0x6fc\r\n\t處理程序名稱:\t\tC:\\Windows\\System32\\services.exe\r\n\r\n網路資訊:\r\n\t工作站名稱:\t-\r\n\t來源網路位址:\t-\r\n\t來源連接埠:\t\t-\r\n\r\n詳細的驗證資訊:\r\n\t登入處理程序:\t\tAdvapi  \r\n\t驗證封裝:\tNegotiate\r\n\t轉送的服務:\t-\r\n\t封裝名稱 (僅 NTLM):\t-\r\n\t金鑰長度:\t\t0\r\n\r\n建立登入工作階段時會產生此事件。它是在所存取的電腦上產生。\r\n\r\n主體欄位指出要求登入之本機系統上的帳戶。這通常是發生在服務 (例如伺服器服務) 或是本機處理程序 (例如 Winlogon.exe 或 Services.exe)。\r\n\r\n登入類型欄位指出發生的登入類型。最常見的類型是 2 (互動式) 與 3 (網路)。\r\n\r\n新登入欄位指出是哪個帳戶建立新登入，例如登入的帳戶。\r\n\r\n網路欄位指出遠端登入要求的來源。工作站名稱並非一律可用，在某些情況下可能會是空白。\r\n\r\n模擬層級欄位指出登入工作階段中的處理程序可以模擬的範圍。\r\n\r\n驗證資訊欄位提供關於此特定登入要求的詳細資訊。\r\n\t- 登入 GUID 是唯一識別碼，可用於關聯這個事件與 KDC 事件。\r\n\t- 轉送的服務指出哪一個中介服務已經加入這個登入要求。\r\n\t- 封裝名稱指出在 NTLM 通訊協定中使用哪一個子協定。\r\n\t- 金鑰長度指出產生的工作階段金鑰長度。如果沒有要求工作階段金鑰則為 0。\"",
+                "version" : "3",
+                "systemTime" : "2024-05-19T17:17:22.8061391Z",
+                "eventRecordID" : "3474632",
+                "threadID" : "45448",
+                "computer" : "CHPIYR2",
+                "task" : "12544",
+                "processID" : "1824",
+                "severityValue" : "AUDIT_SUCCESS",
+                "providerName" : "Microsoft-Windows-Security-Auditing"
+              }
+            }
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "Windows logon success.",
+            "groups" : [
+              "windows",
+              "windows_security",
+              "authentication_success"
+            ],
+            "nist_800_53" : [
+              "AC.7",
+              "AU.14"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 16,
+            "mitre" : {
+              "technique" : [
+                "Valid Accounts"
+              ],
+              "id" : [
+                "T1078"
+              ],
+              "tactic" : [
+                "Defense Evasion",
+                "Persistence",
+                "Privilege Escalation",
+                "Initial Access"
+              ]
+            },
+            "id" : "60106",
+            "gpg13" : [
+              "7.1",
+              "7.2"
+            ]
+          },
+          "decoder" : {
+            "name" : "windows_eventchannel"
+          },
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-19T17:17:22.522Z",
+          "location" : "EventChannel",
+          "id" : "1716139042.12803720",
+          "timestamp" : "2024-05-19T17:17:22.522+0000"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.19",
+        "_id" : "1rTnkY8BSo6fEa2HPmAv",
+        "_score" : 0.0,
+        "_source" : {
+          "cluster" : {
+            "node" : "node01",
+            "name" : "wazuh"
+          },
+          "agent" : {
+            "ip" : "192.168.1.216",
+            "name" : "chpiyr2",
+            "id" : "014"
+          },
+          "manager" : {
+            "name" : "wazuh-server"
+          },
+          "data" : {
+            "win" : {
+              "eventdata" : {
+                "subjectLogonId" : "0x3e7",
+                "subjectDomainName" : "WORKGROUP",
+                "targetLinkedLogonId" : "0x0",
+                "impersonationLevel" : "%%1833",
+                "authenticationPackageName" : "Negotiate",
+                "targetLogonId" : "0x3e7",
+                "logonProcessName" : "Advapi",
+                "logonGuid" : "{00000000-0000-0000-0000-000000000000}",
+                "targetUserName" : "SYSTEM",
+                "keyLength" : "0",
+                "elevatedToken" : "%%1842",
+                "subjectUserSid" : "S-1-5-18",
+                "processId" : "0x6fc",
+                "processName" : "C:\\\\Windows\\\\System32\\\\services.exe",
+                "targetDomainName" : "NT AUTHORITY",
+                "targetUserSid" : "S-1-5-18",
+                "virtualAccount" : "%%1843",
+                "logonType" : "5",
+                "subjectUserName" : "CHPIYR2$"
+              },
+              "system" : {
+                "eventID" : "4624",
+                "keywords" : "0x8020000000000000",
+                "providerGuid" : "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+                "level" : "0",
+                "channel" : "Security",
+                "opcode" : "0",
+                "message" : "\"帳戶已順利登入。\r\n\r\n主體:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\tA帳戶名稱:\t\tCHPIYR2$\r\n\t帳戶網域:\t\tWORKGROUP\r\n\t登入識別碼:\t\t0x3E7\r\n\r\n登入資訊:\r\n\t登入類型:\t\t5\r\n\t受限制的系統管理模式:\t-\r\n\tRemote Credential Guard:\t-\r\n\t虛擬帳戶:\t\t否\r\n\t提高權限的權杖:\t\t是\r\n\r\n模擬層級:\t\t模擬\r\n\r\n新登入:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\t帳戶名稱:\t\tSYSTEM\r\n\t帳戶網域:\t\tNT AUTHORITY\r\n\t登入識別碼:\t\t0x3E7\r\n\t連結的登入識別碼:\t\t0x0\r\n\t網路帳戶名稱:\t-\r\n\t網路帳戶網域:\t-\r\n\t登入 GUID:\t\t{00000000-0000-0000-0000-000000000000}\r\n\r\n處理程序資訊:\r\n\t處理程序識別碼:\t\t0x6fc\r\n\t處理程序名稱:\t\tC:\\Windows\\System32\\services.exe\r\n\r\n網路資訊:\r\n\t工作站名稱:\t-\r\n\t來源網路位址:\t-\r\n\t來源連接埠:\t\t-\r\n\r\n詳細的驗證資訊:\r\n\t登入處理程序:\t\tAdvapi  \r\n\t驗證封裝:\tNegotiate\r\n\t轉送的服務:\t-\r\n\t封裝名稱 (僅 NTLM):\t-\r\n\t金鑰長度:\t\t0\r\n\r\n建立登入工作階段時會產生此事件。它是在所存取的電腦上產生。\r\n\r\n主體欄位指出要求登入之本機系統上的帳戶。這通常是發生在服務 (例如伺服器服務) 或是本機處理程序 (例如 Winlogon.exe 或 Services.exe)。\r\n\r\n登入類型欄位指出發生的登入類型。最常見的類型是 2 (互動式) 與 3 (網路)。\r\n\r\n新登入欄位指出是哪個帳戶建立新登入，例如登入的帳戶。\r\n\r\n網路欄位指出遠端登入要求的來源。工作站名稱並非一律可用，在某些情況下可能會是空白。\r\n\r\n模擬層級欄位指出登入工作階段中的處理程序可以模擬的範圍。\r\n\r\n驗證資訊欄位提供關於此特定登入要求的詳細資訊。\r\n\t- 登入 GUID 是唯一識別碼，可用於關聯這個事件與 KDC 事件。\r\n\t- 轉送的服務指出哪一個中介服務已經加入這個登入要求。\r\n\t- 封裝名稱指出在 NTLM 通訊協定中使用哪一個子協定。\r\n\t- 金鑰長度指出產生的工作階段金鑰長度。如果沒有要求工作階段金鑰則為 0。\"",
+                "version" : "3",
+                "systemTime" : "2024-05-19T17:29:58.8189282Z",
+                "eventRecordID" : "3474870",
+                "threadID" : "54236",
+                "computer" : "CHPIYR2",
+                "task" : "12544",
+                "processID" : "1824",
+                "severityValue" : "AUDIT_SUCCESS",
+                "providerName" : "Microsoft-Windows-Security-Auditing"
+              }
+            }
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "Windows logon success.",
+            "groups" : [
+              "windows",
+              "windows_security",
+              "authentication_success"
+            ],
+            "nist_800_53" : [
+              "AC.7",
+              "AU.14"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 40,
+            "mitre" : {
+              "technique" : [
+                "Valid Accounts"
+              ],
+              "id" : [
+                "T1078"
+              ],
+              "tactic" : [
+                "Defense Evasion",
+                "Persistence",
+                "Privilege Escalation",
+                "Initial Access"
+              ]
+            },
+            "id" : "60106",
+            "gpg13" : [
+              "7.1",
+              "7.2"
+            ]
+          },
+          "decoder" : {
+            "name" : "windows_eventchannel"
+          },
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-19T17:29:59.005Z",
+          "location" : "EventChannel",
+          "id" : "1716139799.13004284",
+          "timestamp" : "2024-05-19T17:29:59.005+0000"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.19",
+        "_id" : "CLT0kY8BSo6fEa2HSWNI",
+        "_score" : 0.0,
+        "_source" : {
+          "cluster" : {
+            "node" : "node01",
+            "name" : "wazuh"
+          },
+          "agent" : {
+            "ip" : "192.168.1.216",
+            "name" : "chpiyr2",
+            "id" : "014"
+          },
+          "manager" : {
+            "name" : "wazuh-server"
+          },
+          "data" : {
+            "win" : {
+              "eventdata" : {
+                "subjectLogonId" : "0x3e7",
+                "subjectDomainName" : "WORKGROUP",
+                "targetLinkedLogonId" : "0x0",
+                "impersonationLevel" : "%%1833",
+                "authenticationPackageName" : "Negotiate",
+                "targetLogonId" : "0x3e7",
+                "logonProcessName" : "Advapi",
+                "logonGuid" : "{00000000-0000-0000-0000-000000000000}",
+                "targetUserName" : "SYSTEM",
+                "keyLength" : "0",
+                "elevatedToken" : "%%1842",
+                "subjectUserSid" : "S-1-5-18",
+                "processId" : "0x6fc",
+                "processName" : "C:\\\\Windows\\\\System32\\\\services.exe",
+                "targetDomainName" : "NT AUTHORITY",
+                "targetUserSid" : "S-1-5-18",
+                "virtualAccount" : "%%1843",
+                "logonType" : "5",
+                "subjectUserName" : "CHPIYR2$"
+              },
+              "system" : {
+                "eventID" : "4624",
+                "keywords" : "0x8020000000000000",
+                "providerGuid" : "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+                "level" : "0",
+                "channel" : "Security",
+                "opcode" : "0",
+                "message" : "\"帳戶已順利登入。\r\n\r\n主體:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\tA帳戶名稱:\t\tCHPIYR2$\r\n\t帳戶網域:\t\tWORKGROUP\r\n\t登入識別碼:\t\t0x3E7\r\n\r\n登入資訊:\r\n\t登入類型:\t\t5\r\n\t受限制的系統管理模式:\t-\r\n\tRemote Credential Guard:\t-\r\n\t虛擬帳戶:\t\t否\r\n\t提高權限的權杖:\t\t是\r\n\r\n模擬層級:\t\t模擬\r\n\r\n新登入:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\t帳戶名稱:\t\tSYSTEM\r\n\t帳戶網域:\t\tNT AUTHORITY\r\n\t登入識別碼:\t\t0x3E7\r\n\t連結的登入識別碼:\t\t0x0\r\n\t網路帳戶名稱:\t-\r\n\t網路帳戶網域:\t-\r\n\t登入 GUID:\t\t{00000000-0000-0000-0000-000000000000}\r\n\r\n處理程序資訊:\r\n\t處理程序識別碼:\t\t0x6fc\r\n\t處理程序名稱:\t\tC:\\Windows\\System32\\services.exe\r\n\r\n網路資訊:\r\n\t工作站名稱:\t-\r\n\t來源網路位址:\t-\r\n\t來源連接埠:\t\t-\r\n\r\n詳細的驗證資訊:\r\n\t登入處理程序:\t\tAdvapi  \r\n\t驗證封裝:\tNegotiate\r\n\t轉送的服務:\t-\r\n\t封裝名稱 (僅 NTLM):\t-\r\n\t金鑰長度:\t\t0\r\n\r\n建立登入工作階段時會產生此事件。它是在所存取的電腦上產生。\r\n\r\n主體欄位指出要求登入之本機系統上的帳戶。這通常是發生在服務 (例如伺服器服務) 或是本機處理程序 (例如 Winlogon.exe 或 Services.exe)。\r\n\r\n登入類型欄位指出發生的登入類型。最常見的類型是 2 (互動式) 與 3 (網路)。\r\n\r\n新登入欄位指出是哪個帳戶建立新登入，例如登入的帳戶。\r\n\r\n網路欄位指出遠端登入要求的來源。工作站名稱並非一律可用，在某些情況下可能會是空白。\r\n\r\n模擬層級欄位指出登入工作階段中的處理程序可以模擬的範圍。\r\n\r\n驗證資訊欄位提供關於此特定登入要求的詳細資訊。\r\n\t- 登入 GUID 是唯一識別碼，可用於關聯這個事件與 KDC 事件。\r\n\t- 轉送的服務指出哪一個中介服務已經加入這個登入要求。\r\n\t- 封裝名稱指出在 NTLM 通訊協定中使用哪一個子協定。\r\n\t- 金鑰長度指出產生的工作階段金鑰長度。如果沒有要求工作階段金鑰則為 0。\"",
+                "version" : "3",
+                "systemTime" : "2024-05-19T17:44:11.3932779Z",
+                "eventRecordID" : "3474883",
+                "threadID" : "72212",
+                "computer" : "CHPIYR2",
+                "task" : "12544",
+                "processID" : "1824",
+                "severityValue" : "AUDIT_SUCCESS",
+                "providerName" : "Microsoft-Windows-Security-Auditing"
+              }
+            }
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "Windows logon success.",
+            "groups" : [
+              "windows",
+              "windows_security",
+              "authentication_success"
+            ],
+            "nist_800_53" : [
+              "AC.7",
+              "AU.14"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 44,
+            "mitre" : {
+              "technique" : [
+                "Valid Accounts"
+              ],
+              "id" : [
+                "T1078"
+              ],
+              "tactic" : [
+                "Defense Evasion",
+                "Persistence",
+                "Privilege Escalation",
+                "Initial Access"
+              ]
+            },
+            "id" : "60106",
+            "gpg13" : [
+              "7.1",
+              "7.2"
+            ]
+          },
+          "decoder" : {
+            "name" : "windows_eventchannel"
+          },
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-19T17:44:11.576Z",
+          "location" : "EventChannel",
+          "id" : "1716140651.13042054",
+          "timestamp" : "2024-05-19T17:44:11.576+0000"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.19",
+        "_id" : "_LT5kY8BSo6fEa2H7mOk",
+        "_score" : 0.0,
+        "_source" : {
+          "cluster" : {
+            "node" : "node01",
+            "name" : "wazuh"
+          },
+          "agent" : {
+            "ip" : "192.168.1.216",
+            "name" : "chpiyr2",
+            "id" : "014"
+          },
+          "manager" : {
+            "name" : "wazuh-server"
+          },
+          "data" : {
+            "win" : {
+              "eventdata" : {
+                "data" : "2124-04-25T17:50:21Z, RulesEngine"
+              },
+              "system" : {
+                "eventID" : "16384",
+                "eventSourceName" : "Software Protection Platform Service",
+                "keywords" : "0x80000000000000",
+                "providerGuid" : "{E23B33B0-C8C9-472C-A5F9-F2BDFEA0F156}",
+                "level" : "4",
+                "channel" : "Application",
+                "opcode" : "0",
+                "message" : "\"順利排程軟體保護服務在 2124-04-25T17:50:21Z 重新啟動。原因: RulesEngine。\"",
+                "version" : "0",
+                "systemTime" : "2024-05-19T17:50:21.0918098Z",
+                "eventRecordID" : "241147",
+                "threadID" : "0",
+                "computer" : "CHPIYR2",
+                "task" : "0",
+                "processID" : "67236",
+                "severityValue" : "INFORMATION",
+                "providerName" : "Microsoft-Windows-Security-SPP"
+              }
+            }
+          },
+          "rule" : {
+            "firedtimes" : 6,
+            "mail" : false,
+            "level" : 3,
+            "description" : "Software protection service scheduled successfully.",
+            "groups" : [
+              "windows",
+              "windows_application"
+            ],
+            "id" : "60642"
+          },
+          "decoder" : {
+            "name" : "windows_eventchannel"
+          },
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-19T17:50:20.307Z",
+          "location" : "EventChannel",
+          "id" : "1716141020.13071901",
+          "timestamp" : "2024-05-19T17:50:20.307+0000"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.19",
+        "_id" : "nLTRkY8BSo6fEa2HBVdw",
+        "_score" : 0.0,
+        "_source" : {
+          "cluster" : {
+            "node" : "node01",
+            "name" : "wazuh"
+          },
+          "agent" : {
+            "ip" : "192.168.1.216",
+            "name" : "chpiyr2",
+            "id" : "014"
+          },
+          "manager" : {
+            "name" : "wazuh-server"
+          },
+          "data" : {
+            "win" : {
+              "eventdata" : {
+                "subjectLogonId" : "0x3e7",
+                "subjectDomainName" : "WORKGROUP",
+                "targetLinkedLogonId" : "0x0",
+                "impersonationLevel" : "%%1833",
+                "authenticationPackageName" : "Negotiate",
+                "targetLogonId" : "0x3e7",
+                "logonProcessName" : "Advapi",
+                "logonGuid" : "{00000000-0000-0000-0000-000000000000}",
+                "targetUserName" : "SYSTEM",
+                "keyLength" : "0",
+                "elevatedToken" : "%%1842",
+                "subjectUserSid" : "S-1-5-18",
+                "processId" : "0x6fc",
+                "processName" : "C:\\\\Windows\\\\System32\\\\services.exe",
+                "targetDomainName" : "NT AUTHORITY",
+                "targetUserSid" : "S-1-5-18",
+                "virtualAccount" : "%%1843",
+                "logonType" : "5",
+                "subjectUserName" : "CHPIYR2$"
+              },
+              "system" : {
+                "eventID" : "4624",
+                "keywords" : "0x8020000000000000",
+                "providerGuid" : "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+                "level" : "0",
+                "channel" : "Security",
+                "opcode" : "0",
+                "message" : "\"帳戶已順利登入。\r\n\r\n主體:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\tA帳戶名稱:\t\tCHPIYR2$\r\n\t帳戶網域:\t\tWORKGROUP\r\n\t登入識別碼:\t\t0x3E7\r\n\r\n登入資訊:\r\n\t登入類型:\t\t5\r\n\t受限制的系統管理模式:\t-\r\n\tRemote Credential Guard:\t-\r\n\t虛擬帳戶:\t\t否\r\n\t提高權限的權杖:\t\t是\r\n\r\n模擬層級:\t\t模擬\r\n\r\n新登入:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\t帳戶名稱:\t\tSYSTEM\r\n\t帳戶網域:\t\tNT AUTHORITY\r\n\t登入識別碼:\t\t0x3E7\r\n\t連結的登入識別碼:\t\t0x0\r\n\t網路帳戶名稱:\t-\r\n\t網路帳戶網域:\t-\r\n\t登入 GUID:\t\t{00000000-0000-0000-0000-000000000000}\r\n\r\n處理程序資訊:\r\n\t處理程序識別碼:\t\t0x6fc\r\n\t處理程序名稱:\t\tC:\\Windows\\System32\\services.exe\r\n\r\n網路資訊:\r\n\t工作站名稱:\t-\r\n\t來源網路位址:\t-\r\n\t來源連接埠:\t\t-\r\n\r\n詳細的驗證資訊:\r\n\t登入處理程序:\t\tAdvapi  \r\n\t驗證封裝:\tNegotiate\r\n\t轉送的服務:\t-\r\n\t封裝名稱 (僅 NTLM):\t-\r\n\t金鑰長度:\t\t0\r\n\r\n建立登入工作階段時會產生此事件。它是在所存取的電腦上產生。\r\n\r\n主體欄位指出要求登入之本機系統上的帳戶。這通常是發生在服務 (例如伺服器服務) 或是本機處理程序 (例如 Winlogon.exe 或 Services.exe)。\r\n\r\n登入類型欄位指出發生的登入類型。最常見的類型是 2 (互動式) 與 3 (網路)。\r\n\r\n新登入欄位指出是哪個帳戶建立新登入，例如登入的帳戶。\r\n\r\n網路欄位指出遠端登入要求的來源。工作站名稱並非一律可用，在某些情況下可能會是空白。\r\n\r\n模擬層級欄位指出登入工作階段中的處理程序可以模擬的範圍。\r\n\r\n驗證資訊欄位提供關於此特定登入要求的詳細資訊。\r\n\t- 登入 GUID 是唯一識別碼，可用於關聯這個事件與 KDC 事件。\r\n\t- 轉送的服務指出哪一個中介服務已經加入這個登入要求。\r\n\t- 封裝名稱指出在 NTLM 通訊協定中使用哪一個子協定。\r\n\t- 金鑰長度指出產生的工作階段金鑰長度。如果沒有要求工作階段金鑰則為 0。\"",
+                "version" : "3",
+                "systemTime" : "2024-05-19T17:05:39.5289219Z",
+                "eventRecordID" : "3474503",
+                "threadID" : "68252",
+                "computer" : "CHPIYR2",
+                "task" : "12544",
+                "processID" : "1824",
+                "severityValue" : "AUDIT_SUCCESS",
+                "providerName" : "Microsoft-Windows-Security-Auditing"
+              }
+            }
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "Windows logon success.",
+            "groups" : [
+              "windows",
+              "windows_security",
+              "authentication_success"
+            ],
+            "nist_800_53" : [
+              "AC.7",
+              "AU.14"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 3,
+            "mitre" : {
+              "technique" : [
+                "Valid Accounts"
+              ],
+              "id" : [
+                "T1078"
+              ],
+              "tactic" : [
+                "Defense Evasion",
+                "Persistence",
+                "Privilege Escalation",
+                "Initial Access"
+              ]
+            },
+            "id" : "60106",
+            "gpg13" : [
+              "7.1",
+              "7.2"
+            ]
+          },
+          "decoder" : {
+            "name" : "windows_eventchannel"
+          },
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-19T17:05:39.721Z",
+          "location" : "EventChannel",
+          "id" : "1716138339.11654550",
+          "timestamp" : "2024-05-19T17:05:39.721+0000"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.19",
+        "_id" : "OrTTkY8BSo6fEa2H-11g",
+        "_score" : 0.0,
+        "_source" : {
+          "cluster" : {
+            "node" : "node01",
+            "name" : "wazuh"
+          },
+          "agent" : {
+            "ip" : "192.168.1.216",
+            "name" : "chpiyr2",
+            "id" : "014"
+          },
+          "manager" : {
+            "name" : "wazuh-server"
+          },
+          "data" : {
+            "win" : {
+              "eventdata" : {
+                "subjectLogonId" : "0x3e7",
+                "subjectDomainName" : "WORKGROUP",
+                "targetLinkedLogonId" : "0x0",
+                "impersonationLevel" : "%%1833",
+                "authenticationPackageName" : "Negotiate",
+                "targetLogonId" : "0x3e7",
+                "logonProcessName" : "Advapi",
+                "logonGuid" : "{00000000-0000-0000-0000-000000000000}",
+                "targetUserName" : "SYSTEM",
+                "keyLength" : "0",
+                "elevatedToken" : "%%1842",
+                "subjectUserSid" : "S-1-5-18",
+                "processId" : "0x6fc",
+                "processName" : "C:\\\\Windows\\\\System32\\\\services.exe",
+                "targetDomainName" : "NT AUTHORITY",
+                "targetUserSid" : "S-1-5-18",
+                "virtualAccount" : "%%1843",
+                "logonType" : "5",
+                "subjectUserName" : "CHPIYR2$"
+              },
+              "system" : {
+                "eventID" : "4624",
+                "keywords" : "0x8020000000000000",
+                "providerGuid" : "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+                "level" : "0",
+                "channel" : "Security",
+                "opcode" : "0",
+                "message" : "\"帳戶已順利登入。\r\n\r\n主體:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\tA帳戶名稱:\t\tCHPIYR2$\r\n\t帳戶網域:\t\tWORKGROUP\r\n\t登入識別碼:\t\t0x3E7\r\n\r\n登入資訊:\r\n\t登入類型:\t\t5\r\n\t受限制的系統管理模式:\t-\r\n\tRemote Credential Guard:\t-\r\n\t虛擬帳戶:\t\t否\r\n\t提高權限的權杖:\t\t是\r\n\r\n模擬層級:\t\t模擬\r\n\r\n新登入:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\t帳戶名稱:\t\tSYSTEM\r\n\t帳戶網域:\t\tNT AUTHORITY\r\n\t登入識別碼:\t\t0x3E7\r\n\t連結的登入識別碼:\t\t0x0\r\n\t網路帳戶名稱:\t-\r\n\t網路帳戶網域:\t-\r\n\t登入 GUID:\t\t{00000000-0000-0000-0000-000000000000}\r\n\r\n處理程序資訊:\r\n\t處理程序識別碼:\t\t0x6fc\r\n\t處理程序名稱:\t\tC:\\Windows\\System32\\services.exe\r\n\r\n網路資訊:\r\n\t工作站名稱:\t-\r\n\t來源網路位址:\t-\r\n\t來源連接埠:\t\t-\r\n\r\n詳細的驗證資訊:\r\n\t登入處理程序:\t\tAdvapi  \r\n\t驗證封裝:\tNegotiate\r\n\t轉送的服務:\t-\r\n\t封裝名稱 (僅 NTLM):\t-\r\n\t金鑰長度:\t\t0\r\n\r\n建立登入工作階段時會產生此事件。它是在所存取的電腦上產生。\r\n\r\n主體欄位指出要求登入之本機系統上的帳戶。這通常是發生在服務 (例如伺服器服務) 或是本機處理程序 (例如 Winlogon.exe 或 Services.exe)。\r\n\r\n登入類型欄位指出發生的登入類型。最常見的類型是 2 (互動式) 與 3 (網路)。\r\n\r\n新登入欄位指出是哪個帳戶建立新登入，例如登入的帳戶。\r\n\r\n網路欄位指出遠端登入要求的來源。工作站名稱並非一律可用，在某些情況下可能會是空白。\r\n\r\n模擬層級欄位指出登入工作階段中的處理程序可以模擬的範圍。\r\n\r\n驗證資訊欄位提供關於此特定登入要求的詳細資訊。\r\n\t- 登入 GUID 是唯一識別碼，可用於關聯這個事件與 KDC 事件。\r\n\t- 轉送的服務指出哪一個中介服務已經加入這個登入要求。\r\n\t- 封裝名稱指出在 NTLM 通訊協定中使用哪一個子協定。\r\n\t- 金鑰長度指出產生的工作階段金鑰長度。如果沒有要求工作階段金鑰則為 0。\"",
+                "version" : "3",
+                "systemTime" : "2024-05-19T17:08:51.6377643Z",
+                "eventRecordID" : "3474581",
+                "threadID" : "2408",
+                "computer" : "CHPIYR2",
+                "task" : "12544",
+                "processID" : "1824",
+                "severityValue" : "AUDIT_SUCCESS",
+                "providerName" : "Microsoft-Windows-Security-Auditing"
+              }
+            }
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "Windows logon success.",
+            "groups" : [
+              "windows",
+              "windows_security",
+              "authentication_success"
+            ],
+            "nist_800_53" : [
+              "AC.7",
+              "AU.14"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 7,
+            "mitre" : {
+              "technique" : [
+                "Valid Accounts"
+              ],
+              "id" : [
+                "T1078"
+              ],
+              "tactic" : [
+                "Defense Evasion",
+                "Persistence",
+                "Privilege Escalation",
+                "Initial Access"
+              ]
+            },
+            "id" : "60106",
+            "gpg13" : [
+              "7.1",
+              "7.2"
+            ]
+          },
+          "decoder" : {
+            "name" : "windows_eventchannel"
+          },
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-19T17:08:51.828Z",
+          "location" : "EventChannel",
+          "id" : "1716138531.12731516",
+          "timestamp" : "2024-05-19T17:08:51.828+0000"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.19",
+        "_id" : "CrTikY8BSo6fEa2HyGCi",
+        "_score" : 0.0,
+        "_source" : {
+          "cluster" : {
+            "node" : "node01",
+            "name" : "wazuh"
+          },
+          "agent" : {
+            "ip" : "192.168.1.216",
+            "name" : "chpiyr2",
+            "id" : "014"
+          },
+          "manager" : {
+            "name" : "wazuh-server"
+          },
+          "data" : {
+            "win" : {
+              "eventdata" : {
+                "subjectLogonId" : "0x3e7",
+                "subjectDomainName" : "WORKGROUP",
+                "targetLinkedLogonId" : "0x0",
+                "impersonationLevel" : "%%1833",
+                "authenticationPackageName" : "Negotiate",
+                "targetLogonId" : "0x3e7",
+                "logonProcessName" : "Advapi",
+                "logonGuid" : "{00000000-0000-0000-0000-000000000000}",
+                "targetUserName" : "SYSTEM",
+                "keyLength" : "0",
+                "elevatedToken" : "%%1842",
+                "subjectUserSid" : "S-1-5-18",
+                "processId" : "0x6fc",
+                "processName" : "C:\\\\Windows\\\\System32\\\\services.exe",
+                "targetDomainName" : "NT AUTHORITY",
+                "targetUserSid" : "S-1-5-18",
+                "virtualAccount" : "%%1843",
+                "logonType" : "5",
+                "subjectUserName" : "CHPIYR2$"
+              },
+              "system" : {
+                "eventID" : "4624",
+                "keywords" : "0x8020000000000000",
+                "providerGuid" : "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+                "level" : "0",
+                "channel" : "Security",
+                "opcode" : "0",
+                "message" : "\"帳戶已順利登入。\r\n\r\n主體:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\tA帳戶名稱:\t\tCHPIYR2$\r\n\t帳戶網域:\t\tWORKGROUP\r\n\t登入識別碼:\t\t0x3E7\r\n\r\n登入資訊:\r\n\t登入類型:\t\t5\r\n\t受限制的系統管理模式:\t-\r\n\tRemote Credential Guard:\t-\r\n\t虛擬帳戶:\t\t否\r\n\t提高權限的權杖:\t\t是\r\n\r\n模擬層級:\t\t模擬\r\n\r\n新登入:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\t帳戶名稱:\t\tSYSTEM\r\n\t帳戶網域:\t\tNT AUTHORITY\r\n\t登入識別碼:\t\t0x3E7\r\n\t連結的登入識別碼:\t\t0x0\r\n\t網路帳戶名稱:\t-\r\n\t網路帳戶網域:\t-\r\n\t登入 GUID:\t\t{00000000-0000-0000-0000-000000000000}\r\n\r\n處理程序資訊:\r\n\t處理程序識別碼:\t\t0x6fc\r\n\t處理程序名稱:\t\tC:\\Windows\\System32\\services.exe\r\n\r\n網路資訊:\r\n\t工作站名稱:\t-\r\n\t來源網路位址:\t-\r\n\t來源連接埠:\t\t-\r\n\r\n詳細的驗證資訊:\r\n\t登入處理程序:\t\tAdvapi  \r\n\t驗證封裝:\tNegotiate\r\n\t轉送的服務:\t-\r\n\t封裝名稱 (僅 NTLM):\t-\r\n\t金鑰長度:\t\t0\r\n\r\n建立登入工作階段時會產生此事件。它是在所存取的電腦上產生。\r\n\r\n主體欄位指出要求登入之本機系統上的帳戶。這通常是發生在服務 (例如伺服器服務) 或是本機處理程序 (例如 Winlogon.exe 或 Services.exe)。\r\n\r\n登入類型欄位指出發生的登入類型。最常見的類型是 2 (互動式) 與 3 (網路)。\r\n\r\n新登入欄位指出是哪個帳戶建立新登入，例如登入的帳戶。\r\n\r\n網路欄位指出遠端登入要求的來源。工作站名稱並非一律可用，在某些情況下可能會是空白。\r\n\r\n模擬層級欄位指出登入工作階段中的處理程序可以模擬的範圍。\r\n\r\n驗證資訊欄位提供關於此特定登入要求的詳細資訊。\r\n\t- 登入 GUID 是唯一識別碼，可用於關聯這個事件與 KDC 事件。\r\n\t- 轉送的服務指出哪一個中介服務已經加入這個登入要求。\r\n\t- 封裝名稱指出在 NTLM 通訊協定中使用哪一個子協定。\r\n\t- 金鑰長度指出產生的工作階段金鑰長度。如果沒有要求工作階段金鑰則為 0。\"",
+                "version" : "3",
+                "systemTime" : "2024-05-19T17:25:02.9994189Z",
+                "eventRecordID" : "3474776",
+                "threadID" : "66960",
+                "computer" : "CHPIYR2",
+                "task" : "12544",
+                "processID" : "1824",
+                "severityValue" : "AUDIT_SUCCESS",
+                "providerName" : "Microsoft-Windows-Security-Auditing"
+              }
+            }
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "Windows logon success.",
+            "groups" : [
+              "windows",
+              "windows_security",
+              "authentication_success"
+            ],
+            "nist_800_53" : [
+              "AC.7",
+              "AU.14"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 37,
+            "mitre" : {
+              "technique" : [
+                "Valid Accounts"
+              ],
+              "id" : [
+                "T1078"
+              ],
+              "tactic" : [
+                "Defense Evasion",
+                "Persistence",
+                "Privilege Escalation",
+                "Initial Access"
+              ]
+            },
+            "id" : "60106",
+            "gpg13" : [
+              "7.1",
+              "7.2"
+            ]
+          },
+          "decoder" : {
+            "name" : "windows_eventchannel"
+          },
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-19T17:25:02.599Z",
+          "location" : "EventChannel",
+          "id" : "1716139502.12977939",
+          "timestamp" : "2024-05-19T17:25:02.599+0000"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.19",
+        "_id" : "3bTikY8BSo6fEa2HGF_W",
+        "_score" : 0.0,
+        "_source" : {
+          "cluster" : {
+            "node" : "node01",
+            "name" : "wazuh"
+          },
+          "agent" : {
+            "ip" : "192.168.1.216",
+            "name" : "chpiyr2",
+            "id" : "014"
+          },
+          "manager" : {
+            "name" : "wazuh-server"
+          },
+          "data" : {
+            "win" : {
+              "eventdata" : {
+                "subjectLogonId" : "0x3e7",
+                "subjectDomainName" : "WORKGROUP",
+                "targetLinkedLogonId" : "0x0",
+                "impersonationLevel" : "%%1833",
+                "authenticationPackageName" : "Negotiate",
+                "targetLogonId" : "0x3e7",
+                "logonProcessName" : "Advapi",
+                "logonGuid" : "{00000000-0000-0000-0000-000000000000}",
+                "targetUserName" : "SYSTEM",
+                "keyLength" : "0",
+                "elevatedToken" : "%%1842",
+                "subjectUserSid" : "S-1-5-18",
+                "processId" : "0x6fc",
+                "processName" : "C:\\\\Windows\\\\System32\\\\services.exe",
+                "targetDomainName" : "NT AUTHORITY",
+                "targetUserSid" : "S-1-5-18",
+                "virtualAccount" : "%%1843",
+                "logonType" : "5",
+                "subjectUserName" : "CHPIYR2$"
+              },
+              "system" : {
+                "eventID" : "4624",
+                "keywords" : "0x8020000000000000",
+                "providerGuid" : "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+                "level" : "0",
+                "channel" : "Security",
+                "opcode" : "0",
+                "message" : "\"帳戶已順利登入。\r\n\r\n主體:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\tA帳戶名稱:\t\tCHPIYR2$\r\n\t帳戶網域:\t\tWORKGROUP\r\n\t登入識別碼:\t\t0x3E7\r\n\r\n登入資訊:\r\n\t登入類型:\t\t5\r\n\t受限制的系統管理模式:\t-\r\n\tRemote Credential Guard:\t-\r\n\t虛擬帳戶:\t\t否\r\n\t提高權限的權杖:\t\t是\r\n\r\n模擬層級:\t\t模擬\r\n\r\n新登入:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\t帳戶名稱:\t\tSYSTEM\r\n\t帳戶網域:\t\tNT AUTHORITY\r\n\t登入識別碼:\t\t0x3E7\r\n\t連結的登入識別碼:\t\t0x0\r\n\t網路帳戶名稱:\t-\r\n\t網路帳戶網域:\t-\r\n\t登入 GUID:\t\t{00000000-0000-0000-0000-000000000000}\r\n\r\n處理程序資訊:\r\n\t處理程序識別碼:\t\t0x6fc\r\n\t處理程序名稱:\t\tC:\\Windows\\System32\\services.exe\r\n\r\n網路資訊:\r\n\t工作站名稱:\t-\r\n\t來源網路位址:\t-\r\n\t來源連接埠:\t\t-\r\n\r\n詳細的驗證資訊:\r\n\t登入處理程序:\t\tAdvapi  \r\n\t驗證封裝:\tNegotiate\r\n\t轉送的服務:\t-\r\n\t封裝名稱 (僅 NTLM):\t-\r\n\t金鑰長度:\t\t0\r\n\r\n建立登入工作階段時會產生此事件。它是在所存取的電腦上產生。\r\n\r\n主體欄位指出要求登入之本機系統上的帳戶。這通常是發生在服務 (例如伺服器服務) 或是本機處理程序 (例如 Winlogon.exe 或 Services.exe)。\r\n\r\n登入類型欄位指出發生的登入類型。最常見的類型是 2 (互動式) 與 3 (網路)。\r\n\r\n新登入欄位指出是哪個帳戶建立新登入，例如登入的帳戶。\r\n\r\n網路欄位指出遠端登入要求的來源。工作站名稱並非一律可用，在某些情況下可能會是空白。\r\n\r\n模擬層級欄位指出登入工作階段中的處理程序可以模擬的範圍。\r\n\r\n驗證資訊欄位提供關於此特定登入要求的詳細資訊。\r\n\t- 登入 GUID 是唯一識別碼，可用於關聯這個事件與 KDC 事件。\r\n\t- 轉送的服務指出哪一個中介服務已經加入這個登入要求。\r\n\t- 封裝名稱指出在 NTLM 通訊協定中使用哪一個子協定。\r\n\t- 金鑰長度指出產生的工作階段金鑰長度。如果沒有要求工作階段金鑰則為 0。\"",
+                "version" : "3",
+                "systemTime" : "2024-05-19T17:24:20.8937972Z",
+                "eventRecordID" : "3474727",
+                "threadID" : "2408",
+                "computer" : "CHPIYR2",
+                "task" : "12544",
+                "processID" : "1824",
+                "severityValue" : "AUDIT_SUCCESS",
+                "providerName" : "Microsoft-Windows-Security-Auditing"
+              }
+            }
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "Windows logon success.",
+            "groups" : [
+              "windows",
+              "windows_security",
+              "authentication_success"
+            ],
+            "nist_800_53" : [
+              "AC.7",
+              "AU.14"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 33,
+            "mitre" : {
+              "technique" : [
+                "Valid Accounts"
+              ],
+              "id" : [
+                "T1078"
+              ],
+              "tactic" : [
+                "Defense Evasion",
+                "Persistence",
+                "Privilege Escalation",
+                "Initial Access"
+              ]
+            },
+            "id" : "60106",
+            "gpg13" : [
+              "7.1",
+              "7.2"
+            ]
+          },
+          "decoder" : {
+            "name" : "windows_eventchannel"
+          },
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-19T17:24:21.090Z",
+          "location" : "EventChannel",
+          "id" : "1716139461.12950417",
+          "timestamp" : "2024-05-19T17:24:21.090+0000"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.19",
+        "_id" : "17TnkY8BSo6fEa2HPmAv",
+        "_score" : 0.0,
+        "_source" : {
+          "cluster" : {
+            "node" : "node01",
+            "name" : "wazuh"
+          },
+          "agent" : {
+            "ip" : "192.168.1.216",
+            "name" : "chpiyr2",
+            "id" : "014"
+          },
+          "manager" : {
+            "name" : "wazuh-server"
+          },
+          "data" : {
+            "win" : {
+              "eventdata" : {
+                "param3" : "自動啟動",
+                "param4" : "BITS",
+                "param1" : "Background Intelligent Transfer Service",
+                "param2" : "指定啟動"
+              },
+              "system" : {
+                "eventID" : "7040",
+                "eventSourceName" : "Service Control Manager",
+                "keywords" : "0x8080000000000000",
+                "providerGuid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+                "level" : "4",
+                "channel" : "System",
+                "opcode" : "0",
+                "message" : "\"Background Intelligent Transfer Service 服務的啟動類型已從 指定啟動 變更為 自動啟動。\"",
+                "version" : "0",
+                "systemTime" : "2024-05-19T17:29:59.0405271Z",
+                "eventRecordID" : "328768",
+                "threadID" : "52052",
+                "computer" : "CHPIYR2",
+                "task" : "0",
+                "processID" : "1788",
+                "severityValue" : "INFORMATION",
+                "providerName" : "Service Control Manager"
+              }
+            }
+          },
+          "rule" : {
+            "firedtimes" : 4,
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.6"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.1",
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "Service startup type was changed",
+            "groups" : [
+              "windows",
+              "windows_system",
+              "policy_changed"
+            ],
+            "id" : "61104",
+            "nist_800_53" : [
+              "AU.6"
+            ],
+            "info" : "This does not appear to be logged on Windows 2000",
+            "gdpr" : [
+              "IV_35.7.d"
+            ]
+          },
+          "decoder" : {
+            "name" : "windows_eventchannel"
+          },
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-19T17:29:59.299Z",
+          "location" : "EventChannel",
+          "id" : "1716139799.13011157",
+          "timestamp" : "2024-05-19T17:29:59.299+0000"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.19",
+        "_id" : "JrTpkY8BSo6fEa2Hc2G_",
+        "_score" : 0.0,
+        "_source" : {
+          "cluster" : {
+            "node" : "node01",
+            "name" : "wazuh"
+          },
+          "agent" : {
+            "ip" : "192.168.1.216",
+            "name" : "chpiyr2",
+            "id" : "014"
+          },
+          "manager" : {
+            "name" : "wazuh-server"
+          },
+          "data" : {
+            "win" : {
+              "eventdata" : {
+                "param3" : "指定啟動",
+                "param4" : "BITS",
+                "param1" : "Background Intelligent Transfer Service",
+                "param2" : "自動啟動"
+              },
+              "system" : {
+                "eventID" : "7040",
+                "eventSourceName" : "Service Control Manager",
+                "keywords" : "0x8080000000000000",
+                "providerGuid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+                "level" : "4",
+                "channel" : "System",
+                "opcode" : "0",
+                "message" : "\"Background Intelligent Transfer Service 服務的啟動類型已從 自動啟動 變更為 指定啟動。\"",
+                "version" : "0",
+                "systemTime" : "2024-05-19T17:32:16.6598124Z",
+                "eventRecordID" : "328777",
+                "threadID" : "73696",
+                "computer" : "CHPIYR2",
+                "task" : "0",
+                "processID" : "1788",
+                "severityValue" : "INFORMATION",
+                "providerName" : "Service Control Manager"
+              }
+            }
+          },
+          "rule" : {
+            "firedtimes" : 5,
+            "mail" : false,
+            "level" : 3,
+            "pci_dss" : [
+              "10.6"
+            ],
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "tsc" : [
+              "CC6.1",
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "Service startup type was changed",
+            "groups" : [
+              "windows",
+              "windows_system",
+              "policy_changed"
+            ],
+            "id" : "61104",
+            "nist_800_53" : [
+              "AU.6"
+            ],
+            "info" : "This does not appear to be logged on Windows 2000",
+            "gdpr" : [
+              "IV_35.7.d"
+            ]
+          },
+          "decoder" : {
+            "name" : "windows_eventchannel"
+          },
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-19T17:32:16.842Z",
+          "location" : "EventChannel",
+          "id" : "1716139936.13012962",
+          "timestamp" : "2024-05-19T17:32:16.842+0000"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.19",
+        "_id" : "TrTqkY8BSo6fEa2HmGG6",
+        "_score" : 0.0,
+        "_source" : {
+          "cluster" : {
+            "node" : "node01",
+            "name" : "wazuh"
+          },
+          "agent" : {
+            "ip" : "192.168.1.216",
+            "name" : "chpiyr2",
+            "id" : "014"
+          },
+          "manager" : {
+            "name" : "wazuh-server"
+          },
+          "data" : {
+            "win" : {
+              "eventdata" : {
+                "data" : "2124-04-25T17:33:38Z, RulesEngine"
+              },
+              "system" : {
+                "eventID" : "16384",
+                "eventSourceName" : "Software Protection Platform Service",
+                "keywords" : "0x80000000000000",
+                "providerGuid" : "{E23B33B0-C8C9-472C-A5F9-F2BDFEA0F156}",
+                "level" : "4",
+                "channel" : "Application",
+                "opcode" : "0",
+                "message" : "\"順利排程軟體保護服務在 2124-04-25T17:33:38Z 重新啟動。原因: RulesEngine。\"",
+                "version" : "0",
+                "systemTime" : "2024-05-19T17:33:38.2319759Z",
+                "eventRecordID" : "241145",
+                "threadID" : "0",
+                "computer" : "CHPIYR2",
+                "task" : "0",
+                "processID" : "73092",
+                "severityValue" : "INFORMATION",
+                "providerName" : "Microsoft-Windows-Security-SPP"
+              }
+            }
+          },
+          "rule" : {
+            "firedtimes" : 4,
+            "mail" : false,
+            "level" : 3,
+            "description" : "Software protection service scheduled successfully.",
+            "groups" : [
+              "windows",
+              "windows_application"
+            ],
+            "id" : "60642"
+          },
+          "decoder" : {
+            "name" : "windows_eventchannel"
+          },
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-19T17:33:37.413Z",
+          "location" : "EventChannel",
+          "id" : "1716140017.13014767",
+          "timestamp" : "2024-05-19T17:33:37.413+0000"
+        }
+      },
+      {
+        "_index" : "wazuh-alerts-4.x-2024.05.19",
+        "_id" : "CbT0kY8BSo6fEa2HSWNI",
+        "_score" : 0.0,
+        "_source" : {
+          "cluster" : {
+            "node" : "node01",
+            "name" : "wazuh"
+          },
+          "agent" : {
+            "ip" : "192.168.1.216",
+            "name" : "chpiyr2",
+            "id" : "014"
+          },
+          "manager" : {
+            "name" : "wazuh-server"
+          },
+          "data" : {
+            "win" : {
+              "eventdata" : {
+                "subjectLogonId" : "0x3e7",
+                "subjectDomainName" : "WORKGROUP",
+                "targetLinkedLogonId" : "0x0",
+                "impersonationLevel" : "%%1833",
+                "authenticationPackageName" : "Negotiate",
+                "targetLogonId" : "0x3e7",
+                "logonProcessName" : "Advapi",
+                "logonGuid" : "{00000000-0000-0000-0000-000000000000}",
+                "targetUserName" : "SYSTEM",
+                "keyLength" : "0",
+                "elevatedToken" : "%%1842",
+                "subjectUserSid" : "S-1-5-18",
+                "processId" : "0x6fc",
+                "processName" : "C:\\\\Windows\\\\System32\\\\services.exe",
+                "targetDomainName" : "NT AUTHORITY",
+                "targetUserSid" : "S-1-5-18",
+                "virtualAccount" : "%%1843",
+                "logonType" : "5",
+                "subjectUserName" : "CHPIYR2$"
+              },
+              "system" : {
+                "eventID" : "4624",
+                "keywords" : "0x8020000000000000",
+                "providerGuid" : "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+                "level" : "0",
+                "channel" : "Security",
+                "opcode" : "0",
+                "message" : "\"帳戶已順利登入。\r\n\r\n主體:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\tA帳戶名稱:\t\tCHPIYR2$\r\n\t帳戶網域:\t\tWORKGROUP\r\n\t登入識別碼:\t\t0x3E7\r\n\r\n登入資訊:\r\n\t登入類型:\t\t5\r\n\t受限制的系統管理模式:\t-\r\n\tRemote Credential Guard:\t-\r\n\t虛擬帳戶:\t\t否\r\n\t提高權限的權杖:\t\t是\r\n\r\n模擬層級:\t\t模擬\r\n\r\n新登入:\r\n\t安全性識別碼:\t\tS-1-5-18\r\n\t帳戶名稱:\t\tSYSTEM\r\n\t帳戶網域:\t\tNT AUTHORITY\r\n\t登入識別碼:\t\t0x3E7\r\n\t連結的登入識別碼:\t\t0x0\r\n\t網路帳戶名稱:\t-\r\n\t網路帳戶網域:\t-\r\n\t登入 GUID:\t\t{00000000-0000-0000-0000-000000000000}\r\n\r\n處理程序資訊:\r\n\t處理程序識別碼:\t\t0x6fc\r\n\t處理程序名稱:\t\tC:\\Windows\\System32\\services.exe\r\n\r\n網路資訊:\r\n\t工作站名稱:\t-\r\n\t來源網路位址:\t-\r\n\t來源連接埠:\t\t-\r\n\r\n詳細的驗證資訊:\r\n\t登入處理程序:\t\tAdvapi  \r\n\t驗證封裝:\tNegotiate\r\n\t轉送的服務:\t-\r\n\t封裝名稱 (僅 NTLM):\t-\r\n\t金鑰長度:\t\t0\r\n\r\n建立登入工作階段時會產生此事件。它是在所存取的電腦上產生。\r\n\r\n主體欄位指出要求登入之本機系統上的帳戶。這通常是發生在服務 (例如伺服器服務) 或是本機處理程序 (例如 Winlogon.exe 或 Services.exe)。\r\n\r\n登入類型欄位指出發生的登入類型。最常見的類型是 2 (互動式) 與 3 (網路)。\r\n\r\n新登入欄位指出是哪個帳戶建立新登入，例如登入的帳戶。\r\n\r\n網路欄位指出遠端登入要求的來源。工作站名稱並非一律可用，在某些情況下可能會是空白。\r\n\r\n模擬層級欄位指出登入工作階段中的處理程序可以模擬的範圍。\r\n\r\n驗證資訊欄位提供關於此特定登入要求的詳細資訊。\r\n\t- 登入 GUID 是唯一識別碼，可用於關聯這個事件與 KDC 事件。\r\n\t- 轉送的服務指出哪一個中介服務已經加入這個登入要求。\r\n\t- 封裝名稱指出在 NTLM 通訊協定中使用哪一個子協定。\r\n\t- 金鑰長度指出產生的工作階段金鑰長度。如果沒有要求工作階段金鑰則為 0。\"",
+                "version" : "3",
+                "systemTime" : "2024-05-19T17:44:11.7366433Z",
+                "eventRecordID" : "3474885",
+                "threadID" : "64700",
+                "computer" : "CHPIYR2",
+                "task" : "12544",
+                "processID" : "1824",
+                "severityValue" : "AUDIT_SUCCESS",
+                "providerName" : "Microsoft-Windows-Security-Auditing"
+              }
+            }
+          },
+          "rule" : {
+            "mail" : false,
+            "level" : 3,
+            "hipaa" : [
+              "164.312.b"
+            ],
+            "pci_dss" : [
+              "10.2.5"
+            ],
+            "tsc" : [
+              "CC6.8",
+              "CC7.2",
+              "CC7.3"
+            ],
+            "description" : "Windows logon success.",
+            "groups" : [
+              "windows",
+              "windows_security",
+              "authentication_success"
+            ],
+            "nist_800_53" : [
+              "AC.7",
+              "AU.14"
+            ],
+            "gdpr" : [
+              "IV_32.2"
+            ],
+            "firedtimes" : 45,
+            "mitre" : {
+              "technique" : [
+                "Valid Accounts"
+              ],
+              "id" : [
+                "T1078"
+              ],
+              "tactic" : [
+                "Defense Evasion",
+                "Persistence",
+                "Privilege Escalation",
+                "Initial Access"
+              ]
+            },
+            "id" : "60106",
+            "gpg13" : [
+              "7.1",
+              "7.2"
+            ]
+          },
+          "decoder" : {
+            "name" : "windows_eventchannel"
+          },
+          "input" : {
+            "type" : "log"
+          },
+          "@timestamp" : "2024-05-19T17:44:11.584Z",
+          "location" : "EventChannel",
+          "id" : "1716140651.13048927",
+          "timestamp" : "2024-05-19T17:44:11.584+0000"
+        }
+      }
+    ]
+  }
+}
