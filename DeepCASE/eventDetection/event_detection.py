@@ -27,7 +27,7 @@ if __name__ == "__main__":
 
     # Load test data from file
     context_test, events_test, labels_test, mapping_test = preprocessor.text(
-        path    = './data/convertData/wazuh-20240519-wazuh-2024-05-19T01:00:00+08:00-ruleID',
+        path    = './data/convertData/ruleID/wazuh-20240519-wazuh-2024-05-19T01:00:00+08:00-ruleID',
         verbose = True,
     )
     print(f"mapping_test:\n{mapping_test}\n")
@@ -69,7 +69,7 @@ if __name__ == "__main__":
     context_builder.fit(
         X             = context_train,               # Context to train with
         y             = events_train.reshape(-1, 1), # Events to train with, note that these should be of shape=(n_events, 1)
-        epochs        = 2,                         # Number of epochs to train with
+        epochs        = 10,                         # Number of epochs to train with
         batch_size    = 128,                         # Number of samples in each training batch, in paper this was 128
         learning_rate = 0.01,                        # Learning rate to train with, in paper this was 0.01
         verbose       = True,                        # If True, prints progress
