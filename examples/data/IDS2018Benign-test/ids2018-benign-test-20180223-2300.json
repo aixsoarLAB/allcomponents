@@ -1,0 +1,2921 @@
+{
+  "took" : 5,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 44,
+      "relation" : "eq"
+    },
+    "max_score" : 0.0,
+    "hits" : [
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "oMywCo8Bwz1RKkctu6cV",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:00:52.790Z",
+          "winlog" : {
+            "record_id" : 41649,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 3076
+              }
+            },
+            "task" : "None",
+            "event_id" : "7036",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074002F0031000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "stopped"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "message" : "Amazon SSM Agent 服務已進入 stopped 狀態。",
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.479070061Z",
+            "code" : "7036",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.967Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "ocywCo8Bwz1RKkctu6cV",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:00:52.790Z",
+          "winlog" : {
+            "record_id" : 41650,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 3076
+              }
+            },
+            "task" : "None",
+            "event_id" : "7024",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "%%1"
+            },
+            "api" : "wineventlog",
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.479868180Z",
+            "code" : "7024",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.967Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務因下列服務特定錯誤而終止: \n功能錯誤。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "osywCo8Bwz1RKkctu6cV",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:00:52.790Z",
+          "winlog" : {
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "record_id" : 41651,
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2152
+              }
+            },
+            "event_id" : "7031",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "event_data" : {
+              "param5" : "Restart the service",
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param3" : "30000",
+              "param4" : "1",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "209"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.480382493Z",
+            "code" : "7031",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.967Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務意外終止，服務曾完成這項動作 209 次。以下的修正操作將在 30000 毫秒內執行: Restart the service。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "o8ywCo8Bwz1RKkctu6cV",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:03:10.773Z",
+          "winlog" : {
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "record_id" : 41652,
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2276
+              }
+            },
+            "task" : "None",
+            "event_id" : "7036",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074002F0031000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "stopped"
+            },
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.480880405Z",
+            "code" : "7036",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.967Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務已進入 stopped 狀態。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "pMywCo8Bwz1RKkctu6cV",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:03:10.773Z",
+          "winlog" : {
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "record_id" : 41653,
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2276
+              }
+            },
+            "event_id" : "7024",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "%%1"
+            },
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "message" : "Amazon SSM Agent 服務因下列服務特定錯誤而終止: \n功能錯誤。",
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.481375817Z",
+            "code" : "7024",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.967Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "pcywCo8Bwz1RKkctu6cV",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:03:10.773Z",
+          "winlog" : {
+            "record_id" : 41654,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2752
+              }
+            },
+            "task" : "None",
+            "event_id" : "7031",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "param5" : "Restart the service",
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param3" : "30000",
+              "param4" : "1",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "210"
+            },
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.481877329Z",
+            "code" : "7031",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-04-23T11:21:35.967Z",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務意外終止，服務曾完成這項動作 210 次。以下的修正操作將在 30000 毫秒內執行: Restart the service。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "psywCo8Bwz1RKkctu6cV",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:05:22.475Z",
+          "winlog" : {
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "record_id" : 41655,
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 3076
+              }
+            },
+            "task" : "None",
+            "event_id" : "7036",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074002F0031000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "stopped"
+            },
+            "api" : "wineventlog",
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "message" : "Amazon SSM Agent 服務已進入 stopped 狀態。",
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.482390541Z",
+            "code" : "7036",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-04-23T11:21:35.967Z",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "p8ywCo8Bwz1RKkctu6cV",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:05:22.475Z",
+          "winlog" : {
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "record_id" : 41656,
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 3076
+              }
+            },
+            "task" : "None",
+            "event_id" : "7024",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "%%1"
+            },
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.482900454Z",
+            "code" : "7024",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-04-23T11:21:35.967Z",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務因下列服務特定錯誤而終止: \n功能錯誤。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "qMywCo8Bwz1RKkctu6cV",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:05:22.475Z",
+          "winlog" : {
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "record_id" : 41657,
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 3148
+              }
+            },
+            "event_id" : "7031",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "event_data" : {
+              "param5" : "Restart the service",
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param3" : "30000",
+              "param4" : "1",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "211"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.483414266Z",
+            "code" : "7031",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-04-23T11:21:35.967Z",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務意外終止，服務曾完成這項動作 211 次。以下的修正操作將在 30000 毫秒內執行: Restart the service。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "qcywCo8Bwz1RKkctu6cV",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:07:36.159Z",
+          "winlog" : {
+            "record_id" : 41658,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2276
+              }
+            },
+            "event_id" : "7036",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074002F0031000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "stopped"
+            },
+            "api" : "wineventlog",
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.484107483Z",
+            "code" : "7036",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.967Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務已進入 stopped 狀態。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "qsywCo8Bwz1RKkctu6cV",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:07:36.159Z",
+          "winlog" : {
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "record_id" : 41659,
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2276
+              }
+            },
+            "task" : "None",
+            "event_id" : "7024",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "%%1"
+            },
+            "api" : "wineventlog",
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.484619495Z",
+            "code" : "7024",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.967Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務因下列服務特定錯誤而終止: \n功能錯誤。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "q8ywCo8Bwz1RKkctu6cV",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:07:36.159Z",
+          "winlog" : {
+            "record_id" : 41660,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2808
+              }
+            },
+            "event_id" : "7031",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "event_data" : {
+              "param5" : "Restart the service",
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param3" : "30000",
+              "param4" : "1",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "212"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.485132707Z",
+            "code" : "7031",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.967Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務意外終止，服務曾完成這項動作 212 次。以下的修正操作將在 30000 毫秒內執行: Restart the service。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "rMywCo8Bwz1RKkctu6cV",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:09:47.923Z",
+          "winlog" : {
+            "record_id" : 41661,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 3076
+              }
+            },
+            "event_id" : "7036",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074002F0031000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "stopped"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.485632819Z",
+            "code" : "7036",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.967Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務已進入 stopped 狀態。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "rcywCo8Bwz1RKkctu6cV",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:09:47.923Z",
+          "winlog" : {
+            "record_id" : 41662,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 3076
+              }
+            },
+            "task" : "None",
+            "event_id" : "7024",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "%%1"
+            },
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.485980828Z",
+            "code" : "7024",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.967Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務因下列服務特定錯誤而終止: \n功能錯誤。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "rsywCo8Bwz1RKkctu6cV",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:09:47.923Z",
+          "winlog" : {
+            "record_id" : 41663,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2632
+              }
+            },
+            "event_id" : "7031",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "param5" : "Restart the service",
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param3" : "30000",
+              "param4" : "1",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "213"
+            },
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "message" : "Amazon SSM Agent 服務意外終止，服務曾完成這項動作 213 次。以下的修正操作將在 30000 毫秒內執行: Restart the service。",
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.486232434Z",
+            "code" : "7031",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-04-23T11:21:35.967Z",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "r8ywCo8Bwz1RKkctu6cV",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:11:55.999Z",
+          "winlog" : {
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "record_id" : 41664,
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2276
+              }
+            },
+            "task" : "None",
+            "event_id" : "7036",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074002F0031000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "stopped"
+            },
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "message" : "Amazon SSM Agent 服務已進入 stopped 狀態。",
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.486608643Z",
+            "code" : "7036",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.967Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "sMywCo8Bwz1RKkctu6cV",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:11:55.999Z",
+          "winlog" : {
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "record_id" : 41665,
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2276
+              }
+            },
+            "event_id" : "7024",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "%%1"
+            },
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.487096255Z",
+            "code" : "7024",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.967Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務因下列服務特定錯誤而終止: \n功能錯誤。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "scywCo8Bwz1RKkctu6cV",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:11:55.999Z",
+          "winlog" : {
+            "record_id" : 41666,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 3440
+              }
+            },
+            "task" : "None",
+            "event_id" : "7031",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "param5" : "Restart the service",
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param3" : "30000",
+              "param4" : "1",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "214"
+            },
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.487903974Z",
+            "code" : "7031",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-04-23T11:21:35.967Z",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務意外終止，服務曾完成這項動作 214 次。以下的修正操作將在 30000 毫秒內執行: Restart the service。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "ssywCo8Bwz1RKkctu6cV",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:14:05.419Z",
+          "winlog" : {
+            "record_id" : 41667,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 3076
+              }
+            },
+            "task" : "None",
+            "event_id" : "7036",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074002F0031000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "stopped"
+            },
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.488400186Z",
+            "code" : "7036",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.967Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務已進入 stopped 狀態。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "s8ywCo8Bwz1RKkctu6cV",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:14:05.419Z",
+          "winlog" : {
+            "record_id" : 41668,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 3076
+              }
+            },
+            "task" : "None",
+            "event_id" : "7024",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "%%1"
+            },
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.488897398Z",
+            "code" : "7024",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.967Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務因下列服務特定錯誤而終止: \n功能錯誤。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "tMywCo8Bwz1RKkctu6cW",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:14:05.419Z",
+          "winlog" : {
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "record_id" : 41669,
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 3672
+              }
+            },
+            "event_id" : "7031",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "event_data" : {
+              "param5" : "Restart the service",
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param3" : "30000",
+              "param4" : "1",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "215"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.489394710Z",
+            "code" : "7031",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.967Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務意外終止，服務曾完成這項動作 215 次。以下的修正操作將在 30000 毫秒內執行: Restart the service。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "tcywCo8Bwz1RKkctu6cW",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:16:10.104Z",
+          "winlog" : {
+            "record_id" : 41670,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2276
+              }
+            },
+            "task" : "None",
+            "event_id" : "7036",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074002F0031000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "stopped"
+            },
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "message" : "Amazon SSM Agent 服務已進入 stopped 狀態。",
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.489899422Z",
+            "code" : "7036",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.967Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "tsywCo8Bwz1RKkctu6eG",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:16:10.104Z",
+          "winlog" : {
+            "record_id" : 41671,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2276
+              }
+            },
+            "event_id" : "7024",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "%%1"
+            },
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.586089143Z",
+            "code" : "7024",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-04-23T11:21:35.967Z",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務因下列服務特定錯誤而終止: \n功能錯誤。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "t8ywCo8Bwz1RKkctu6eG",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:16:10.104Z",
+          "winlog" : {
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "record_id" : 41672,
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2560
+              }
+            },
+            "task" : "None",
+            "event_id" : "7031",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "event_data" : {
+              "param5" : "Restart the service",
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param3" : "30000",
+              "param4" : "1",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "216"
+            },
+            "api" : "wineventlog",
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.586510553Z",
+            "code" : "7031",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.986Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務意外終止，服務曾完成這項動作 216 次。以下的修正操作將在 30000 毫秒內執行: Restart the service。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "uMywCo8Bwz1RKkctu6eG",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:17:51.274Z",
+          "winlog" : {
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "record_id" : 41673,
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 3848
+              }
+            },
+            "event_id" : "7036",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "770075006100750073006500720076002F0034000000",
+              "param1" : "Windows Update",
+              "param2" : "running"
+            },
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "message" : "Windows Update 服務已進入 running 狀態。",
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.586878062Z",
+            "code" : "7036",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-04-23T11:21:35.986Z",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "ucywCo8Bwz1RKkctu6eG",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:18:30.899Z",
+          "winlog" : {
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "record_id" : 41674,
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 3848
+              }
+            },
+            "event_id" : "7036",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074002F0031000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "stopped"
+            },
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "message" : "Amazon SSM Agent 服務已進入 stopped 狀態。",
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.587246870Z",
+            "code" : "7036",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-04-23T11:21:35.986Z",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "usywCo8Bwz1RKkctu6eH",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:18:30.899Z",
+          "winlog" : {
+            "record_id" : 41675,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 3848
+              }
+            },
+            "event_id" : "7024",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "%%1"
+            },
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.587808984Z",
+            "code" : "7024",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.986Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務因下列服務特定錯誤而終止: \n功能錯誤。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "u8ywCo8Bwz1RKkctu6eH",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:18:30.900Z",
+          "winlog" : {
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "record_id" : 41676,
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 480
+              }
+            },
+            "event_id" : "7031",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "param5" : "Restart the service",
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param3" : "30000",
+              "param4" : "1",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "217"
+            },
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "message" : "Amazon SSM Agent 服務意外終止，服務曾完成這項動作 217 次。以下的修正操作將在 30000 毫秒內執行: Restart the service。",
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.588167793Z",
+            "code" : "7031",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.986Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "vMywCo8Bwz1RKkctu6eH",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:20:40.475Z",
+          "winlog" : {
+            "record_id" : 41677,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2276
+              }
+            },
+            "task" : "None",
+            "event_id" : "7036",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074002F0031000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "stopped"
+            },
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.588517801Z",
+            "code" : "7036",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.986Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務已進入 stopped 狀態。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "vcywCo8Bwz1RKkctu6eH",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:20:40.475Z",
+          "winlog" : {
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "record_id" : 41678,
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2276
+              }
+            },
+            "task" : "None",
+            "event_id" : "7024",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "%%1"
+            },
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.588864110Z",
+            "code" : "7024",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.986Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務因下列服務特定錯誤而終止: \n功能錯誤。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "vsywCo8Bwz1RKkctu6eH",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:20:40.475Z",
+          "winlog" : {
+            "record_id" : 41679,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 3472
+              }
+            },
+            "task" : "None",
+            "event_id" : "7031",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "event_data" : {
+              "param5" : "Restart the service",
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param3" : "30000",
+              "param4" : "1",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "218"
+            },
+            "api" : "wineventlog",
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.589219418Z",
+            "code" : "7031",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.986Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務意外終止，服務曾完成這項動作 218 次。以下的修正操作將在 30000 毫秒內執行: Restart the service。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "v8ywCo8Bwz1RKkctu6eH",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:22:55.957Z",
+          "winlog" : {
+            "record_id" : 41680,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 3848
+              }
+            },
+            "event_id" : "7036",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074002F0031000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "stopped"
+            },
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.589571127Z",
+            "code" : "7036",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.986Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務已進入 stopped 狀態。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "wMywCo8Bwz1RKkctu6eH",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:22:55.957Z",
+          "winlog" : {
+            "record_id" : 41681,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 3848
+              }
+            },
+            "event_id" : "7024",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "%%1"
+            },
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.589918035Z",
+            "code" : "7024",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-04-23T11:21:35.986Z",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務因下列服務特定錯誤而終止: \n功能錯誤。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "wcywCo8Bwz1RKkctu6eH",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:22:55.957Z",
+          "winlog" : {
+            "record_id" : 41682,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 3996
+              }
+            },
+            "task" : "None",
+            "event_id" : "7031",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "param5" : "Restart the service",
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param3" : "30000",
+              "param4" : "1",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "219"
+            },
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.590265444Z",
+            "code" : "7031",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-04-23T11:21:35.986Z",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務意外終止，服務曾完成這項動作 219 次。以下的修正操作將在 30000 毫秒內執行: Restart the service。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "wsywCo8Bwz1RKkctu6eH",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:25:01.331Z",
+          "winlog" : {
+            "record_id" : 41683,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2276
+              }
+            },
+            "task" : "None",
+            "event_id" : "7036",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074002F0031000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "stopped"
+            },
+            "api" : "wineventlog",
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.590616952Z",
+            "code" : "7036",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.987Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務已進入 stopped 狀態。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "w8ywCo8Bwz1RKkctu6eH",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:25:01.331Z",
+          "winlog" : {
+            "record_id" : 41684,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2276
+              }
+            },
+            "task" : "None",
+            "event_id" : "7024",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "%%1"
+            },
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.590970761Z",
+            "code" : "7024",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.987Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務因下列服務特定錯誤而終止: \n功能錯誤。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "xMywCo8Bwz1RKkctu6eH",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:25:01.331Z",
+          "winlog" : {
+            "record_id" : 41685,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 3368
+              }
+            },
+            "task" : "None",
+            "event_id" : "7031",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "event_data" : {
+              "param5" : "Restart the service",
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param3" : "30000",
+              "param4" : "1",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "220"
+            },
+            "api" : "wineventlog",
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "message" : "Amazon SSM Agent 服務意外終止，服務曾完成這項動作 220 次。以下的修正操作將在 30000 毫秒內執行: Restart the service。",
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.591324669Z",
+            "code" : "7031",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.987Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "xcywCo8Bwz1RKkctu6eH",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:27:22.875Z",
+          "winlog" : {
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "record_id" : 41686,
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 3848
+              }
+            },
+            "event_id" : "7036",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074002F0031000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "stopped"
+            },
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.591900483Z",
+            "code" : "7036",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-04-23T11:21:35.987Z",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務已進入 stopped 狀態。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "xsywCo8Bwz1RKkctu6eH",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:27:22.875Z",
+          "winlog" : {
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "record_id" : 41687,
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 3848
+              }
+            },
+            "task" : "None",
+            "event_id" : "7024",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "%%1"
+            },
+            "api" : "wineventlog",
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.592248792Z",
+            "code" : "7024",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.987Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務因下列服務特定錯誤而終止: \n功能錯誤。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "x8ywCo8Bwz1RKkctu6eH",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:27:22.875Z",
+          "winlog" : {
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "record_id" : 41688,
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 936
+              }
+            },
+            "task" : "None",
+            "event_id" : "7031",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "param5" : "Restart the service",
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param3" : "30000",
+              "param4" : "1",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "221"
+            },
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "message" : "Amazon SSM Agent 服務意外終止，服務曾完成這項動作 221 次。以下的修正操作將在 30000 毫秒內執行: Restart the service。",
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.592600800Z",
+            "code" : "7031",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.987Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "yMywCo8Bwz1RKkctu6eH",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:27:52.312Z",
+          "winlog" : {
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "record_id" : 41689,
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 2276
+              }
+            },
+            "event_id" : "7036",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "770075006100750073006500720076002F0031000000",
+              "param1" : "Windows Update",
+              "param2" : "stopped"
+            },
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "message" : "Windows Update 服務已進入 stopped 狀態。",
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.592967709Z",
+            "code" : "7036",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.987Z",
+            "kind" : "event",
+            "action" : "None"
+          }
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "ycywCo8Bwz1RKkctu6eH",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:29:33.107Z",
+          "winlog" : {
+            "record_id" : 41690,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 3076
+              }
+            },
+            "task" : "None",
+            "event_id" : "7036",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074002F0031000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "stopped"
+            },
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "資訊"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.593464621Z",
+            "code" : "7036",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-04-23T11:21:35.987Z",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務已進入 stopped 狀態。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "ysywCo8Bwz1RKkctu6eH",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "type" : "winlogbeat",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:29:33.107Z",
+          "winlog" : {
+            "record_id" : 41691,
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 3076
+              }
+            },
+            "task" : "None",
+            "event_id" : "7024",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "%%1"
+            },
+            "opcode" : "Info",
+            "provider_name" : "Service Control Manager"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.593836830Z",
+            "code" : "7024",
+            "provider" : "Service Control Manager",
+            "kind" : "event",
+            "created" : "2024-04-23T11:21:35.987Z",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務因下列服務特定錯誤而終止: \n功能錯誤。"
+        }
+      },
+      {
+        "_index" : "ids-2018-benign-test",
+        "_id" : "y8ywCo8Bwz1RKkctu6eH",
+        "_score" : 0.0,
+        "_source" : {
+          "agent" : {
+            "name" : "CHPIYR2",
+            "id" : "60d66234-2dc5-408a-9a6e-a0a6278a7ae3",
+            "type" : "winlogbeat",
+            "ephemeral_id" : "37f0e225-ba75-4589-bc54-68376a4d3020",
+            "version" : "8.11.3"
+          },
+          "@timestamp" : "2018-02-23T20:29:33.108Z",
+          "winlog" : {
+            "computer_name" : "EC2AMAZ-O4EL3NG",
+            "record_id" : 41692,
+            "process" : {
+              "pid" : 724,
+              "thread" : {
+                "id" : 3456
+              }
+            },
+            "event_id" : "7031",
+            "task" : "None",
+            "keywords" : [
+              "傳統"
+            ],
+            "provider_guid" : "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+            "channel" : "System",
+            "api" : "wineventlog",
+            "event_data" : {
+              "param5" : "Restart the service",
+              "Binary" : "41006D0061007A006F006E00530053004D004100670065006E0074000000",
+              "param3" : "30000",
+              "param4" : "1",
+              "param1" : "Amazon SSM Agent",
+              "param2" : "222"
+            },
+            "provider_name" : "Service Control Manager",
+            "opcode" : "Info"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "log" : {
+            "file" : {
+              "path" : "D:\\AIXSOAR\\EDR\\IDS_2018\\benign\\Friday-23-02-2018\\EC2AMAZ-O4EL3NG-172.31.69.19.evtx"
+            },
+            "level" : "錯誤"
+          },
+          "host" : {
+            "os" : {
+              "type" : "windows",
+              "family" : "windows"
+            },
+            "name" : "EC2AMAZ-O4EL3NG"
+          },
+          "event" : {
+            "ingested" : "2024-04-23T11:21:45.594185238Z",
+            "code" : "7031",
+            "provider" : "Service Control Manager",
+            "created" : "2024-04-23T11:21:35.987Z",
+            "kind" : "event",
+            "action" : "None"
+          },
+          "message" : "Amazon SSM Agent 服務意外終止，服務曾完成這項動作 222 次。以下的修正操作將在 30000 毫秒內執行: Restart the service。"
+        }
+      }
+    ]
+  }
+}
