@@ -72,10 +72,12 @@ class EventIDExtractor:
     def extract_rule_ids(input_file_path, output_file_path):
         with open(input_file_path, 'r', encoding='utf-8') as file:
             data = json.load(file)
-            # 提取 rule 的 id 並寫入檔案
-            event_ids = [str(item['_source']['rule']['id']) 
-                         for item in data['hits']['hits'] 
-                         if 'rule' in item['_source'] and 'id' in item['_source']['rule']]
+            # 提取 rule 的 id 並寫入檔案，且篩選 "rule" -> "level" >= 9
+            event_ids = [
+                str(item['_source']['rule']['id']) 
+                for item in data['hits']['hits'] 
+                if 'rule' in item['_source'] and 'id' in item['_source']['rule'] and item['_source']['rule'].get('level', 0) >= 9
+            ]
         with open(output_file_path, 'w', encoding='utf-8') as output_file:
             output_file.write(' '.join(event_ids) + '\n')
         print(f'所有 Rule ID 已成功儲存到 "{output_file_path}"。')
@@ -84,13 +86,16 @@ class EventIDExtractor:
     def extract_SEIDS(input_file_path, output_file_path):
         with open(input_file_path, 'r', encoding='utf-8') as file:
             data = json.load(file)
-            # 提取 rule 的 id 並寫入檔案
-            event_ids = [str(item['_source']['id']) 
-                         for item in data['hits']['hits'] 
-                         if'id' in item['_source']]
+            # 提取 rule 的 id 並寫入檔案，且篩選 "rule" -> "level" >= 9
+            event_ids = [
+                str(item['_source']['id']) 
+                for item in data['hits']['hits'] 
+                if 'id' in item['_source'] and 'rule' in item['_source'] and item['_source']['rule'].get('level', 0) >= 9
+            ]
         with open(output_file_path, 'w', encoding='utf-8') as output_file:
             output_file.write(' '.join(event_ids) + '\n')
         print(f'所有 Security Event ID 已成功儲存到 "{output_file_path}"。')
+
 
     # 刪除空白檔案(多個檔案轉換合併後包含空白適用)
     def clean_and_save(output_file_path):

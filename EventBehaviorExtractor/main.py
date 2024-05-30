@@ -37,7 +37,7 @@ processor.run()
 #   Event/rule ID 使用  #
 #########################
 
-filefolder_path = "../DeepCASE/eventDetection/data/wazuh-20240518"
+filefolder_path = "../DeepCASE/eventDetection/data/wazuh-20240519"
 input_file_path = get_json_filefolder(filefolder_path) 
 head, sep, tail = filefolder_path.rpartition('/')
 foldername = tail
@@ -48,11 +48,11 @@ for i in range(len(input_file_path)):
     head, sep, tail = input_file_path[i].rpartition('/')
     filename = tail[:-5]
 
-    outputFileName = ruleID_output_file_path + "-" + filename + "-ruleID"
+    outputFileName = ruleID_output_file_path + "-" + filename + "-ruleID-level_9"
     EventIDExtractor.extract_rule_ids(input_file_path[i], outputFileName)
     EventIDExtractor.delete_empty_file(outputFileName)
 
-    outputFileName = SEID_output_file_path + "-" + filename + "-SEID"
+    outputFileName = SEID_output_file_path + "-" + filename + "-SEID-level_9"
     EventIDExtractor.extract_SEIDS(input_file_path[i], outputFileName)
     EventIDExtractor.delete_empty_file(outputFileName)
 
