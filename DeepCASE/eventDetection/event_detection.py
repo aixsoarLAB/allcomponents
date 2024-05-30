@@ -2,10 +2,24 @@
 from sklearn.metrics import classification_report
 import numpy as np
 import torch
+import random
 
 # DeepCASE Imports
 from deepcase.preprocessing   import Preprocessor
 from deepcase.context_builder import ContextBuilder
+
+# 設置隨機種子
+seed = 42
+np.random.seed(seed)
+torch.manual_seed(seed)
+random.seed(seed)
+
+# 如果使用的是 CUDA，還需要設置 CUDA 的隨機種子
+if torch.cuda.is_available():
+    torch.cuda.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
 
 if __name__ == "__main__":
     ########################################################################
@@ -27,7 +41,7 @@ if __name__ == "__main__":
 
     # Load test data from file
     context_test, events_test, labels_test, mapping_test = preprocessor.text(
-        path    = './data/convertData/ruleID/wazuh-20240519-wazuh-2024-05-19T01:00:00+08:00-ruleID',
+        path    = './data/convertData/ruleID/wazuh-20240519-wazuh-2024-05-19T01:00:00+08:00-ruleID-level_7',
         verbose = True,
     )
     print(f"mapping_test:\n{mapping_test}\n")
@@ -69,7 +83,7 @@ if __name__ == "__main__":
     context_builder.fit(
         X             = context_train,               # Context to train with
         y             = events_train.reshape(-1, 1), # Events to train with, note that these should be of shape=(n_events, 1)
-        epochs        = 10,                         # Number of epochs to train with
+        epochs        = 3,                           # Number of epochs to train with
         batch_size    = 128,                         # Number of samples in each training batch, in paper this was 128
         learning_rate = 0.01,                        # Learning rate to train with, in paper this was 0.01
         verbose       = True,                        # If True, prints progress
@@ -111,20 +125,35 @@ if __name__ == "__main__":
     y_pred = [mapping_train[key] for key in y_pred]
 
     result = []
-    abnormal = []
+    abnormal_list = []
     for i in range(len(y_test)):
         if (int(y_test[i]) == int(y_pred[i])):
             result.append(0)
         else:
             result.append(1)
-            abnormal.append(i)
+            abnormal_list.append(i)
 
     # Calculate abnormal rate
     num_of_one = result.count(1)
     abnormal_rate = num_of_one / len(result)
 
     print(f"\n異常量：{num_of_one}\n異常率：{abnormal_rate:.2f}\n")
-    print(f"偵測結果：\n{result}\nsize: {len(result)}\n\n異常序列：\n{abnormal}\nsize: {len(abnormal)}")
+    print(f"偵測結果：\n{result}\nsize: {len(result)}\n\n異常序列：\n{abnormal_list}\nsize: {len(abnormal_list)}\n")
+
+    # 讀取SEID檔案內容
+    SEID_file_path = './data/convertData/SEID/wazuh-20240519-wazuh-2024-05-19T01:00:00+08:00-SEID-level_7'
+    with open(SEID_file_path, 'r') as file:
+        data = file.read()
+
+    # 根據空格分割數據並存儲在列表中
+    SEID_list = data.split()
+    
+    abnormal_security_event = []
+    for i in abnormal_list:
+        abnormal_security_event.append(SEID_list[i])
+
+    print(f"Abnormal security event:\n{abnormal_security_event}\nsize: {len(abnormal_security_event)}\n")
+
 
 
 '''
